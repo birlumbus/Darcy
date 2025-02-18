@@ -19,7 +19,7 @@ def extract_dialogue(input_file, output_file):
             f.write(quote.strip() + "\n")
 
 
-input_file = "/Users/rhodri/Projects/Darcy/pride_and_prejudice.txt"
-output_file = "/Users/rhodri/Projects/Darcy/all_dialogue.txt"
+input_file = "/Users/rhodri/Projects/Darcy/training_data/raw_text/pride_and_prejudice.txt"
+output_file = "/Users/rhodri/Projects/Darcy/training_data/raw_text/all_dialogue.txt"
 extract_dialogue(input_file, output_file)
 print(f"Extracted dialogue saved to {output_file}")
