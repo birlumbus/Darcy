@@ -1,0 +1,30 @@
+
+<darcy-impression-on-others> 			100-500 in each tag category is ok
+<darcy-about>							500+ is best
+<darcy-self-impression>
+<darcy-dialogue>						If there aren't enough, add tags that reword previous data.
+<darcy-inner-thoughts> 					Manually generated tags are placed in a space above direct book data.
+<darcy-actions>
+
+
+<darcy-about> Friend to the good-looking and gentlemanlike Mr. Bingley.
+<darcy-about> He is the owner of a large estate in Derbyshire.
+
+
+<darcy-impression-on-others> Mr. Darcy soon drew the attention of the room by his fine, tall person, handsome features, and noble mien.
+<darcy-about> The report, which was in general circulation within five minutes after his entrance, was his having ten thousand a year.
+<darcy-impression-on-others> The gentlemen pronounced him to be a fine figure of a man.
+<darcy-impression-on-others> The ladies declared he was much handsomer than Mr. Bingley. H
+<darcy-impression-on-others> He was looked at with great admiration for about half the evening, till his manners gave a disgust which turned the tide of his popularity. 
+<darcy-impression-on-others> He was discovered to be proud.
+<darcy-impression-on-others> He was discovered to be above his company.
+<darcy-impression-on-others> He was discovered to be above being pleased.
+<darcy-impression-on-others> Not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance, and being unworthy to be compared with his friend Mr. Bingley.
+<darcy-impression-on-others> Mr. Bingley had soon made himself acquainted with all the principal people in the room: he was lively and unreserved, danced every dance, was angry that the ball closed so early, and talked of giving one himself at Netherfield. What a great contrast between him and his friend Mr. Darcy!
+<darcy-impression-on-others> Mr. Bingley had soon made himself acquainted with all the principal people in the room: he was lively and unreserved, danced every dance, was angry that the ball closed so early, and talked of giving one himself at Netherfield. What a great contrast between him and his friend Mr. Darcy!
+<darcy-actions> Danced only once with Mrs. Hurst and once with Miss Bingley.
+<darcy-actions> Declined being introduced to any other lady.
+<darcy-actions> Spent the rest of the evening in walking about the room, speaking occasionally to one of his own party.
+<darcy-impression-on-others> He was the proudest, most disagreeable man in the world.
+<darcy-impression-on-others> Everybody hoped that he would never come there again.
+<darcy-impression-on-others> Amongst the most violent against him was Mrs. Bennet, whose dislike of his general behaviour was sharpened into particular resentment by his having slighted one of her daughters.

@@ -1,0 +1,6 @@
+darcy-about: 2
+darcy-impression-on-others: 1
+darcy-self-impression: 1
+darcy-dialogue: 1
+darcy-inner-thoughts: 1
+darcy-demeanor: 1
