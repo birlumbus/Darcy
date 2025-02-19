@@ -1,10 +1,14 @@
 
 <darcy-impression-on-others> 			100-500 in each tag category is ok
 <darcy-about>							500+ is best
-<darcy-self-impression>
+<darcy-relationships>
 <darcy-dialogue>						If there aren't enough, add tags that reword previous data.
 <darcy-inner-thoughts> 					Manually generated tags are placed in a space above direct book data.
 <darcy-actions>
+
+
+Here is a passage from Pride and Prejudice. Extract all references to Mr. Darcy and categorize them into structured tags like <darcy-impression-on-others>, <darcy-about>, <darcy-dialogue>, <darcy-inner-thoughts>, <darcy-actions>, and <darcy-relationships>. Be as exhaustive as possible but do not add any information not explicitly in the text.
+
 
 
 <darcy-about> Friend to the good-looking and gentlemanlike Mr. Bingley.
