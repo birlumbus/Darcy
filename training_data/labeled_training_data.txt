@@ -1,36 +1,34 @@
 
 <others-impressions-of-darcy> 			100-500 in each tag category is ok
-<darcy-background>							500+ is best
-<darcy-relationships>
-<darcy-dialogue>						If there aren't enough, add tags that reword previous data.
-<darcy-inner-thoughts> 					Manually generated tags are placed in a space above direct book data.
+<darcy-inner-thoughts>							500+ is best
 <darcy-actions>
+<darcy-dialogue>						If there aren't enough, add tags that reword previous data.
+ 										Manually generated tags are placed in a space above direct book data.
+
 
 
 EXAMPLE PROMPT:
-I'm going to be fine-tuning a GPT model to sound like Darcy from Pride and Prejudice. Here is a passage from the book. Extract all references to Mr. Darcy and categorize them into structured tags like <others-impressions-of-darcy>, <darcy-background>, <darcy-dialogue>, <darcy-inner-thoughts>, <darcy-actions>, and <darcy-relationships>. Be as exhaustive as possible but do not add any information not explicitly in the text. It's important for you to present these in a manner that makes it possible to train a GPT model to mimic Darcy's personality as closely as possible.
+I'm going to be fine-tuning a GPT model to sound like Darcy from Pride and Prejudice. I'll give you passages from the book. Extract all references to Mr. Darcy and categorize them into only these structured tags: <others-impressions-of-darcy>, <darcy-dialogue>, <darcy-inner-thoughts>, and <darcy-actions>. 
 
-Structure your results in the following format:
-<darcy-background> Large estate in Derbyshire
+When anyone forms or expresses an opinion about Darcy, <others-impressions-of-darcy>
+When Darcy speaks, <darcy-dialogue>
+When Darcy thinks, or the narrative describes his thoughts or feelings, <darcy-inner-thoughts>
+When Darcy does anything, or his actions, past or present, are described, <darcy-actions>
+
+Be as exhaustive as possible but do not add any information not explicitly in the text. It's important for you to present these in a manner that makes it possible to train a GPT model to mimic Darcy's personality as closely as possible. There may be no references falling within a particular category, or none at all.
+
+Structure your results in the following format, each tag on its own line:
+
 <others-impressions-of-darcy> Not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance, and being unworthy to be compared with his friend.
+<darcy-actions> Mr. Darcy danced only once with Mrs. Hurst and once with Miss Bingley, declined being introduced to any other lady, and spent the rest of the evening in walking about the room, speaking occasionally to one of his own party.
+<darcy-dialogue> I have been used to consider poetry as the _food_ of love.
+<darcy-dialogue> You are mistaken. I write rather slowly.
+<darcy-dialogue> It is fortunate, then, that they fall to my lot instead of to yours.
+<darcy-inner-thoughts> Darcy began to feel the danger of paying Elizabeth too much attention.
 
-Mr. Bingley was good-looking and gentlemanlike: he had a pleasant
-countenance, and easy, unaffected manners. His sisters were fine women,
-with an air of decided fashion. His brother-in-law, Mr. Hurst, merely
-looked the gentleman; but his friend Mr. Darcy soon drew the attention
-of the room by his fine, tall person, handsome features, noble mien, and
-the report, which was in general circulation within five minutes after
-his entrance, of his having ten thousand a year. The gentlemen
-pronounced him to be a fine figure of a man, the ladies declared he was
-much handsomer than Mr. Bingley, and he was looked at with great
-admiration for about half the evening, till his manners gave a disgust
-which turned the tide of his popularity; for he was discovered to be
-proud, to be above his company, and above being pleased; and not all his
-large estate in Derbyshire could save him from having a most forbidding,
-disagreeable countenance, and being unworthy to be compared with his
-friend.
 
-Here is a passage from Pride and Prejudice. Extract all references to Mr. Darcy and categorize them into structured tags like <darcy-impression-on-others>, <darcy-about>, <darcy-dialogue>, <darcy-inner-thoughts>, <darcy-actions>, and <darcy-relationships>. Be as exhaustive as possible but do not add any information not explicitly in the text.
+
+
 
 
 
