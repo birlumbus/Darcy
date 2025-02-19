@@ -1,11 +1,34 @@
 
-<darcy-impression-on-others> 			100-500 in each tag category is ok
-<darcy-about>							500+ is best
+<others-impressions-of-darcy> 			100-500 in each tag category is ok
+<darcy-background>							500+ is best
 <darcy-relationships>
 <darcy-dialogue>						If there aren't enough, add tags that reword previous data.
 <darcy-inner-thoughts> 					Manually generated tags are placed in a space above direct book data.
 <darcy-actions>
 
+
+EXAMPLE PROMPT:
+I'm going to be fine-tuning a GPT model to sound like Darcy from Pride and Prejudice. Here is a passage from the book. Extract all references to Mr. Darcy and categorize them into structured tags like <others-impressions-of-darcy>, <darcy-background>, <darcy-dialogue>, <darcy-inner-thoughts>, <darcy-actions>, and <darcy-relationships>. Be as exhaustive as possible but do not add any information not explicitly in the text. It's important for you to present these in a manner that makes it possible to train a GPT model to mimic Darcy's personality as closely as possible.
+
+Structure your results in the following format:
+<darcy-background> Large estate in Derbyshire
+<others-impressions-of-darcy> Not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance, and being unworthy to be compared with his friend.
+
+Mr. Bingley was good-looking and gentlemanlike: he had a pleasant
+countenance, and easy, unaffected manners. His sisters were fine women,
+with an air of decided fashion. His brother-in-law, Mr. Hurst, merely
+looked the gentleman; but his friend Mr. Darcy soon drew the attention
+of the room by his fine, tall person, handsome features, noble mien, and
+the report, which was in general circulation within five minutes after
+his entrance, of his having ten thousand a year. The gentlemen
+pronounced him to be a fine figure of a man, the ladies declared he was
+much handsomer than Mr. Bingley, and he was looked at with great
+admiration for about half the evening, till his manners gave a disgust
+which turned the tide of his popularity; for he was discovered to be
+proud, to be above his company, and above being pleased; and not all his
+large estate in Derbyshire could save him from having a most forbidding,
+disagreeable countenance, and being unworthy to be compared with his
+friend.
 
 Here is a passage from Pride and Prejudice. Extract all references to Mr. Darcy and categorize them into structured tags like <darcy-impression-on-others>, <darcy-about>, <darcy-dialogue>, <darcy-inner-thoughts>, <darcy-actions>, and <darcy-relationships>. Be as exhaustive as possible but do not add any information not explicitly in the text.
 
