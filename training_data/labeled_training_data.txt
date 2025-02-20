@@ -60,8 +60,8 @@ completely in your way; and if the second, I can admire you much better
 as I sit by the fire.”
 
 
-<darcy-actions> Mr. Darcy looked up. He was as much awake to the novelty of attention in that quarter as Elizabeth herself could be, and unconsciously closed his book.
-<darcy-actions> He was directly invited to join their party, but he declined with customary reserve.
+<darcy-actions> Darcy looked up. He was as much awake to the novelty of attention in that quarter as Elizabeth herself could be, and unconsciously closed his book.
+<darcy-actions> He was directly invited to join their party, but he declined it, observing that he could imagine but two motives for their choosing to walk up and down the room together, with either of which motives his joining them would interfere.
 <darcy-actions> He offered the requested explanation as soon as she allowed him to speak.
 <darcy-dialogue> I have not the smallest objection to explaining them.
 <darcy-dialogue> You either choose this method of passing the evening because you are in each other’s confidence, and have secret affairs to discuss, or because you are conscious that your figures appear to the greatest advantage in walking: if the first, I should be completely in your way; and if the second, I can admire you much better as I sit by the fire.
@@ -144,16 +144,21 @@ opened; and Darcy, after a few moments’ recollection, was not sorry for
 it. He began to feel the danger of paying Elizabeth too much attention.
 
 
-<darcy-actions> He began to feel the danger of paying Elizabeth too much attention.
-<darcy-actions> He spoke with a smile when amused.
-<darcy-dialogue> “Miss Bingley,” said he, “has given me credit for more than can be. The wisest and best of men,--nay, the wisest and best of their actions,--may be rendered ridiculous by a person whose first object in life is a joke.”  
+<darcy-actions> Darcy spoke with a smile when amused.  
+<darcy-actions> Darcy, after a few moments’ recollection, was not sorry to end his conversation.  
+<darcy-actions> He began to feel the danger of paying Elizabeth too much attention.  
+<darcy-dialogue> Miss Bingley has given me credit for more than can be. The wisest and best of men,--nay, the wisest and best of their actions,--may be rendered ridiculous by a person whose first object in life is a joke.
 <darcy-dialogue> Perhaps that is not possible for anyone. But it has been the study of my life to avoid those weaknesses which often expose a strong understanding to ridicule.  
-<darcy-dialogue> No I have made no such pretension. I have faults enough, but they are not, I hope, of understanding. My temper I dare not vouch for. It is, I believe, too little yielding; certainly too little for the convenience of the world. I cannot forget the follies and vices of others so soon as I ought, nor their offences against myself. My feelings are not puffed about with every attempt to move them. My temper would perhaps be called resentful. My good opinion once lost is lost for ever.”  
-<darcy-dialogue> There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome. 
+<darcy-dialogue> Yes, vanity is a weakness indeed. But pride--where there is a real superiority of mind--pride will be always under good regulation.  
+<darcy-dialogue> No, I have made no such pretension. I have faults enough, but they are not, I hope, of understanding. 
+<darcy-dialogue> My temper I dare not vouch for. It is, I believe, too little yielding; certainly too little for the convenience of the world. 
+<darcy-dialogue> I cannot forget the follies and vices of others so soon as I ought, nor their offences against myself. 
+<darcy-dialogue> My feelings are not puffed about with every attempt to move them. 
+<darcy-dialogue> My temper would perhaps be called resentful. My good opinion once lost is lost for ever.  
+<darcy-dialogue> There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.  
 <darcy-dialogue> And yours is wilfully to misunderstand them.
-<others-impressions-of-darcy> Calmness of temper and presence of mind.
 <others-impressions-of-darcy> Mr. Darcy is not to be laughed at!
-<others-impressions-of-darcy> Implacable resentment _is_ a shade in Mr Darcy.
+<others-impressions-of-darcy> Implacable resentment _is_ a shade in Mr. Darcy.
 
 
 
