@@ -1,16 +1,4 @@
 
-FORMAT:
-
-Original Text
-
-<highly-edited-or-synthetic-data> MAY NOT APPLY; not all book text will result in this category
-
-<minimally-edited-training-data> Possible changes include slight changes to wording, or replacing pronouns with proper nouns.
-
-
-
-
-
 Not all that Mrs. Bennet, however, with the assistance of her five
 daughters, could ask on the subject, was sufficient to draw from her
 husband any satisfactory description of Mr. Bingley. They attacked him
@@ -92,20 +80,19 @@ friend to join it.
 
 <others-impressions-of-darcy> Mr. Darcy soon drew the attention of the room by his fine, tall person, handsome features, noble mien, and the report of his having ten thousand a year.  
 <others-impressions-of-darcy> The gentlemen pronounced him to be a fine figure of a man.  
-<others-impressions-of-darcy> The ladies declared he was much handsomer than Mr. Bingley.  
-<others-impressions-of-darcy> He was looked at with great admiration for about half the evening.  
-<others-impressions-of-darcy> His manners gave a disgust which turned the tide of his popularity.  
-<others-impressions-of-darcy> He was discovered to be proud, to be above his company, and above being pleased.  
-<others-impressions-of-darcy> Not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance.  
-<others-impressions-of-darcy> He was unworthy to be compared with his friend.  
-<others-impressions-of-darcy> His character was decided. He was the proudest, most disagreeable man in the world.  
-<others-impressions-of-darcy> Everybody hoped that he would never come there again.  
-<others-impressions-of-darcy> Mrs. Bennet’s dislike of his general behaviour was sharpened into particular resentment by his having slighted one of her daughters.  
-<darcy-actions> Mr. Darcy danced only once with Mrs. Hurst and once with Miss Bingley.  
-<darcy-actions> He declined being introduced to any other lady.  
-<darcy-actions> He spent the rest of the evening in walking about the room, speaking occasionally to one of his own party.  
-<darcy-actions> Mr. Darcy had been standing near enough for Elizabeth to overhear a conversation between him and Mr. Bingley.  
- 
+<others-impressions-of-darcy> The ladies declared he was much handsomer than Mr. Bingley.
+<others-impressions-of-darcy> He was looked at with great admiration for about half the evening.
+<others-impressions-of-darcy> His manners gave a disgust which turned the tide of his popularity.
+<others-impressions-of-darcy> He was discovered to be proud, to be above his company, and above being pleased.
+<others-impressions-of-darcy> Not all his large estate in Derbyshire could save him from having a most forbidding, disagreeable countenance.
+<others-impressions-of-darcy> He was unworthy to be compared with his friend.
+<others-impressions-of-darcy> His character was decided. He was the proudest, most disagreeable man in the world.
+<others-impressions-of-darcy> Everybody hoped that he would never come there again.
+<others-impressions-of-darcy> Mrs. Bennet’s dislike of his general behaviour was sharpened into particular resentment by his having slighted one of her daughters.
+<darcy-actions> Mr. Darcy danced only once with Mrs. Hurst and once with Miss Bingley.
+<darcy-actions> He declined being introduced to any other lady.
+<darcy-actions> He spent the rest of the evening in walking about the room, speaking occasionally to one of his own party.
+<darcy-actions> Mr. Darcy had been standing near enough for Elizabeth to overhear a conversation between him and Mr. Bingley.
 
 
 
@@ -162,15 +149,15 @@ views on the stranger would be disappointed; but he soon found that he
 had a very different story to hear.
 
 
-
-
-<darcy-dialogue> “I certainly shall not. You know how I detest it, unless I am particularly acquainted with my partner. At such an assembly as this, it would be insupportable. Your sisters are engaged, and there is not another woman in the room whom it would not be a punishment to me to stand up with.”  
-<darcy-dialogue> “_You_ are dancing with the only handsome girl in the room,” said Mr. Darcy, looking at the eldest Miss Bennet.  
-<darcy-dialogue> “She is tolerable: but not handsome enough to tempt _me_; and I am in no humour at present to give consequence to young ladies who are slighted by other men. You had better return to your partner and enjoy her smiles, for you are wasting your time with me.”  
-
-<darcy-actions> Mr. Darcy looked for a moment at Elizabeth, till, catching her eye, he withdrew his own.  
-<darcy-actions> Mr. Darcy walked off.  
-
+<darcy-dialogue> I certainly shall not. 
+<darcy-dialogue> You know how I detest it, unless I am particularly acquainted with my partner. 
+<darcy-dialogue> At such an assembly as this, it would be insupportable. 
+<darcy-dialogue> Your sisters are engaged, and there is not another woman in the room whom it would not be a punishment to me to stand up with.
+<darcy-dialogue> _You_ are dancing with the only handsome girl in the room.
+<darcy-dialogue> She is tolerable: but not handsome enough to tempt _me_; and I am in no humour at present to give consequence to young ladies who are slighted by other men. 
+<darcy-dialogue> You had better return to your partner and enjoy her smiles, for you are wasting your time with me.
+<darcy-actions> Mr. Darcy looked for a moment at Elizabeth, till, catching her eye, he withdrew his own.
+<darcy-actions> Darcy thought Elizabeth not handsome enough to overcome his dislike of dancing with someone he doesn't know.
 <others-impressions-of-darcy> Mr. Darcy was considered fastidious in his taste for dance partners.  
 <others-impressions-of-darcy> Mr. Darcy was regarded as cold and dismissive, especially after his comment about Elizabeth.  
 
@@ -213,13 +200,10 @@ great! Not handsome enough to dance with! I wish you had been there, my
 dear, to have given him one of your set-downs. I quite detest the man.”
 
 
-
-<others-impressions-of-darcy> Mr. Darcy was described as exceedingly handsome and conceited.  
-<others-impressions-of-darcy> Mr. Darcy was considered high and self-important, walking around as if he fancied himself to be very great.  
-<others-impressions-of-darcy> Mr. Darcy was considered disagreeable and horrid by Mrs. Bennet.  
-<others-impressions-of-darcy> Mr. Darcy was not thought handsome enough to dance with Elizabeth.  
+<others-impressions-of-darcy> Mr. Darcy was described as exceedingly handsome and conceited.
+<others-impressions-of-darcy> Mr. Darcy was considered high and self-important, walking around as if he fancied himself to be very great.
+<others-impressions-of-darcy> Mr. Darcy was considered disagreeable and horrid by Mrs. Bennet.
 <others-impressions-of-darcy> Mrs. Bennet felt a strong resentment toward Mr. Darcy, wishing her husband had been present to "give him one of your set-downs."
-
 
 
 
@@ -285,11 +269,7 @@ memories than that their brother’s fortune and their own had been
 acquired by trade.
 
 
-
-<others-impressions-of-darcy> Mr. Darcy's sisters were very fine ladies; not deficient in good-humour when they were pleased, nor in the power of being agreeable where they chose it; but proud and conceited.
-<others-impressions-of-darcy> They were rather handsome; had been educated in one of the first private seminaries in town; had a fortune of twenty thousand pounds; were in the habit of spending more than they ought, and of associating with people of rank; and were, therefore, in every respect entitled to think well of themselves and meanly of others.
-<others-impressions-of-darcy> They were of a respectable family in the north of England; a circumstance more deeply impressed on their memories than that their brother’s fortune and their own had been acquired by trade.
-
+(((((No references)))))
 
 
 
@@ -344,17 +324,12 @@ established as a sweet girl; and their brother felt authorized by such
 commendation to think of her as he chose.
 
 
-
-
-
 <others-impressions-of-darcy> Bingley was endeared to Darcy by the easiness, openness, and ductility of his temper, though no disposition could offer a greater contrast to his own.
 <others-impressions-of-darcy> Bingley had the firmest reliance on Darcy’s regard, and the highest opinion of his judgment.
 <others-impressions-of-darcy> In understanding, Darcy was the superior. Bingley was by no means deficient; but Darcy was clever.
 <others-impressions-of-darcy> Darcy was haughty, reserved, and fastidious; and his manners, though well bred, were not inviting.
 <others-impressions-of-darcy> Darcy was continually giving offence.
 <others-impressions-of-darcy> Miss Bennet he acknowledged to be pretty; but she smiled too much.
-
-
 
 
 
@@ -468,26 +443,17 @@ The boy protested that she should not; she continued to declare that she
 would; and the argument ended only with the visit.
 
 
-
-
-<others-impressions-of-darcy> Mr. Darcy is not so well worth listening to as his friend, is he?  
+<others-impressions-of-darcy> Mr. Darcy is not so well worth listening to as his friend, is he?
 <others-impressions-of-darcy> He is such a disagreeable man that it would be quite a misfortune to be liked by him.  
 <others-impressions-of-darcy> Everybody says that he is eat up with pride.  
 <others-impressions-of-darcy> His pride does not offend me so much as pride often does, because there is an excuse for it.  
 <others-impressions-of-darcy> One cannot wonder that so very fine a young man, with family, fortune, everything in his favour, should think highly of himself. If I may so express it, he has a right to be proud.  
 <others-impressions-of-darcy> I do not believe a word of it, my dear. If he had been so very agreeable, he would have talked to Mrs. Long.  
-<others-impressions-of-darcy> Mr. Darcy is eat up with pride.  
-<others-impressions-of-darcy> Mr. Darcy is very proud.  
-<others-impressions-of-darcy> He sat close to her for half an hour without once opening his lips.  
+<darcy-actions> He sat close to her for half an hour without once opening his lips.  
 <others-impressions-of-darcy> Mr. Darcy seems very angry at being spoken to.  
-<others-impressions-of-darcy> Mr. Darcy may think highly of himself, but he mortified Elizabeth’s pride.  
-
-<darcy-dialogue> I beg you will not put it into Lizzy’s head to be vexed by his ill-treatment, for he is such a disagreeable man that it would be quite a misfortune to be liked by him.  
-<darcy-dialogue> Ay, because she asked him at last how he liked Netherfield, and he could not help answering her; but she said he seemed very angry at being spoke to.  
-
 <darcy-actions> Mr. Darcy did not dance with Eliza.  
 <darcy-actions> Mr. Darcy remained silent for half an hour while sitting next to Mrs. Long.  
-<darcy-actions> Mr. Darcy answered Mrs. Long’s question, but seemed angry.  
+<darcy-actions> Mr. Darcy answered Mrs. Long’s question, but seemed angry at being bothered. 
 
 
 
@@ -576,10 +542,7 @@ life.”
 sound, and that you would never act in this way yourself.”
 
 
-
-
 (((((((No references)))))))
-
 
 
 
@@ -660,12 +623,11 @@ some of the Lucases, and two or three officers, joined eagerly in
 dancing at one end of the room.
 
 
-
-<others-actions> Mr. Darcy had at first scarcely allowed her to be pretty: he had looked at her without admiration at the ball; and when they next met, he looked at her only to criticise.
-<others-actions> No sooner had he made it clear to himself and his friends that she had hardly a good feature in her face, than he began to find it was rendered uncommonly intelligent by the beautiful expression of her dark eyes.
+<darcy-actions> Mr. Darcy had at first scarcely allowed her to be pretty: he had looked at her without admiration at the ball; and when they next met, he looked at her only to criticise.
+<darcy-actions> No sooner had he made it clear to himself and his friends that she had hardly a good feature in her face, than he began to find it was rendered uncommonly intelligent by the beautiful expression of her dark eyes.
 <others-impressions-of-darcy> Though he had detected with a critical eye more than one failure of perfect symmetry in her form, he was forced to acknowledge her figure to be light and pleasing.
-<others-impressions-of-darcy> In spite of his asserting that her manners were not those of the fashionable world, he was caught by their easy playfulness.
-<others-impressions-of-darcy> He began to wish to know more of her.
+<darcy-actions> In spite of his asserting that her manners were not those of the fashionable world, he was caught by their easy playfulness.
+<darcy-actions> He began to wish to know more of Elizabeth after observing her more closely.
 <others-impressions-of-darcy> He had a very satirical eye.
 <darcy-actions> He attended to her conversation with others as a step towards conversing with her himself.
 <darcy-dialogue> With great energy; but it is a subject which always makes a lady energetic.
@@ -740,19 +702,15 @@ cannot wonder at his complaisance; for who would object to such a
 partner?”
 
 
-
 <darcy-actions> Mr. Darcy stood near them in silent indignation at such a mode of passing the evening.
-<darcy-thoughts> He was too much engrossed by his own thoughts to perceive that Sir William Lucas was his neighbour.
-<darcy-dialogue> "Certainly, sir; and it has the advantage also of being in vogue amongst the less polished societies of the world: every savage can dance."
-<darcy-dialogue> "It is a compliment which I never pay to any place if I can avoid it."
-<darcy-dialogue> "You saw me dance at Meryton, I believe, sir."
-<darcy-dialogue> "Never, sir."
+<darcy-actions> He was too much engrossed by his own thoughts to perceive that Sir William Lucas was his neighbour.
+<darcy-dialogue> Certainly, sir; and it has the advantage also of being in vogue amongst the less polished societies of the world: every savage can dance.
+<darcy-dialogue> It is a compliment which I never pay to any place if I can avoid it.
+<darcy-dialogue> You saw me dance at Meryton, I believe, sir.
+<darcy-dialogue> Never, sir.
 <darcy-actions> Mr. Darcy bowed when Sir William asked if he had a house in town.
-<darcy-dialogue> "Mr. Darcy, you must allow me to present this young lady to you as a very desirable partner."
 <darcy-actions> Mr. Darcy, though extremely surprised, was not unwilling to receive Elizabeth’s hand.
 <darcy-actions> He requested to be allowed the honour of her hand, but was refused.
-<darcy-dialogue> "Mr. Darcy is all politeness," said Elizabeth, smiling.
-
 
 
 
@@ -798,15 +756,15 @@ entertain herself in this manner; and as his composure convinced her
 that all was safe, her wit flowed along.
 
 
-
-
 <darcy-actions> He was thinking of her with some complacency.
-<darcy-dialogue> My mind was more agreeably engaged. I have been meditating on the very great pleasure which a pair of fine eyes in the face of a pretty woman can bestow.
+<darcy-dialogue> My mind was more agreeably engaged. 
+<darcy-dialogue> I have been meditating on the very great pleasure which a pair of fine eyes in the face of a pretty woman can bestow.
 <darcy-dialogue> Miss Elizabeth Bennet.
-<darcy-dialogue> That is exactly the question which I expected you to ask. A lady’s imagination is very rapid; it jumps from admiration to love, from love to matrimony, in a moment. I knew you would be wishing me joy.
+<darcy-dialogue> That is exactly the question which I expected you to ask. 
+<darcy-dialogue> A lady’s imagination is very rapid; it jumps from admiration to love, from love to matrimony, in a moment. 
+<darcy-dialogue> I knew you would be wishing me joy.
 <others-impressions-of-darcy> He listened to her with perfect indifference.
 <others-impressions-of-darcy> His composure convinced her that all was safe.
-
 
 
 
@@ -872,11 +830,7 @@ so far differ from you as to think our two youngest daughters uncommonly
 foolish.”
 
 
-
-
-
 ((((((((No references))))))))
-
 
 
 
@@ -950,9 +904,7 @@ delighted. The rain continued the whole evening without intermission;
 Jane certainly could not come back.
 
 
-
-<darcy-actions> My brother and Darcy are to dine with the officers.
-
+<darcy-actions> Darcy went with Bingley to dine with the officers.
 
 
 
@@ -1019,8 +971,8 @@ within view of the house, with weary ancles, dirty stockings, and a face
 glowing with the warmth of exercise.
 
 
-
 (((((No references)))))
+
 
 
 
@@ -1069,13 +1021,8 @@ despatched to Longbourn, to acquaint the family with her stay, and bring
 back a supply of clothes.
 
 
-
-
-
 <darcy-actions> Mr. Darcy said very little.
 <darcy-actions> Mr. Darcy was divided between admiration of the brilliancy which exercise had given to her complexion and doubt as to the occasion’s justifying her coming so far alone.
-<others-impressions-of-darcy> There was something better than politeness in Mr. Darcy’s manners—there was good-humour and kindness.
-<others-impressions-of-darcy> Mr. Darcy was thinking only of his breakfast.
 
 
 
@@ -1151,15 +1098,11 @@ a father and mother, and such low connections, I am afraid there is no
 chance of it.”
 
 
-
-
-
-<others-impressions-of-darcy> Miss Bingley was engrossed by Mr. Darcy.  
-<others-impressions-of-darcy> Miss Bingley thought Mr. Darcy would not wish to see his sister make such an exhibition.  
-<darcy-dialogue> Certainly not.  
-<darcy-dialogue> Not at all, they were brightened by the exercise.  
-<darcy-actions> Mr. Darcy replied with composure.
-
+<others-impressions-of-darcy> Miss Bingley was engrossed by Mr. Darcy.
+<others-impressions-of-darcy> Miss Bingley thought Mr. Darcy would not wish to see his sister make such an exhibition.
+<darcy-dialogue> Certainly not.
+<darcy-dialogue> Not at all, they were brightened by the exercise.
+<darcy-actions> Mr. Darcy replied with composure to Miss Bingley's teasing.
 
 
 
@@ -1245,17 +1188,13 @@ finer county in England than Derbyshire.”
 Pemberley by purchase than by imitation.”
 
 
-
-
 <darcy-dialogue> But it must very materially lessen their chance of marrying men of any consideration in the world.  
 <darcy-dialogue> It ought to be good; it has been the work of many generations.  
 <darcy-dialogue> I cannot comprehend the neglect of a family library in such days as these.  
 <others-impressions-of-darcy> Miss Bingley admired Mr. Darcy’s collection of books at Pemberley.  
 <others-impressions-of-darcy> Mr. Darcy is always buying books.  
-<others-impressions-of-darcy> Mr. Darcy’s library has been the work of many generations.  
 <others-impressions-of-darcy> Miss Bingley believed Mr. Darcy neglected nothing that could add to the beauties of Pemberley.  
 <darcy-actions> Mr. Darcy replied with a sense of pride about his family’s library.
-
 
 
 
@@ -1354,14 +1293,14 @@ his feelings than by giving his housekeeper directions that every
 possible attention might be paid to the sick lady and her sister.
 
 
-
-<darcy-dialogue> Your list of the common extent of accomplishments has too much truth. The word is applied to many a woman who deserves it no otherwise than by netting a purse or covering a screen; but I am very far from agreeing with you in your estimation of ladies in general. I cannot boast of knowing more than half-a-dozen in the whole range of my acquaintance that are really accomplished.  
-<darcy-dialogue> Yes; I do comprehend a great deal in it.  
+<darcy-dialogue> Your list of the common extent of accomplishments has too much truth. 
+<darcy-dialogue> The word is applied to many a woman who deserves it no otherwise than by netting a purse or covering a screen; but I am very far from agreeing with you in your estimation of ladies in general. 
+<darcy-dialogue> I cannot boast of knowing more than half-a-dozen in the whole range of my acquaintance that are really accomplished.  
+<darcy-dialogue> Yes; I do comprehend a great deal in it.
 <darcy-dialogue> All this she must possess, and to all she must yet add something more substantial in the improvement of her mind by extensive reading.  
-<darcy-dialogue> I never saw such a woman. I never saw such capacity, and taste, and application, and elegance, as you describe, united.  
-<darcy-dialogue> Undoubtedly, there is meanness in all the arts which ladies sometimes condescend to employ for captivation. Whatever bears affinity to cunning is despicable.  
-<darcy-actions> Darcy replied to Miss Bingley's remark.  
-<others-impressions-of-darcy> Mr. Darcy is very far from agreeing with the estimation of ladies in general.  
+<darcy-dialogue> Undoubtedly, there is meanness in all the arts which ladies sometimes condescend to employ for captivation. 
+<darcy-dialogue> Whatever bears affinity to cunning is despicable.  
+<others-impressions-of-darcy> Mr. Darcy is very far from agreeing with the estimation of ladies' accomplishments in general.  
 <others-impressions-of-darcy> Mr. Darcy is severe upon the arts which ladies sometimes use for captivation.  
 
 
@@ -1444,12 +1383,10 @@ unvarying society.”
 observed in them for ever.”
 
 
-
-<darcy-dialogue> The country can in general supply but few subjects for such a study. In a country neighbourhood you move in a very confined and unvarying society.  
-<darcy-dialogue> But people themselves alter so much, that there is something new to be observed in them for ever.  
+<darcy-dialogue> The country can in general supply but few subjects for such a study. 
+<darcy-dialogue> In a country neighbourhood you move in a very confined and unvarying society.  
 <darcy-actions> Darcy spoke in response to Bingley's remark about the study of character.  
 <others-impressions-of-darcy> Mr. Darcy suggests the limited variety of a country neighbourhood.
-
 
 
 
@@ -1517,13 +1454,10 @@ But, however, he did not. Perhaps he thought her too young. However, he
 wrote some verses on her, and very pretty they were.”
 
 
-
-
 <darcy-actions> Darcy turned silently away after looking at Mrs. Bennet.  
 <others-impressions-of-darcy> Mrs. Bennet fancied she had gained a complete victory over Mr. Darcy.  
 <others-impressions-of-darcy> Darcy seemed to think the country was nothing at all.  
 <others-impressions-of-darcy> Darcy did not comment further on the country after Mrs. Bennet's remarks.
-
 
 
 
@@ -1580,14 +1514,10 @@ could not be prevailed on to join in their censure of _her_, in spite of
 all Miss Bingley’s witticisms on _fine eyes_.
 
 
-
-
-
-<darcy-dialogue> "I have been used to consider poetry as the _food_ of love."
+<darcy-dialogue> I have been used to consider poetry as the _food_ of love.
 <darcy-actions> Darcy only smiled.
 <others-impressions-of-darcy> Mr. Darcy could not be prevailed on to join in their censure of Elizabeth.
-<others-impressions-of-darcy> Miss Bingley’s witticisms on _fine eyes_.
-
+<darcy-actions> Darcy could not be provoked to conversation by Miss Bingley's witticisms on "fine eyes."
 
 
 
@@ -1666,17 +1596,17 @@ means my letters sometimes convey no ideas at all to my correspondents.”
 “Your humility, Mr. Bingley,” said Elizabeth, “must disarm reproof.”
 
 
-
-
-*******
-<darcy-actions> Mr. Darcy was writing.
-<darcy-dialogue> “It is fortunate, then, that they fall to my lot instead of to yours.”
-<darcy-dialogue> “Thank you--but I always mend my own.”
-<darcy-dialogue> “Will you give me leave to defer your raptures till I write again? At present I have not room to do them justice.”
-<darcy-dialogue> “They are generally long; but whether always charming, it is not for me to determine.”
-<darcy-dialogue> “My style of writing is very different from yours.”
+<darcy-actions> Mr. Darcy spent the morning writing letters.
+<darcy-actions> Darcy did not choose to reply to Miss Bingley's comment on his penmanship.
+<darcy-dialogue> You are mistaken. I write rather slowly.
+<darcy-dialogue> I have already told her so once, by your desire.
+<darcy-dialogue> It is fortunate, then, that they fall to my lot instead of to yours.
+<darcy-dialogue> Thank you--but I always mend my own.
+<darcy-dialogue> Will you give me leave to defer your raptures till I write again? 
+<darcy-dialogue> At present I have not room to do them justice.
+<darcy-dialogue> They are generally long; but whether always charming, it is not for me to determine.
+<darcy-dialogue> My style of writing is very different from yours.
 <others-impressions-of-darcy> Mr. Darcy writes with study and deliberation.
-
 
 
 
@@ -1759,22 +1689,20 @@ appertain to this request, as well as the degree of intimacy subsisting
 between the parties?”
 
 
-
-
-<darcy-dialogue> "Nothing is more deceitful than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast."
-<darcy-dialogue> "The indirect boast; for you are really proud of your defects in writing, because you consider them as proceeding from a rapidity of thought and carelessness of execution, which, if not estimable, you think at least highly interesting."
-<darcy-dialogue> "The power of doing anything with quickness is always much prized by the possessor, and often without any attention to the imperfection of the performance."
-<darcy-dialogue> "When you told Mrs. Bennet this morning, that if you ever resolved on quitting Netherfield you should be gone in five minutes, you meant it to be a sort of panegyric, of compliment to yourself; and yet what is there so very laudable in a precipitance which must leave very necessary business undone, and can be of no real advantage to yourself or anyone else?"
-<darcy-dialogue> "I daresay you believed it; but I am by no means convinced that you would be gone with such celerity. Your conduct would be quite as dependent on chance as that of any man I know; and if, as you were mounting your horse, a friend were to say, ‘Bingley, you had better stay till next week,’ you would probably do it--you would probably not go--and, at another word, might stay a month."
-<darcy-dialogue> "You expect me to account for opinions which you choose to call mine, but which I have never acknowledged."
-<darcy-dialogue> "Allowing the case, however, to stand according to your representation, you must remember, Miss Bennet, that the friend who is supposed to desire his return to the house, and the delay of his plan, has merely desired it, asked it without offering one argument in favour of its propriety."
-<darcy-dialogue> "To yield without conviction is no compliment to the understanding of either."
-<darcy-dialogue> "Will it not be advisable, before we proceed on this subject, to arrange with rather more precision the degree of importance which is to appertain to this request, as well as the degree of intimacy subsisting between the parties?"
+<darcy-dialogue> Nothing is more deceitful than the appearance of humility. 
+<darcy-dialogue> It is often only carelessness of opinion, and sometimes an indirect boast.
+<darcy-dialogue> The indirect boast; for you are really proud of your defects in writing, because you consider them as proceeding from a rapidity of thought and carelessness of execution, which, if not estimable, you think at least highly interesting.
+<darcy-dialogue> The power of doing anything with quickness is always much prized by the possessor, and often without any attention to the imperfection of the performance.
+<darcy-dialogue> When you told Mrs. Bennet this morning, that if you ever resolved on quitting Netherfield you should be gone in five minutes, you meant it to be a sort of panegyric, of compliment to yourself; and yet what is there so very laudable in a precipitance which must leave very necessary business undone, and can be of no real advantage to yourself or anyone else?
+<darcy-dialogue> I daresay you believed it; but I am by no means convinced that you would be gone with such celerity. 
+<darcy-dialogue> Your conduct would be quite as dependent on chance as that of any man I know; and if, as you were mounting your horse, a friend were to say, ‘Bingley, you had better stay till next week,’ you would probably do it--you would probably not go--and, at another word, might stay a month.
+<darcy-dialogue> You expect me to account for opinions which you choose to call mine, but which I have never acknowledged.
+<darcy-dialogue> Allowing the case, however, to stand according to your representation, you must remember, Miss Bennet, that the friend who is supposed to desire his return to the house, and the delay of his plan, has merely desired it, asked it without offering one argument in favour of its propriety.
+<darcy-dialogue> To yield without conviction is no compliment to the understanding of either.
+<darcy-dialogue> Will it not be advisable, before we proceed on this subject, to arrange with rather more precision the degree of importance which is to appertain to this request, as well as the degree of intimacy subsisting between the parties?
 <others-impressions-of-darcy> Mr. Darcy is seen as someone who expects the highest standards of conviction and deliberation.
 <others-impressions-of-darcy> Mr. Darcy does not yield easily, particularly without a strong rationale.
 <others-impressions-of-darcy> Mr. Darcy is perceived as someone who values logic and structure over yielding to persuasion without reason.
-
-
 
 
 
@@ -1867,19 +1795,16 @@ which your lady possesses.”
 “Have you anything else to propose for my domestic felicity?”
 
 
-
-
-<darcy-dialogue> "I see your design, Bingley. You dislike an argument, and want to silence this."
-<darcy-dialogue> "Perhaps I do. Arguments are too much like disputes. If you and Miss Bennet will defer yours till I am out of the room, I shall be very thankful; and then you may say whatever you like of me."
-<darcy-dialogue> "Do you not feel a great inclination, Miss Bennet, to seize such an opportunity of dancing a reel?"
-<darcy-dialogue> "Indeed I do not dare."
-<darcy-dialogue> "Have you anything else to propose for my domestic felicity?"
-<darcy-actions> Mr. Darcy smiled.
+<darcy-dialogue> I see your design, Bingley. 
+<darcy-dialogue> You dislike an argument, and want to silence this.
+<darcy-dialogue> Do you not feel a great inclination, Miss Bennet, to seize such an opportunity of dancing a reel?
+<darcy-dialogue> Indeed I do not dare.
+<darcy-dialogue> Have you anything else to propose for my domestic felicity?
+<darcy-actions> Mr. Darcy smiled, concealing his offense.
 <darcy-actions> Mr. Darcy took her advice, and did finish his letter.
 <darcy-actions> Mr. Darcy drew near Elizabeth before speaking to her.
 <darcy-actions> Mr. Darcy’s eyes were frequently fixed on Elizabeth.
 <darcy-actions> Mr. Darcy believed he was bewitched by Elizabeth.
-<others-impressions-of-darcy> Mr. Darcy is seen as someone who avoids arguments but is also willing to respectfully defer them.
 <others-impressions-of-darcy> Mr. Darcy is perceived as a man of gallantry and respect, particularly when interacting with Elizabeth.
 <others-impressions-of-darcy> Mr. Darcy's feelings toward Elizabeth are influenced by her perceived social inferiority. 
 <others-impressions-of-darcy> Mr. Darcy is seen as someone who can be easily influenced by a woman's charm and wit.
@@ -1916,11 +1841,10 @@ being at home again in a day or two. Jane was already so much recovered
 as to intend leaving her room for a couple of hours that evening.
 
 
-
-
 <darcy-actions> Mr. Darcy felt their rudeness.
-<darcy-dialogue> "This walk is not wide enough for our party. We had better go into the avenue."
+<darcy-dialogue> This walk is not wide enough for our party. We had better go into the avenue.
 <others-impressions-of-darcy> Mr. Darcy is aware of and reacts to the rudeness of others, particularly in social situations.
+
 
 
 
@@ -1995,14 +1919,11 @@ day.”
 near so much like a ball.”
 
 
-
 <darcy-actions> Darcy addressed himself directly to Miss Bennet with a polite congratulation.
 <darcy-actions> Darcy took up a book.
 <darcy-actions> Darcy merely answered her question and read on.
-<darcy-dialogue> Much more rational, my dear Caroline, I dare say; but it would not be near so much like a ball.
 <others-impressions-of-darcy> Miss Bingley’s attention was quite as much engaged in watching Mr. Darcy’s progress through his book, as in reading her own.
 <others-impressions-of-darcy> Mr. Darcy did not wish for cards.
-<others-impressions-of-darcy> Darcy may go to bed, if he chooses, before it begins.
 
 
 
@@ -2132,7 +2053,7 @@ opened; and Darcy, after a few moments’ recollection, was not sorry for
 it. He began to feel the danger of paying Elizabeth too much attention.
 
 
-<darcy-actions> Darcy spoke with a smile when amused.  
+<darcy-actions> Darcy spoke with a smile when amused. 
 <darcy-actions> Darcy, after a few moments’ recollection, was not sorry to end his conversation.  
 <darcy-actions> He began to feel the danger of paying Elizabeth too much attention.  
 <darcy-dialogue> Miss Bingley has given me credit for more than can be. The wisest and best of men,--nay, the wisest and best of their actions,--may be rendered ridiculous by a person whose first object in life is a joke.
@@ -2218,9 +2139,8 @@ had dined lately with their uncle; a private had been flogged; and it
 had actually been hinted that Colonel Forster was going to be married.
 
 
-
-<others-impressions-of-darcy> To Mr. Darcy it was welcome intelligence: Elizabeth had been at Netherfield long enough. She attracted him more than he liked.  
-<darcy-actions> He wisely resolved to be particularly careful that no sign of admiration should now escape him.  
+<darcy-actions> To Mr. Darcy it was welcome intelligence: Elizabeth had been at Netherfield long enough. She attracted him more than he liked.  
+<darcy-actions> He resolved to be particularly careful that no sign of admiration should now escape him.  
 <darcy-actions> Steady to his purpose, he scarcely spoke ten words to her through the whole of Saturday.  
 <darcy-actions> Though they were at one time left by themselves for half an hour, he adhered most conscientiously to his book, and would not even look at her.  
 
@@ -2281,8 +2201,6 @@ did before him?”
 
 “Why, indeed, he does seem to have had some filial scruples on that
 head, as you will hear.”
-
-
 
      /* “Hunsford, near Westerham, Kent, _15th October_. */
 
@@ -2407,8 +2325,6 @@ cook, and that her daughters had nothing to do in the kitchen. He begged
 pardon for having displeased her. In a softened tone she declared
 herself not at all offended; but he continued to apologize for about a
 quarter of an hour.
-
-
 
 During dinner, Mr. Bennet scarcely spoke at all; but when the servants
 were withdrawn, he thought it time to have some conversation with his
@@ -2596,9 +2512,7 @@ nothing less than a very smart bonnet, indeed, or a really new muslin in
 a shop window, could recall them.
 
 
-
 (((((No references)))))
-
 
 
 
@@ -2647,13 +2561,10 @@ Philips’s throwing up the parlour window, and loudly seconding the
 invitation.
 
 
-
-
-<others-impressions-of-darcy> Mr. Darcy corroborated it with a bow.  
-<darcy-actions> Mr. Darcy was beginning to determine not to fix his eyes on Elizabeth.  
-<darcy-actions> Darcy and Bingley were seen riding down the street.  
-<darcy-actions> Mr. Darcy just deigned to return the salutation with a bow.  
-<darcy-actions> Both changed colour, one looked white, the other red.  
+<others-impressions-of-darcy> Mr. Darcy bowed to corroborated the report of their being on the way to check on Jane's health. 
+<darcy-actions> During a chance meeting, Mr. Darcy was determined not to fix his eyes on Elizabeth.  
+<darcy-actions> Darcy and Bingley were seen riding down the street.
+<darcy-actions> Darcy turned red at the chance sighting of Wickham.
 
 
 
@@ -2719,8 +2630,6 @@ improve myself; for in my situation of life----” Mrs. Philips was very
 thankful for his compliance, but could not wait for his reason.
 
 
-
-
 ((((((No references))))))
 
 
@@ -2773,16 +2682,9 @@ Hertfordshire. Everybody is disgusted with his pride. You will not find
 him more favourably spoken of by anyone.”
 
 
-
-<darcy-dialogue> About a month.  
-<darcy-dialogue> He is a man of very large property in Derbyshire, I understand.  
-<darcy-dialogue> His estate there is a noble one. A clear ten thousand per annum.  
-<darcy-dialogue> You could not have met with a person more capable of giving you certain information on that head than myself--for I have been connected with his family, in a particular manner, from my infancy.  
-<darcy-dialogue> I have no right to give _my_ opinion, as to his being agreeable or otherwise. I am not qualified to form one. I have known him too long and too well to be a fair judge. It is impossible for _me_ to be impartial.  
-<darcy-dialogue> But I believe your opinion of him would in general astonish--and, perhaps, you would not express it quite so strongly anywhere else. Here you are in your own family.  
-<darcy-dialogue> Upon my word I say no more _here_ than I might say in any house in the neighbourhood, except Netherfield. He is not at all liked in Hertfordshire. Everybody is disgusted with his pride. You will not find him more favourably spoken of by anyone.  
 <others-impressions-of-darcy> He is not at all liked in Hertfordshire. Everybody is disgusted with his pride.  
-<others-impressions-of-darcy> You will not find him more favourably spoken of by anyone.
+<others-impressions-of-darcy> You will not find him favourably spoken of by anyone.
+
 
 
 
@@ -2821,14 +2723,9 @@ Elizabeth found the interest of the subject increase, and listened with
 all her heart; but the delicacy of it prevented further inquiry.
 
 
-
-
-<darcy-dialogue> I should take him, even on _my_ slight acquaintance, to be an ill-tempered man.  
-<darcy-dialogue> Oh no--it is not for _me_ to be driven away by Mr. Darcy. If _he_ wishes to avoid seeing _me_ he must go. We are not on friendly terms, and it always gives me pain to meet him, but I have no reason for avoiding _him_ but what I might proclaim to all the world--a sense of very great ill-usage, and most painful regrets at his being what he is.  
-<darcy-dialogue> His father, Miss Bennet, the late Mr. Darcy, was one of the best men that ever breathed, and the truest friend I ever had; and I can never be in company with this Mr. Darcy without being grieved to the soul by a thousand tender recollections.  
-<darcy-dialogue> His behaviour to myself has been scandalous; but I verily believe I could forgive him anything and everything, rather than his disappointing the hopes and disgracing the memory of his father.  
 <others-impressions-of-darcy> The world is blinded by his fortune and consequence, or frightened by his high and imposing manners, and sees him only as he chooses to be seen.  
 <others-impressions-of-darcy> I believe it does not often happen that he or any man should not be estimated beyond their deserts.
+<others-impressions-of-darcy> On slight acquaintance he is thought to be an ill-tempered man.
 
 
 
@@ -2905,18 +2802,8 @@ his resentments, of his having an unforgiving temper. His disposition
 must be dreadful.”
 
 
-
-
-<others-impressions-of-darcy> Mr. Darcy chose to doubt it--or to treat it as a merely conditional recommendation, and to assert that I had forfeited all claim to it by extravagance, imprudence, in short, anything or nothing.  
-<others-impressions-of-darcy> Certain it is that the living became vacant two years ago, exactly as I was of an age to hold it, and that it was given to another man; and no less certain is it, that I cannot accuse myself of having really done anything to deserve to lose it.  
-<others-impressions-of-darcy> He hates me.  
-<others-impressions-of-darcy> A thorough, determined dislike of me--a dislike which I cannot but attribute in some measure to jealousy.  
-<others-impressions-of-darcy> Had the late Mr. Darcy liked me less, his son might have borne with me better; but his father’s uncommon attachment to me irritated him, I believe, very early in life.  
-<others-impressions-of-darcy> He had not a temper to bear the sort of competition in which we stood--the sort of preference which was often given me.  
-<others-impressions-of-darcy> I had not thought Mr. Darcy so bad as this--though I have never liked him, I had not thought so very ill of him--I had supposed him to be despising his fellow-creatures in general, but did not suspect him of descending to such malicious revenge, such injustice, such inhumanity as this!  
-<others-impressions-of-darcy> I do remember his boasting one day, at Netherfield, of the implacability of his resentments, of his having an unforgiving temper. His disposition must be dreadful.  
-<darcy-actions> Elizabeth honoured him for such feelings, and thought him handsomer than ever as he expressed them.
-
+<others-impressions-of-darcy> I have never liked him
+<others-impressions-of-darcy> I do remember his boasting one day, at Netherfield, of the implacability of his resentments, of his having an unforgiving temper. His disposition must be dreadful. 
 
 
 
@@ -3010,21 +2897,7 @@ that he considered the money as a mere trifle, and begged she would not
 make herself uneasy.
 
 
-
-
-
-
-<others-impressions-of-darcy> I wonder that the very pride of this Mr. Darcy has not made him just to you. If from no better motive, that he should not have been too proud to be dishonest,--for dishonesty I must call it.  
-<others-impressions-of-darcy> It is wonderful, for almost all his actions may be traced to pride; and pride has often been his best friend. It has connected him nearer with virtue than any other feeling.  
-<others-impressions-of-darcy> Family pride, and filial pride, for he is very proud of what his father was, have done this. Not to appear to disgrace his family, to degenerate from the popular qualities, or lose the influence of the Pemberley House, is a powerful motive.  
-<others-impressions-of-darcy> He has also brotherly pride, which, with some brotherly affection, makes him a very kind and careful guardian of his sister; and you will hear him generally cried up as the most attentive and best of brothers.  
-<others-impressions-of-darcy> I wish I could call her amiable. It gives me pain to speak ill of a Darcy; but she is too much like her brother,--very, very proud.  
-<others-impressions-of-darcy> He is a sweet-tempered, amiable, charming man. He cannot know what Mr. Darcy is.  
-<others-impressions-of-darcy> Mr. Darcy can please where he chooses. He does not want abilities. He can be a conversible companion if he thinks it worth his while.  
-<others-impressions-of-darcy> His pride never deserts him; but with the rich he is liberal-minded, just, sincere, rational, honourable, and, perhaps, agreeable,--allowing something for fortune and figure.  
-<darcy-actions> Mr. Darcy can be a conversible companion if he thinks it worth his while.  
-
-
+<others-impressions-of-darcy> Mr. Darcy can be a conversible companion if he thinks it worth his while.  
 
 
 
@@ -3092,7 +2965,6 @@ before the carriage stopped at Longbourn House.
 
 
 (((((((No references)))))))
-
 
 
 
@@ -3225,9 +3097,8 @@ Tuesday could have made such a Friday, Saturday, Sunday, and Monday
 endurable to Kitty and Lydia.
 
 
-
-
 ((((No references))))
+
 
 
 
@@ -3289,12 +3160,10 @@ a man agreeable whom one is determined to hate! Do not wish me such an
 evil.”
 
 
-
-
-<others-impressions-of-darcy> The absolute fact of his absence was pronounced by his friend Mr. Denny, to whom Lydia eagerly applied, and who told them that Wickham had been obliged to go to town on business the day before, and was not yet returned; adding, with a significant smile, “I do not imagine his business would have called him away just now, if he had not wished to avoid a certain gentleman here.”
-<darcy-actions> Darcy directly afterwards approached Elizabeth to make polite inquiries.
+<others-impressions-of-darcy> Wickham professed himself willing to see Darcy, but proved the coward in the end.
+<darcy-actions> Darcy directly approached Elizabeth to make polite inquiries.
 <darcy-actions> Darcy applied for her hand in dance, surprising her.
-
+<darcy-actions> After applying for Elizabeth's hand in the next dance, he walked away again immediately.
 
 
 
@@ -3367,21 +3236,17 @@ with emphasis, “and in a manner which he is likely to suffer from all
 his life.”
 
 
-
-
-<darcy-actions> Darcy approached to claim her hand for the dance.  
+<others-impressions-of-darcy> Elizabeth believed that during their dance it would be greater punishment to force Darcy to speak than to remain silent.
 <darcy-actions> Darcy smiled and assured her that whatever she wished him to say should be said.  
-<darcy-actions> Darcy made no answer to Elizabeth's remark.  
 <darcy-actions> Darcy asked Elizabeth if she and her sisters did not very often walk to Meryton.  
 <darcy-actions> Darcy's features showed a deeper shade of hauteur when Elizabeth mentioned Wickham.  
 <darcy-actions> Darcy spoke in a constrained manner when replying about Wickham's manners.  
-<darcy-dialogue> “It is _your_ turn to say something now, Mr. Darcy. _I_ talked about the dance, and _you_ ought to make some kind of remark on the size of the room, or the number of couples.”  
-<darcy-dialogue> “Very well; that reply will do for the present. Perhaps, by-and-by, I may observe that private balls are much pleasanter than public ones; but _now_ we may be silent.”  
-<darcy-dialogue> “Do you talk by rule, then, while you are dancing?”  
-<darcy-dialogue> “Are you consulting your own feelings in the present case, or do you imagine that you are gratifying mine?”  
-<darcy-dialogue> “This is no very striking resemblance of your own character, I am sure. How near it may be to _mine_, I cannot pretend to say. _You_ think it a faithful portrait, undoubtedly.”  
-<darcy-dialogue> “Mr. Wickham is blessed with such happy manners as may insure his _making_ friends; whether he may be equally capable of _retaining_ them, is less certain.”  
-<others-impressions-of-darcy> A deeper shade of _hauteur_ overspread his features.  
+<darcy-dialogue> Do you talk by rule, then, while you are dancing?
+<darcy-dialogue> Are you consulting your own feelings in the present case, or do you imagine that you are gratifying mine?
+<darcy-dialogue> This is no very striking resemblance of your own character, I am sure. 
+<darcy-dialogue> How near it may be to _mine_, I cannot pretend to say. 
+<darcy-dialogue> _You_ think it a faithful portrait, undoubtedly.
+<darcy-dialogue> Mr. Wickham is blessed with such happy manners as may insure his _making_ friends; whether he may be equally capable of _retaining_ them, is less certain.
 
 
 
@@ -3501,24 +3366,25 @@ assure you, he informed me himself.”
 “Excuse my interference; it was kindly meant.”
 
 
-
-
 <darcy-actions> Darcy made no answer, and seemed desirous of changing the subject.  
 <darcy-actions> Darcy's eyes were directed, with a very serious expression, towards Bingley and Jane, who were dancing together.  
 <darcy-actions> Darcy, recovering himself shortly, turned to his partner.  
-<darcy-dialogue> Sir William’s interruption has made me forget what we were talking of.  
+<darcy-actions> In Darcy's breast there was a tolerably powerful feeling toward Elizabeth, which soon procured her pardon, and directed all his anger against another.
+<darcy-dialogue> Sir William’s interruption has made me forget what we were talking of.
 <darcy-dialogue> What think you of books?  
-<darcy-dialogue> I am sorry you think so; but if that be the case, there can at least be no want of subject. We may compare our different opinions.  
+<darcy-dialogue> I am sorry you think so; but if that be the case, there can at least be no want of subject. 
+<darcy-dialogue> We may compare our different opinions.
+<darcy-dialogue> I am.
 <darcy-dialogue> I hope not.  
-<darcy-dialogue> May I ask to what these questions tend?  
-<darcy-dialogue> I can readily believe that reports may vary greatly with respect to me; and I could wish, Miss Bennet, that you were not to sketch my character at the present moment, as there is reason to fear that the performance would reflect no credit on either.  
+<darcy-dialogue> May I ask to what these questions tend? 
+<darcy-dialogue> And what is your success?
+<darcy-dialogue> I can readily believe that reports may vary greatly with respect to me; and I could wish, Miss Bennet, that you were not to sketch my character at the present moment, as there is reason to fear that the performance would reflect no credit on either.
 <darcy-dialogue> I would by no means suspend any pleasure of yours.  
-<others-impressions-of-darcy> It is evident that you belong to the first circles.  
-<others-impressions-of-darcy> Mr. Darcy is not in the least to blame.  
-<others-impressions-of-darcy> Mr. Darcy cannot bear to hear George Wickham mentioned.  
-<others-impressions-of-darcy> Mr. Darcy is excessively glad to find that George Wickham had taken himself out of the way.  
-<others-impressions-of-darcy> Mr. Darcy's guilt and descent are to be looked at in a similar light.
-
+<darcy-dialogue> The _present_ always occupies you in such scenes--does it?
+<others-impressions-of-darcy> It is evident that you belong to the first circles.
+<others-impressions-of-darcy> Mr. Darcy is not in the least to blame.
+<others-impressions-of-darcy> Mr. Darcy cannot bear to hear George Wickham mentioned.
+<others-impressions-of-darcy> Mr. Darcy is excessively glad to find that George Wickham had taken himself out of the way.
 
 
 
@@ -3596,13 +3462,7 @@ I believe him to be Lady Catherine’s _nephew_. It will be in my power to
 assure him that her Ladyship was quite well yesterday se’nnight.”
 
 
-
-
-<darcy-actions> Darcy was overheard mentioning the names of his cousin Miss De Bourgh, and of her mother, Lady Catherine.  
-<darcy-actions> Darcy did not respond to Mr. Collins' interruption or introduction.  
-<others-impressions-of-darcy> Mr. Darcy is Lady Catherine’s nephew.  
-<others-impressions-of-darcy> Mr. Darcy is the subject of Mr. Collins' exultant discovery.
-
+((((((No references))))))
 
 
 
@@ -3682,20 +3542,13 @@ fortunate, though evidently and triumphantly believing there was no
 chance of it.
 
 
-
-
 <darcy-actions> Mr. Darcy's astonishment at being so addressed was very evident.
 <darcy-actions> Mr. Darcy was eyeing Mr. Collins with unrestrained wonder.
 <darcy-actions> Mr. Darcy replied with an air of distant civility.
 <darcy-actions> Mr. Darcy’s contempt seemed abundantly increasing with the length of Mr. Collins’ second speech.
 <darcy-actions> Mr. Darcy made Mr. Collins a slight bow, and moved another way.
 <darcy-actions> Mr. Darcy seemed much pleased with Mr. Collins' attention.
-<darcy-actions> Mr. Darcy answered Mr. Collins with the utmost civility.
-<darcy-dialogue> He answered me with the utmost civility, and even paid me the compliment of saying, that he was so well convinced of Lady Catherine’s discernment as to be certain she could never bestow a favour unworthily.
-<others-impressions-of-darcy> Mr. Darcy was eyeing him with unrestrained wonder.
-<others-impressions-of-darcy> Mr. Darcy seemed much pleased with the attention. 
-<others-impressions-of-darcy> It was really a very handsome thought.
-<others-impressions-of-darcy> Mr. Darcy’s contempt seemed abundantly increasing with the length of his second speech. 
+<others-impressions-of-darcy> Elizebeth saw that Darcy would consider Collins' interruption unwelcome.
 
 
 
@@ -3778,16 +3631,11 @@ having spoken so sensibly, and observed, in a half-whisper to Lady
 Lucas, that he was a remarkably clever, good kind of young man.
 
 
-
-
-<darcy-actions> Mr. Darcy sat opposite to them, overhearing Mrs. Bennet's words.
-<darcy-actions> Mr. Darcy's attention was invariably fixed by Mrs. Bennet.
+<darcy-actions> Mr. Darcy sat opposite to them, overhearing Mrs. Bennet's impertinent words.
+<darcy-actions> Mr. Darcy's attention was invariably fixed by Mrs. Bennet's impertinent commentary.
 <darcy-actions> The expression of Mr. Darcy's face changed gradually from indignant contempt to a composed and steady gravity.
 <darcy-actions> Mr. Darcy continued impenetrably grave.
-<others-impressions-of-darcy> Mr. Darcy’s attention was invariably fixed by Mrs. Bennet.
 <others-impressions-of-darcy> Mr. Darcy's expression changed from indignant contempt to a composed and steady gravity.
-<others-impressions-of-darcy> Mr. Darcy continued impenetrably grave.
-<others-impressions-of-darcy> Mr. Darcy was amused by Mr. Collins' speech.
 
 
 
@@ -3861,8 +3709,7 @@ was eclipsed by Mr. Bingley and Netherfield.
 
 
 
-<others-impressions-of-darcy> To Elizabeth it appeared...that his feelings were not of a sort to be much distressed by the folly which he must have witnessed.  
-<others-impressions-of-darcy> That his two sisters and Mr. Darcy, however, should have such an opportunity of ridiculing her relations was bad enough; and she could not determine whether the silent contempt of the gentleman, or the insolent smiles of the ladies, were more intolerable.  
+<others-impressions-of-darcy> To Elizabeth it appeared that his feelings were not of a sort to be much distressed by the folly which he must have witnessed.  
 <darcy-actions> Though often standing within a very short distance of her, quite disengaged, Mr. Darcy never came near enough to speak.  
 <darcy-actions> Darcy said nothing at all.
 
@@ -4056,11 +3903,7 @@ in such a manner as must be decisive, and whose behaviour at least could
 not be mistaken for the affectation and coquetry of an elegant female.
 
 
-
-
 ((((No references))))
-
-
 
 
 
@@ -4245,7 +4088,6 @@ consideration for the advantage of all your family; and if my _manner_
 has been at all reprehensible, I here beg leave to apologize.”
 
 
-
 (((((No references)))))
 
 
@@ -4289,9 +4131,8 @@ compliment it offered to herself; and it was most acceptable as an
 occasion of introducing him to her father and mother.
 
 
-
-
 (((((No references)))))
+
 
 
 
@@ -4350,8 +4191,6 @@ despair. I sincerely hope your Christmas in Hertfordshire may abound in
 the gaieties which that season generally brings, and that your beaux
 will be so numerous as to prevent your feeling the loss of the three of
 whom we shall deprive you.’
-
-
 
 
 ((((((((No references))))))))
@@ -4469,8 +4308,6 @@ that, though he had been invited only to a family dinner, she would take
 care to have two full courses.
 
 
-
-
 (((((((No references)))))))
 
 
@@ -4486,12 +4323,7 @@ Darcy and the amusements of London, might be too much, she feared, for
 the strength of his attachment.
 
 
-<darcy-actions> The united efforts of Bingley's two unfeeling sisters,
-and of his overpowering friend Mr. Darcy, assisted by the attractions of Miss
-Darcy and the amusements of London, might be too much, she feared, for
-the strength of his attachment.
-
-
+<darcy-actions> The united efforts of Bingley's two unfeeling sisters, and of his overpowering friend Mr. Darcy, assisted by the attractions of Miss Darcy and the amusements of London, might be too much, she feared, for the strength of his attachment.
 
 
 
@@ -4565,12 +4397,11 @@ Miss Bennet eagerly disclaimed all extraordinary merit, and threw back
 the praise on her sister’s warm affection.
 
 
-
-
 <darcy-actions> Mr. Darcy’s house was where Bingley stayed.  
-<darcy-actions> Caroline wrote also with great pleasure of her brother’s being an inmate of Mr. Darcy’s house, and mentioned with raptures some plans of Darcy with regard to new furniture.
+<darcy-actions> Caroline wrote also with great pleasure of her brother’s being an inmate of Mr. Darcy’s house, and mentioned with raptures some Darcy's plans with regard to new furniture.
 <darcy-actions> Mr. Darcy’s actions attempted to lead Bingley away from his affection for Jane.
 <darcy-actions> Mr. Darcy’s influence was seen as a key factor in Bingley’s behavior.
+
 
 
 
@@ -4706,10 +4537,8 @@ allowances, and urged the possibility of mistakes; but by everybody else
 Mr. Darcy was condemned as the worst of men.
 
 
-
-<others-impressions-of-darcy> After Wickham's account, Mr. Darcy was condemned as the worst of men.  
+<others-impressions-of-darcy> After Wickham's account in Meryton, Mr. Darcy was condemned as the worst of men.  
 <others-impressions-of-darcy> Everybody was pleased to think how much they had always disliked Mr. Darcy before they had known anything of Wickham's account.  
-
 
 
 
@@ -4798,9 +4627,8 @@ service--and perhaps a little relief from home may be as useful as
 anything.”
 
 
-
-
 ((((((((No references))))))))
+
 
 
 
@@ -4877,14 +4705,11 @@ heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud,
 ill-natured boy.
 
 
-
 <others-impressions-of-darcy> Mr. Darcy may, perhaps, have _heard_ of such a place as Gracechurch Street, but he would hardly think a month’s ablution enough to cleanse him from its impurities, were he once to enter it.
-<others-impressions-of-darcy> Mr. Darcy never stirs without him.
-<others-impressions-of-darcy> Mrs. Gardiner was confident, at last, that she recollected having heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud, ill-natured boy.
-<darcy-actions> Mr. Darcy would no more suffer him to call on Jane in such a part of London!
-<darcy-actions> Mrs. Gardiner, rendered suspicious by Elizabeth’s warm commendation of him, narrowly observed them both.
-
-
+<others-impressions-of-darcy> Mr. Darcy never stirs without his friend Bingley.
+<others-impressions-of-darcy> Mrs. Gardiner thought she recollected having heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud, ill-natured boy.
+<others-impressions-of-darcy> Mr. Darcy would not suffer Bingley to call on Jane in such a part of London.
+<darcy-actions> Mr. Darcy would not suffer Bingley to call on Jane during her stay in London.
 
 
 
@@ -4947,10 +4772,7 @@ the kindness of her hints, they parted,--a wonderful instance of advice
 being given on such a point without being resented.
 
 
-
-
-
-<darcy-actions> Elizabeth was conscious of the danger of being involved with Mr. Wickham, especially in light of Mr. Darcy’s influence.
+((((((((No references))))))))
 
 
 
@@ -5019,13 +4841,7 @@ lost.
 town, and I shall take the opportunity of calling in Grosvenor Street.”
 
 
-
-<others-impressions-of-darcy> Elizabeth could never address her without feeling that all the comfort of intimacy was over.
-<others-impressions-of-darcy> Charlotte’s first letters were received with a good deal of eagerness: there could not but be curiosity to know how she would speak of her new home, how she would like Lady Catherine, and how happy she would dare pronounce herself to be.
-<others-impressions-of-darcy> The house, furniture, neighbourhood, and roads, were all to her taste, and Lady Catherine’s behaviour was most friendly and obliging.
-<others-impressions-of-darcy> It was Mr. Collins’s picture of Hunsford and Rosings rationally softened.
-
-
+((((((((No references))))))))
 
 
 
@@ -5139,8 +4955,6 @@ handsome young men must have something to live on as well as the
 plain.”
 
 
-
-
 <others-impressions-of-darcy> Before learning the truth about Wickham, Mr. Darcy’s character sunk on every review of it.
 
 
@@ -5202,9 +5016,7 @@ kindness. The day passed most pleasantly away; the morning in bustle and
 shopping, and the evening at one of the theatres.
 
 
-
 (((((No references)))))
-
 
 
 
@@ -5291,7 +5103,6 @@ about its relative situation. Let _our_ first effusions be less
 insupportable than those of the generality of travellers.”
 
 
-
 <others-impressions-of-darcy> Mrs. Gardiner should be sorry to think ill of a young man who has lived so long in Derbyshire.
 
 
@@ -5365,7 +5176,6 @@ Elizabeth gave Charlotte all the credit. When Mr. Collins could be
 forgotten, there was really a great air of comfort throughout, and by
 Charlotte’s evident enjoyment of it, Elizabeth supposed he must be often
 forgotten.
-
 
 
 ((((((No references))))))
@@ -5450,8 +5260,6 @@ the others returned into the house. Mr. Collins no sooner saw the two
 girls than he began to congratulate them on their good fortune, which
 Charlotte explained by letting them know that the whole party was asked
 to dine at Rosings the next day.
-
-
 
 
 ((((((No references))))))
@@ -5781,9 +5589,8 @@ a nice sheltered path, which no one seemed to value but herself, and
 where she felt beyond the reach of Lady Catherine’s curiosity.
 
 
-
-
 (((((((No references)))))))
+
 
 
 
@@ -5845,7 +5652,6 @@ Bingleys and Jane; and she thought he looked a little confused as he
 answered that he had never been so fortunate as to meet Miss Bennet. The
 subject was pursued no further, and the gentlemen soon afterwards went
 away.
-
 
 
 <others-impressions-of-darcy> Lady Catherine talked of Mr. Darcy's coming with the greatest satisfaction, spoke of him in terms of the highest admiration, and seemed almost angry to find that he had already been frequently seen by Miss Lucas and Elizabeth.
@@ -5923,8 +5729,6 @@ of the house.”
 
 Mr. Darcy looked a little ashamed of his aunt’s ill-breeding, and made
 no answer.
-
-
 
 
 <darcy-actions> Mr. Darcy looked a little ashamed of his aunt’s ill-breeding, and made no answer.
@@ -6036,15 +5840,18 @@ gentlemen remained at the instrument till her Ladyship’s carriage was
 ready to take them all home.
 
 
-
-
-<darcy-actions> Mr. Darcy moved with his usual deliberation towards the pianoforte, stationed himself so as to command a full view of the fair performer’s countenance.  
-<darcy-dialogue> I shall not say that you are mistaken, because you could not really believe me to entertain any design of alarming you; and I have had the pleasure of your acquaintance long enough to know, that you find great enjoyment in occasionally professing opinions which, in fact, are not your own.  
+<darcy-actions> Mr. Darcy moved with his usual deliberation towards the pianoforte, stationed himself so as to command a full view of the fair performer’s countenance.
+<darcy-actions> He smiled as he spoke to Elizabeth. 
+<darcy-dialogue> I shall not say that you are mistaken, because you could not really believe me to entertain any design of alarming you; and I have had the pleasure of your acquaintance long enough to know, that you find great enjoyment in occasionally professing opinions which, in fact, are not your own.
 <darcy-dialogue> I am not afraid of you.  
 <darcy-dialogue> Perhaps I should have judged better had I sought an introduction, but I am ill-qualified to recommend myself to strangers.  
-<darcy-dialogue> I certainly have not the talent which some people possess, of conversing easily with those I have never seen before. I cannot catch their tone of conversation, or appear interested in their concerns, as I often see done.  
-<darcy-dialogue> You are perfectly right. You have employed your time much better. No one admitted to the privilege of hearing you can think anything wanting. We neither of us perform to strangers.   
-<others-impressions-of-darcy> From the whole of his behaviour to Miss De Bourgh, Elizabeth derived comfort that Mr. Darcy might have been just as likely to marry her, had she been his relation.
+<darcy-dialogue> I certainly have not the talent which some people possess, of conversing easily with those I have never seen before. 
+<darcy-dialogue> I cannot catch their tone of conversation, or appear interested in their concerns, as I often see done.  
+<darcy-dialogue> You are perfectly right. 
+<darcy-dialogue> You have employed your time much better. 
+<darcy-dialogue> No one admitted to the privilege of hearing you can think anything wanting. 
+<darcy-dialogue> We neither of us perform to strangers.   
+<others-impressions-of-darcy> Elizabeth did not detect any enthusiasm from Darcy about the idea of his marrying Miss de Bourgh.
 
 
 
@@ -6146,25 +5953,24 @@ friend would not call herself _near_ her family under less than _half_
 the present distance.”
 
 
-
-
-
-<darcy-actions> Mr. Darcy entered the room.
+<darcy-actions> Mr. Darcy paid the parsonage a visit on his own, after Elizabeth's cheeky suggestion to practice the art of conversation.
 <darcy-actions> Mr. Darcy seemed astonished on finding her alone.
 <darcy-actions> Mr. Darcy apologized for his intrusion, by letting her know that he had understood all the ladies to be within.
 <darcy-actions> Mr. Darcy and Elizabeth sat down.
 <darcy-actions> Mr. Darcy took the hint and soon began the conversation.
 <darcy-dialogue> Perfectly so, I thank you.
-<darcy-dialogue> I have never heard him say so; but it is probable that he may spend very little of his time there in future. He has many friends, and he is at a time of life when friends and engagements are continually increasing.
+<darcy-dialogue> I have never heard him say so; but it is probable that he may spend very little of his time there in future. 
+<darcy-dialogue> He has many friends, and he is at a time of life when friends and engagements are continually increasing.
 <darcy-dialogue> I should not be surprised if he were to give it up as soon as any eligible purchase offers.
-<darcy-dialogue> This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.
+<darcy-dialogue> This seems a very comfortable house. 
+<darcy-dialogue> Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.
 <darcy-dialogue> Mr. Collins appears very fortunate in his choice of a wife.
 <darcy-dialogue> It must be very agreeable to her to be settled within so easy a distance of her own family and friends.
-<darcy-dialogue> And what is fifty miles of good road? Little more than half a day’s journey. Yes, I call it a very easy distance.
-<darcy-dialogue> It is a proof of your own attachment to Hertfordshire. Anything beyond the very neighbourhood of Longbourn, I suppose, would appear far.
-<others-impressions-of-darcy> Mr. Darcy is supposed to be thinking of Elizabeth’s attachment to Hertfordshire.
-<others-impressions-of-darcy> Mr. Darcy is seen as a considerate observer of the neighbourhood's relationship to Longbourn.
-
+<darcy-dialogue> And what is fifty miles of good road? 
+<darcy-dialogue> Little more than half a day’s journey. 
+<darcy-dialogue> Yes, I call it a very easy distance.
+<darcy-dialogue> It is a proof of your own attachment to Hertfordshire. 
+<darcy-dialogue> Anything beyond the very neighbourhood of Longbourn, I suppose, would appear far.
 
 
 
@@ -6244,9 +6050,12 @@ in the church, and his cousin could have none at all.
 <darcy-actions> Mr. Darcy drew his chair a little towards Elizabeth.
 <darcy-actions> Mr. Darcy drew back his chair, took a newspaper from the table, and glanced over it.
 <darcy-actions> Mr. Darcy sat without saying much to anybody before leaving.
-<darcy-dialogue> You cannot have a right to such very strong local attachment. You cannot have been always at Longbourn.
+<darcy-actions> Darcy engaged in a short conversation, pleasantries about the local area.
+<darcy-actions> Darcy appeared often at the parsonage.
+<darcy-dialogue> You cannot have a right to such very strong local attachment. 
+<darcy-dialogue> You cannot have been always at Longbourn.
 <darcy-dialogue> Are you pleased with Kent?
-<others-impressions-of-darcy> Mr. Darcy frequently sat at the Parsonage ten minutes together without opening his lips.
+<darcy-actions> Mr. Darcy frequently sat at the Parsonage ten minutes together without opening his lips.
 <others-impressions-of-darcy> Mr. Darcy seemed to speak out of necessity, not choice.
 <others-impressions-of-darcy> Mr. Darcy seldom appeared really animated.
 <others-impressions-of-darcy> Mrs. Collins could not understand Mr. Darcy's behavior.
@@ -6324,26 +6133,16 @@ where they like.”
 do.”
 
 
-
 <darcy-actions> More than once did Elizabeth, in her ramble within the park, unexpectedly meet Mr. Darcy.  
 <darcy-actions> It struck her in the course of their third encounter that he was asking some odd unconnected questions--about her pleasure in being at Hunsford, her love of solitary walks, and her opinion of Mr. and Mrs. Collins’s happiness.  
 <darcy-actions> In speaking of Rosings, and her not perfectly understanding the house, he seemed to expect that whenever she came into Kent again she would be staying there too.  
 <darcy-actions> He actually thought it necessary to turn back and walk with her.  
-<others-impressions-of-darcy> His words seemed to imply it. Could he have Colonel Fitzwilliam in his thoughts?  
-<others-impressions-of-darcy> It seemed like wilful ill-nature, or a voluntary penance.  
+<others-impressions-of-darcy> His words seemed to imply marriage. Could he have Colonel Fitzwilliam in his thoughts?  
+<others-impressions-of-darcy> His walking with Elizabeth seemed like wilful ill-nature, or a voluntary penance.  
 <others-impressions-of-darcy> He never said a great deal.  
 <others-impressions-of-darcy> Mr. Darcy likes to have his own way very well.  
 <others-impressions-of-darcy> Mr. Darcy has better means of having it than many others, because he is rich, and many others are poor.  
 <others-impressions-of-darcy> Mr. Darcy enjoys the power of doing what he likes.  
-<darcy-dialogue> I do not know anybody who seems more to enjoy the power of doing what he likes than Mr. Darcy.  
-<darcy-dialogue> Yes--if Darcy does not put it off again. But I am at his disposal. He arranges the business just as he pleases.  
-<darcy-dialogue> He likes to have his own way very well.  
-<darcy-dialogue> But so we all do. It is only that he has better means of having it than many others, because he is rich, and many others are poor.  
-<darcy-dialogue> Younger sons cannot marry where they like.  
-<darcy-dialogue> Unless where they like women of fortune, which I think they very often do.
-
-
-
 
 
 
@@ -6490,14 +6289,11 @@ could not conceal his apprehension of Lady Catherine’s being rather
 displeased by her staying at home.
 
 
-
-
-
 <darcy-actions> Mr. Darcy was concerned in the measures taken to separate Mr. Bingley and Jane.  
-<darcy-actions> Mr. Darcy's pride and caprice were the cause of all that Jane had suffered, and still continued to suffer.  
+<others-impressions-of-darcy> Mr. Darcy's pride and caprice were the cause of all that Jane had suffered, and still continued to suffer.  
 <darcy-actions> Mr. Darcy had ruined, for a while, every hope of happiness for Jane.  
-<darcy-actions> Mr. Darcy's pride would receive a deeper wound from the want of importance in his friend’s connections than from their want of sense.  
-<others-impressions-of-darcy> Mr. Darcy could have such boundless influence over Mr. Bingley.  
+<others-impressions-of-darcy> Mr. Darcy's pride would receive a deeper wound from the want of importance in his friend’s connections than from their want of sense.  
+<others-impressions-of-darcy> Mr. Darcy had boundless influence over Mr. Bingley.  
 <others-impressions-of-darcy> Mr. Darcy’s conduct does not suit Elizabeth’s feelings.  
 <others-impressions-of-darcy> Mr. Darcy is the judge of Mr. Bingley’s inclination, and directs how his friend is to be happy.  
 <others-impressions-of-darcy> It was not to be supposed that there were much affection in Mr. Darcy's interference.  
@@ -6508,13 +6304,6 @@ displeased by her staying at home.
 <others-impressions-of-darcy> Mr. Darcy’s pride was partly governed by his desire to retain Mr. Bingley for his sister.  
 <others-impressions-of-darcy> Mr. Darcy’s conduct was seen as officious in separating Mr. Bingley and Jane.  
 <others-impressions-of-darcy> Mr. Darcy's pride is described as the worst kind of pride.  
-<darcy-dialogue> “Did Mr. Darcy give you his reasons for this interference?”  
-<darcy-dialogue> “I understood that there were some very strong objections against the lady.”  
-<darcy-dialogue> “There were some very strong objections against the lady.”  
-<darcy-dialogue> “You may depend upon my not mentioning it.”  
-<darcy-dialogue> “It is a circumstance which Darcy of course could not wish to be generally known, because if it were to get round to the lady’s family it would be an unpleasant thing.”  
-<darcy-dialogue> “My temper I dare not vouch for. It is, I believe, too little yielding; certainly too little for the convenience of the world.”  
-<darcy-dialogue> “No,” said Darcy, “that is an advantage which he must divide with me. I am joined with him in the guardianship of Miss Darcy.”
 
 
 
@@ -6571,19 +6360,14 @@ consequence he was wounding, but was very unlikely to recommend his
 suit.
 
 
-
-
-<darcy-actions> Elizabeth noticed every sentence conveying the idea of uneasiness, with an attention which it had hardly received on the first perusal.
-<darcy-actions> Mr. Darcy’s shameful boast of what misery he had been able to inflict gave her a keener sense of her sister’s sufferings.
-<darcy-actions> Elizabeth could not think of Darcy’s leaving Kent without remembering that his cousin was to go with him.
+<others-impressions-of-darcy> It seemed to Elizabeth that Darcy had boasted of making Jane miserable by "saving" Bingley from a disadvantageous marriage.
 <darcy-actions> Elizabeth was surprised when she saw Mr. Darcy walk into the room.
 <darcy-actions> In a hurried manner, Mr. Darcy immediately began an inquiry after her health, imputing his visit to a wish of hearing that she were better.
 <darcy-actions> He sat down for a few moments, and then getting up, walked about the room.
 <darcy-actions> After a silence of several minutes, Mr. Darcy came towards her in an agitated manner.
-<darcy-dialogue> In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you.
+<darcy-dialogue> In vain have I struggled. It will not do. My feelings will not be repressed.
 <darcy-dialogue> You must allow me to tell you how ardently I admire and love you.
-<darcy-dialogue> My sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.
-<others-impressions-of-darcy> Mr. Darcy’s shameful boast of what misery he had been able to inflict gave her a keener sense of her sister’s sufferings.
+<darcy-action> His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.
 
 
 
@@ -6622,6 +6406,11 @@ appearance of composure, and would not open his lips till he believed
 himself to have attained it. The pause was to Elizabeth’s feelings
 dreadful. At length, in a voice of forced calmness, he said,--
 
+<darcy-actions> He caught Elizabeth's refusal with surprise and resentment.
+<darcy-actions> His complexion became pale with anger, the disturbance of his mind visible in every feature.
+<darcy-actions> He struggled for the appearance of composure, not opening his lips until he believed himself to have attained it.
+<darcy-actions> He spoke with a voice of forced calmness. 
+
 “And this is all the reply which I am to have the honour of expecting! I
 might, perhaps, wish to be informed why, with so little _endeavour_ at
 civility, I am thus rejected. But it is of small importance.”
@@ -6637,17 +6426,17 @@ the man who has been the means of ruining, perhaps for ever, the
 happiness of a most beloved sister?”
 
 
-
 <darcy-actions> Mr. Darcy concluded with representing to her the strength of that attachment which in spite of all his endeavours he had found impossible to conquer.
 <darcy-actions> Mr. Darcy expressed his hope that his attachment would now be rewarded by her acceptance of his hand.
-<darcy-actions> Mr. Darcy spoke of apprehension and anxiety, but his countenance expressed real security.
-<darcy-actions> Mr. Darcy, who was leaning against the mantel-piece with his eyes fixed on her face, seemed to catch her words with no less resentment than surprise.
-<darcy-actions> Mr. Darcy’s complexion became pale with anger, and the disturbance of his mind was visible in every feature.
-<darcy-actions> Mr. Darcy was struggling for the appearance of composure, and would not open his lips till he believed himself to have attained it.
-<darcy-dialogue> And this is all the reply which I am to have the honour of expecting! I might, perhaps, wish to be informed why, with so little endeavour at civility, I am thus rejected. But it is of small importance.
-<darcy-dialogue> I might as well inquire, why, with so evident a design of offending and insulting me, you chose to tell me that you liked me against your will, against your reason, and even against your character? Was not this some excuse for incivility, if I was uncivil? But I have other provocations. You know I have. Had not my own feelings decided against you, had they been indifferent, or had they even been favourable, do you think that any consideration would tempt me to accept the man who has been the means of ruining, perhaps for ever, the happiness of a most beloved sister?
-<others-impressions-of-darcy> Mr. Darcy expressed his hope that it would now be rewarded by her acceptance of his hand.
-
+<darcy-actions> He spoke of his apprehension and anxiety in approaching Elizabeth to propose.
+<others-impressions-of-darcy> Elizabeth could see his countenance expressed security for her acceptance to his proposal.
+<darcy-actions> He caught Elizabeth's refusal with surprise and resentment.
+<darcy-actions> His complexion became pale with anger, the disturbance of his mind visible in every feature.
+<darcy-actions> He struggled for the appearance of composure, not opening his lips until he believed himself to have attained it.
+<darcy-actions> He spoke with a voice of forced calmness.
+<darcy-actions> He leant on the mantel-piece.
+<darcy-dialogue> And this is all the reply which I am to have the honour of expecting! 
+<darcy-dialogue> I might, perhaps, wish to be informed why, with so little endeavour at civility, I am thus rejected. But it is of small importance.
 
 
 
@@ -6708,9 +6497,10 @@ contempt and ridicule.”
 <darcy-actions> Mr. Darcy changed colour.  
 <darcy-actions> He listened without attempting to interrupt her while she continued.  
 <darcy-actions> He looked at her with a smile of affected incredulity.  
-<darcy-dialogue> I have no wish of denying that I did everything in my power to separate my friend from your sister, or that I rejoice in my success. Towards him I have been kinder than towards myself.  
-<darcy-dialogue> You take an eager interest in that gentleman’s concerns.  
-<darcy-dialogue> His misfortunes! Yes, his misfortunes have been great indeed.  
+<darcy-dialogue> I have no wish of denying that I did everything in my power to separate my friend from your sister, or that I rejoice in my success. 
+<darcy-dialogue> Towards him I have been kinder than towards myself.  
+<darcy-dialogue> You take an eager interest in that gentleman’s concerns.
+<darcy-dialogue> His misfortunes! Yes, his misfortunes have been great indeed.
 <others-impressions-of-darcy> Elizabeth saw with no slight indignation that he was listening with an air which proved him wholly unmoved by any feeling of remorse.  
 <others-impressions-of-darcy> Mr. Darcy treated the mention of Mr. Wickham's misfortunes with contempt and ridicule.
 
@@ -6785,23 +6575,19 @@ Catherine’s carriage made her feel how unequal she was to encounter
 Charlotte’s observation, and hurried her away to her room.
 
 
-
-
-
 <darcy-actions> Darcy walked with quick steps across the room.  
-<darcy-actions> He stopped in his walk and turned towards Elizabeth.  
-<darcy-dialogue> This is your opinion of me! This is the estimation in which you hold me! I thank you for explaining it so fully. My faults, according to this calculation, are heavy indeed!  
+<darcy-dialogue> This is your opinion of me! This is the estimation in which you hold me! 
+<darcy-dialogue> I thank you for explaining it so fully. My faults, according to this calculation, are heavy indeed!
 <darcy-dialogue> Perhaps these offences might have been overlooked, had not your pride been hurt by my honest confession of the scruples that had long prevented my forming any serious design.  
 <darcy-dialogue> These bitter accusations might have been suppressed, had I, with greater policy, concealed my struggles, and flattered you into the belief of my being impelled by unqualified, unalloyed inclination; by reason, by reflection, by everything.  
 <darcy-dialogue> But disguise of every sort is my abhorrence. Nor am I ashamed of the feelings I related. They were natural and just.  
 <darcy-dialogue> Could you expect me to rejoice in the inferiority of your connections?--to congratulate myself on the hope of relations whose condition in life is so decidedly beneath my own?  
-<darcy-dialogue> You have said quite enough, madam. I perfectly comprehend your feelings, and have now only to be ashamed of what my own have been. Forgive me for having taken up so much of your time, and accept my best wishes for your health and happiness.  
+<darcy-dialogue> You have said quite enough, madam. 
+<darcy-dialogue> I perfectly comprehend your feelings, and have now only to be ashamed of what my own have been. 
+<darcy-dialogue> Forgive me for having taken up so much of your time, and accept my best wishes for your health and happiness.  
 <darcy-actions> He hastily left the room.  
 <darcy-actions> Elizabeth heard him the next moment open the front door and quit the house.  
-<others-impressions-of-darcy> Elizabeth felt herself growing more angry every moment.  
 <others-impressions-of-darcy> Darcy's astonishment was obvious; and he looked at her with an expression of mingled incredulity and mortification.  
-<others-impressions-of-darcy> Darcy's pride, his abominable pride, his shameless avowal of what he had done with respect to Jane, his unpardonable assurance in acknowledging, though he could not justify it, and the unfeeling manner which he had mentioned Mr. Wickham, his cruelty towards whom he had not attempted to deny, soon overcame the pity which the consideration of his attachment had for a moment excited.
-
 
 
 
@@ -6843,8 +6629,6 @@ full. Pursuing her way along the lane, she then began it. It was dated
 from Rosings, at eight o’clock in the morning, and was as follows:--
 
 
-
-
 <darcy-actions> Mr. Darcy stepped forward with eagerness.  
 <darcy-actions> Mr. Darcy held out a letter, which Elizabeth instinctively took.  
 <darcy-actions> Mr. Darcy turned again into the plantation and was soon out of sight.  
@@ -6853,7 +6637,6 @@ from Rosings, at eight o’clock in the morning, and was as follows:--
 <darcy-dialogue> I have been walking in the grove some time, in the hope of meeting you. Will you do me the honour of reading that letter?  
 <others-impressions-of-darcy> He was moving that way; and fearful of its being Mr. Darcy, she was directly retreating.  
 <others-impressions-of-darcy> Though in a voice which proved it to be Mr. Darcy, she moved again towards the gate.
-
 
 
 
@@ -7245,24 +7028,17 @@ render Mr. Darcy’s conduct in it less than infamous, was capable of a
 turn which must make him entirely blameless throughout the whole.
 
 
-
-
 <darcy-actions> Mr. Darcy gave Elizabeth a letter.  
-<darcy-actions> He expressed no regret for what he had done which satisfied Elizabeth; his style was not penitent, but haughty.  
+<darcy-actions> He expressed no regret for what he had done which satisfied Elizabeth; his style seemed at first not penitent, but haughty.  
 <darcy-actions> He provided an account of his objections to the match between Jane and Bingley.  
 <darcy-actions> He detailed his history with Mr. Wickham, including Wickham’s dealings with the Pemberley family and the matter of the living.  
-
 <others-impressions-of-darcy> Elizabeth was amazed that Mr. Darcy believed any apology to be in his power.  
 <others-impressions-of-darcy> She was steadfastly persuaded that he could have no explanation to give which a just sense of shame would not conceal.  
-<others-impressions-of-darcy> She began reading his account with a strong prejudice against everything he might say.  
-<others-impressions-of-darcy> His belief in Jane’s insensibility to Bingley she instantly resolved to be false.  
+<others-impressions-of-darcy> At first, his belief in Jane’s insensibility to Bingley she instantly resolved to be false.  
 <others-impressions-of-darcy> His account of the objections to the match made Elizabeth too angry to wish to do him justice.  
 <others-impressions-of-darcy> She found his style to be all pride and insolence.  
 <others-impressions-of-darcy> As she read his account of Mr. Wickham, Elizabeth experienced astonishment, apprehension, and even horror.  
 <others-impressions-of-darcy> Every line of his letter proved more clearly that his conduct, which she had believed infamous, was capable of a turn that made him entirely blameless.  
-
-
-
 
 
 
@@ -7339,26 +7115,12 @@ that friendship between a person capable of it and such an amiable man
 as Mr. Bingley was incomprehensible.
 
 
-
-
-
-<wickham-truth-revealed> Elizabeth was shocked by Mr. Darcy’s accusations against Mr. Wickham but had no proof to dispute them.  
-<wickham-truth-revealed> She realized she had never inquired into Wickham’s real character and had only accepted his charm at face value.  
-<wickham-truth-revealed> She searched for evidence of Wickham’s goodness but found none beyond his social appeal.  
-<wickham-truth-revealed> The revelation of Wickham’s designs on Miss Darcy was partially confirmed by her prior conversation with Colonel Fitzwilliam.  
-<wickham-truth-revealed> She recalled Wickham’s improper disclosure of personal grievances to her, a stranger, and now recognized its impropriety.  
-<wickham-truth-revealed> She noticed inconsistencies in Wickham’s behavior, such as his claim of no fear of Darcy while avoiding the Netherfield ball.  
-<wickham-truth-revealed> Wickham had initially kept his accusations against Darcy private but spread them widely after Darcy left the area.  
-<wickham-truth-revealed> She now saw Wickham’s pursuit of Miss King as purely mercenary, rather than an example of modest ambition.  
-<wickham-truth-revealed> Elizabeth reconsidered Wickham’s attentions toward herself and suspected either misjudgment of her fortune or mere vanity.  
-
-<darcy-reassessment> Elizabeth recognized that Bingley had previously defended Darcy’s character.  
-<darcy-reassessment> She admitted she had never seen Darcy act in a way that suggested unprincipled or unjust behavior.  
-<darcy-reassessment> She acknowledged that Darcy was valued among his friends and that Wickham himself had praised Darcy’s qualities as a brother.  
-<darcy-reassessment> She concluded that if Darcy had truly been guilty of Wickham’s accusations, such misconduct would not have remained concealed.  
-<darcy-reassessment> She found it incomprehensible that an honorable man like Bingley could be close friends with someone as immoral as Wickham had described Darcy to be.  
-
-
+<others-impressions-of-darcy> Proud and repulsive as were his manners, she had never, in the whole course of their acquaintance—an acquaintance which had latterly brought them much together, and given her a sort of intimacy with his ways—seen anything that betrayed him to be unprincipled or unjust—anything that spoke him of irreligious or immoral habits.  
+<others-impressions-of-darcy> Among his own connections he was esteemed and valued.  
+<others-impressions-of-darcy> Even Wickham had allowed him merit as a brother.  
+<others-impressions-of-darcy> She had often heard him speak so affectionately of his sister as to prove him capable of some amiable feeling.  
+<others-impressions-of-darcy> Had his actions been what Wickham represented them, so gross a violation of everything right could hardly have been concealed from the world.  
+<others-impressions-of-darcy> Friendship between a person capable of it and such an amiable man as Mr. Bingley was incomprehensible.  
 
 
 
@@ -7424,15 +7186,10 @@ missing him; she really rejoiced at it. Colonel Fitzwilliam was no
 longer an object. She could think only of her letter.
 
 
-
-
-
 <darcy-actions> Mr. Darcy had called only for a few minutes to take leave.  
 <others-impressions-of-darcy> Elizabeth initially found Mr. Darcy’s explanation insufficient but, upon rereading, found his assertions credible.  
 <others-impressions-of-darcy> The justice of Mr. Darcy’s charge regarding her family’s impropriety struck Elizabeth too forcibly for denial.  
 <others-impressions-of-darcy> The compliment to herself and her sister in Mr. Darcy’s letter was soothing but could not console her for the contempt attracted by the rest of her family.
-
-
 
 
 
@@ -7464,12 +7221,10 @@ seemed to feel it most acutely--more, I think, than last year. His
 attachment to Rosings certainly increases.”
 
 
-
 <darcy-actions> Darcy left Rosings the day after giving Elizabeth his letter
 <others-impressions-of-darcy> Mr. Collins reported that Mr. Darcy appeared to be in very good health and in tolerable spirits after leaving Rosings.  
 <others-impressions-of-darcy> Lady Catherine observed that Darcy seemed to feel the departure from Rosings most acutely, even more than the previous year.  
 <others-impressions-of-darcy> Lady Catherine believed that Darcy’s attachment to Rosings was increasing.
-
 
 
 
@@ -7530,10 +7285,7 @@ Oh, Bromley, of course. If you mention my name at the Bell, you will be
 attended to.”
 
 
-
 (((((((No references)))))))
-
-
 
 
 
@@ -7600,27 +7352,13 @@ and Miss de Bourgh exerted herself so far as to courtesy and hold out
 her hand to both.
 
 
-
-
-
-<darcy-actions> Mr. Darcy’s letter she was in a fair way of soon knowing by heart.  
-<darcy-actions> She studied every sentence.  
-<darcy-actions> Her feelings towards its writer were at times widely different.  
-<darcy-actions> When she remembered the style of his address, she was still full of indignation.  
-<darcy-actions> When she considered how unjustly she had condemned and upbraided him, her anger was turned against herself.  
-<darcy-actions> His disappointed feelings became the object of compassion.  
-<darcy-actions> His attachment excited gratitude.  
-<darcy-actions> His general character excited respect.  
-<darcy-actions> She could not approve him.  
-<darcy-actions> She could not for a moment repent her refusal.  
-<darcy-actions> She did not feel the slightest inclination ever to see him again.  
-<darcy-actions> Mr. Darcy’s explanation, by restoring Bingley to all her former good opinion, heightened the sense of what Jane had lost.  
-
+<others-impressions-of-darcy> Elizabeth's feelings towards him were at times widely different.  
+<others-impressions-of-darcy> When Elizabeth remembered the style of his address, she was still full of indignation, until she considered how unjustly she had condemned and upbraided him.
+<others-impressions-of-darcy> His disappointed feelings became the object of compassion.  
+<others-impressions-of-darcy> His attachment excited gratitude.  
+<others-impressions-of-darcy> His general character excited respect.  
 <others-impressions-of-darcy> His affection was proved to have been sincere.  
 <others-impressions-of-darcy> His conduct was cleared of all blame, unless any could attach to the implicitness of his confidence in his friend.  
-
-
-
 
 
 
@@ -7646,9 +7384,7 @@ repeating something of Bingley, which might only grieve her sister
 further.
 
 
-
 (((((((No references)))))))
-
 
 
 
@@ -7698,11 +7434,7 @@ table. “What do you think? It is excellent news, capital news, and about
 a certain person that we all like.”
 
 
-
-
 ((((((((No references))))))))
-
-
 
 
 
@@ -7767,10 +7499,7 @@ Forster. I thought I should have died. And _that_ made the men suspect
 something, and then they soon found out what was the matter.”
 
 
-
 ((((((((No references))))))))
-
-
 
 
 
@@ -7833,9 +7562,7 @@ at the same time so vague and equivocal, that her mother, though often
 disheartened, had never yet despaired of succeeding at last.
 
 
-
 (((((((((No references)))))))))
-
 
 
 
@@ -7880,14 +7607,9 @@ Most earnestly did she labour to prove the probability of error, and
 seek to clear one, without involving the other.
 
 
-
-
 <others-impressions-of-darcy> Miss Bennet’s astonishment at Darcy's proposal was only lessened by the strong sisterly partiality which made any admiration of Elizabeth appear perfectly natural.  
 <others-impressions-of-darcy> Jane was sorry that Mr. Darcy should have delivered his sentiments in a manner so little suited to recommend them; but still more was she grieved for the unhappiness which her sister’s refusal must have given him.  
 <others-impressions-of-darcy> His being so sure of succeeding was wrong, said she, and certainly ought not to have appeared; but consider how much it must increase his disappointment.
-
-
-
 
 
 
@@ -7952,17 +7674,7 @@ Miss Bennet paused a little, and then replied, “Surely there can be no
 occasion for exposing him so dreadfully. What is your own opinion?”
 
 
-
-
-<others-impressions-of-darcy> It is really too distressing, I am sure you must feel it so.
-<others-impressions-of-darcy> There certainly was some great mismanagement in the education of those two young men. One has got all the goodness, and the other all the appearance of it.
-<others-impressions-of-darcy> I never thought Mr. Darcy so deficient in the _appearance_ of it as you used to do.
-<others-impressions-of-darcy> How unfortunate that you should have used such very strong expressions in speaking of Wickham to Mr. Darcy, for now they _do_ appear wholly undeserved.
-<darcy-actions> Darcy is mentioned in connection with the strong expressions Lizzy used about Wickham. 
-<darcy-actions> Mr. Darcy is implicated in the disappointment felt by Jane and Elizabeth regarding the situation with Wickham.
-<darcy-dialogue> “Certainly. But the misfortune of speaking with bitterness is a most natural consequence of the prejudices I had been encouraging."
-
-
+(((((((No references)))))))
 
 
 
@@ -8052,21 +7764,9 @@ estate that is not lawfully their own, so much the better. _I_ should be
 ashamed of having one that was only entailed on me.”
 
 
-
-
-
 <others-impressions-of-darcy> The general prejudice against Mr. Darcy is so violent, that it would be the death of half the good people in Meryton, to attempt to place him in an amiable light.
-<others-impressions-of-darcy> How sincerely she had been valued by his friend.
 <darcy-actions> Mr. Darcy has not authorized the communication of his sister’s affairs.
 <darcy-actions> Mr. Darcy's letter was not to be disclosed to others.
-<darcy-dialogue> "That it ought not to be attempted. Mr. Darcy has not authorized me to make his communication public."
-<darcy-dialogue> "On the contrary, every particular relative to his sister was meant to be kept as much as possible to myself."
-<darcy-dialogue> "Wickham will soon be gone; and, therefore, it will not signify to anybody here what he really is."
-<darcy-dialogue> "Some time hence it will be all found out, and then we may laugh at their stupidity in not knowing it before."
-<others-impressions-of-darcy> Mr. Darcy’s communication about his sister was meant to be kept private.
-
-
-
 
 
 
