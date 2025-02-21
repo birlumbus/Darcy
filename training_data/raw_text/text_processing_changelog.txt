@@ -7823,7 +7823,6 @@ whilst the luckless Kitty continued in the parlour repining at her fate
 in terms as unreasonable as her accent was peevish.
 
 
-
 <others-impressions-of-darcy> Elizabeth felt anew the justice of Mr. Darcy’s objections; and never had she before been so much disposed to pardon his interference in the views of his friend.
 
 
@@ -7875,10 +7874,7 @@ cause, his attentions had been withdrawn, her vanity would be gratified,
 and her preference secured, at any time, by their renewal.
 
 
-
-
-<others-impressions-of-darcy> Elizabeth had learned to detect, in the very gentleness which had first delighted her, an affectation and a sameness to disgust and weary.
-<others-impressions-of-darcy> She lost all concern for Mr. Wickham in finding herself thus selected as the object of such idle and frivolous gallantry.
+((((((No references))))))
 
 
 
@@ -7917,16 +7913,8 @@ serious tone, “that he is improved in essentials.”
 what he ever was.”
 
 
-
-
-<darcy-actions> He looked surprised, displeased, alarmed; but, with a moment’s recollection, and a returning smile, replied, that he had formerly seen him often.
-<darcy-actions> He soon afterwards added, “How long did you say that he was at Rosings?”
-<darcy-actions> He asked her how she had liked Colonel Fitzwilliam.
-<darcy-dialogue> How long did you say that he was at Rosings?
-<darcy-dialogue> And you saw him frequently?
-<darcy-dialogue> His manners are very different from his cousin’s.
-<darcy-dialogue> Indeed!
-<darcy-dialogue> In essentials, I believe, he is very much what he ever was.
+<others-impressions-of-darcy> His manners are very different from his cousin’s.
+<others-impressions-of-darcy> In essentials, I believe, he is very much what he ever was.
 <others-impressions-of-darcy> Mr. Darcy improves on acquaintance.
 
 
@@ -7978,14 +7966,7 @@ happiness of Lydia herself in bidding farewell, the more gentle adieus
 of her sisters were uttered without being heard.
 
 
-
-
-
-<darcy-actions> Elizabeth answered only by a slight inclination of the head.  
-<others-impressions-of-darcy> Mr. Darcy’s pride may be of service, if not to himself, to many others, for it must deter him from such foul misconduct as I have suffered by.  
-<others-impressions-of-darcy> His fear of his aunt has always operated, I know, when they were together.  
-<others-impressions-of-darcy> Mr. Darcy’s wish of forwarding the match with Miss de Bourgh, which I am certain he has very much at heart.
-
+(((((No references)))))
 
 
 
@@ -8044,11 +8025,7 @@ and Kitty made inevitable; and could she have included Jane in the
 scheme, every part of it would have been perfect.
 
 
-
-<others-impressions-of-darcy> Elizabeth had never been blind to the impropriety of her father’s behaviour as a husband.  
-<others-impressions-of-darcy> Elizabeth had always seen it with pain; but respecting his abilities, and grateful for his affectionate treatment of herself, she endeavoured to forget what she could not overlook.  
-<others-impressions-of-darcy> Elizabeth had never felt so strongly as now the disadvantages which must attend the children of so unsuitable a marriage.
-
+<others-impressions-of-darcy> Elizabeth realized Darcy was right about the behavior of her family.
 
 
 
@@ -8130,10 +8107,7 @@ and intelligence, which might supply it among themselves if there were
 disappointments abroad.
 
 
-
-
 ((((((((No references))))))))
-
 
 
 
@@ -8188,14 +8162,7 @@ to the scheme.
 To Pemberley, therefore, they were to go.
 
 
-
-
-<others-impressions-of-darcy> Wickham passed all his youth there, you know.  
-<darcy-actions> Elizabeth asked the chambermaid whether Pemberley were not a very fine place, what was the name of its proprietor, and, with no little alarm, whether the family were down for the summer?  
-<darcy-actions> Elizabeth’s alarms being now removed, she was at leisure to feel a great deal of curiosity to see the house herself.  
-<darcy-actions> When the subject was revived the next morning, she was again applied to, could readily answer, and with a proper air of indifference, that she had not really any dislike to the scheme.  
-
-
+(((((No references)))))
 
 
 
@@ -8257,11 +8224,9 @@ me; I should not have been allowed to invite them.”
 This was a lucky recollection--it saved her from something like regret.
 
 
-
-<others-impressions-of-darcy> Elizabeth was delighted. She had never seen a place for which nature had done more, or where natural beauty had been so little counteracted by an awkward taste.  
+<others-impressions-of-darcy> Elizabeth was delighted. In Darcy's home she had never seen a place for which nature had done more, or where natural beauty had been so little counteracted by an awkward taste. 
 <others-impressions-of-darcy> They were all of them warm in their admiration; and at that moment she felt that to be mistress of Pemberley might be something!  
 <others-impressions-of-darcy> Elizabeth saw, with admiration of his taste, that it was neither gaudy nor uselessly fine,--with less of splendour, and more real elegance, than the furniture of Rosings.  
-
 
 
 
