@@ -1,8 +1,8 @@
 import random
 
 
-input_file = '/Users/rhodri/Projects/Darcy/training_data/raw_text/text_processing_changelog.txt'
-output_file = '/Users/rhodri/Projects/Darcy/training_data/labeled_training_data.txt'
+input_file = './raw_text/text_processing_changelog.txt'
+output_file = './labeled_training_data.txt'
 dialogue_and_actions = []
 others_impressions = []
 

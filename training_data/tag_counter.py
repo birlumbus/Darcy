@@ -1,8 +1,8 @@
 import re
 from collections import defaultdict
 
-input_file = "/Users/rhodri/Projects/Darcy/training_data/labeled_training_data.txt"  # Replace with the actual file name
-output_file = "/Users/rhodri/Projects/Darcy/training_data/tag_counts.txt"
+input_file = "./labeled_training_data.txt"  # Replace with the actual file name
+output_file = "./tag_counts.txt"
 
 tag_counts = defaultdict(int)
 
