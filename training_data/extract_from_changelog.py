@@ -19,15 +19,15 @@ with open(input_file, 'r', encoding='utf-8') as infile:
 random.shuffle(others_impressions)
 
 # determine start point for insertions of others_impressions
-halfway_point = len(darcy_lines) // 2
-result_lines = darcy_lines[:halfway_point]
+halfway_point = len(dialogue_and_actions) // 2
+result_lines = dialogue_and_actions[:halfway_point]
 
 # determine interval by which others_impressions will be separated
-interval = len(darcy_lines[halfway_point:]) // len(others_impressions)
+interval = len(dialogue_and_actions[halfway_point:]) // len(others_impressions)
 others_index = 0
 
 
-for i, line in enumerate(darcy_lines[halfway_point:]):
+for i, line in enumerate(dialogue_and_actions[halfway_point:]):
     if others_index < len(others_impressions) and i % interval == 0:
         result_lines.append(others_impressions[others_index])
         others_index += 1
