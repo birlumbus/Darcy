@@ -3,7 +3,7 @@ import re
 
 input_file = "./training_text/labeled_training_data.txt"
 dialogue_file = "./training_text/darcy_dialogue_only.txt"
-actions_file = "./training_text/darcy_actions.txt"
+actions_file = "./training_text/darcy_actions_only.txt"
 impressions_file = "./training_text/others_impressions_only.txt"
 
 
