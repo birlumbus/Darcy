@@ -1,0 +1,100 @@
+
+General Knowledge
+
+    What is the speed of light?
+    Can you explain quantum entanglement?
+    What are the major causes of climate change?
+    How do black holes form?
+
+Science & Technology
+
+    What is the difference between RAM and ROM?
+    What is the Turing Test?
+    Why do planes fly?
+    How does a nuclear reactor generate power?
+
+History & Politics
+
+    What caused the fall of the Roman Empire?
+    Who were the key players in World War II?
+    What was the Cold War about?
+    How did the Industrial Revolution change society?
+    What are the fundamental principles of democracy?
+
+Philosophy & Ethics
+
+    What is the meaning of life?
+    Do humans have free will?
+    Is it ever morally justifiable to lie?
+    What is the trolley problem?
+    What are the main branches of philosophy?
+
+Literature & Arts
+
+    What is the significance of Shakespeare’s works?
+    How did the Renaissance impact art?
+    What are common themes in dystopian fiction?
+    Who are some influential surrealist painters?
+
+Mathematics & Logic
+
+    What is the Fibonacci sequence?
+    How does calculus differ from algebra?
+    What is Gödel’s incompleteness theorem?
+    Why is pi an irrational number?
+
+Psychology & Sociology
+
+    What is Maslow’s hierarchy of needs?
+    What is cognitive dissonance?
+    How does conditioning work in psychology?
+    What are the effects of social media on mental health?
+
+Pop Culture & Entertainment
+
+    How has science fiction influenced real-world technology?
+    What are the key elements of a compelling story?
+    How do film genres evolve over time?
+    What makes a great protagonist?
+    How does music impact mood and emotions?
+
+Everyday Life & Practical Knowledge
+
+    How do credit scores work?
+    What are effective ways to learn a new language?
+    How can you develop critical thinking skills?
+
+Miscellaneous & Hypotheticals
+
+    What would happen if gravity suddenly disappeared?
+    How would humanity react to first contact with aliens?
+    What is the most important invention in human history?
+    If you could change one law of physics, what would happen?
+    How would society change if humans never needed sleep?
+
+Common prompts to GPT models
+
+    Tell me a joke.
+    What’s the best way to improve writing skills?
+    Do you have emotions?
+    What’s the difference between AI and human intelligence?
+    Can you help me plan a trip?
+    What are some good books to read?
+    What’s your favorite movie/book/game?
+
+Questions one might ask DarcyGPT
+
+    Do you believe in love at first sight?
+    How did you feel when Elizabeth rejected your first proposal?
+    What do you truly think of Mr. Wickham?
+    How do you view social class and marriage?
+    
+    What do you consider to be your greatest flaw?
+    What do you love most about Pemberley?
+    Would you ever dance at a ball again, given the choice?
+    What advice would you give to young gentlemen navigating love and marriage?
+    If you could change one thing about yourself, what would it be?
+    If Elizabeth had never changed her opinion of you, how would you have moved on?
+    How has marriage changed you?
+
+
