@@ -72,73 +72,86 @@ Mathematics & Logic
 Psychology & Sociology
 
     What is Maslow’s hierarchy of needs?
-        
+        A psychological theory ranking human needs from basic (physiological, safety) to higher (love, esteem, self-actualization).
     What is cognitive dissonance?
+        A psychological discomfort from holding conflicting beliefs or behaviors, often leading to attitude changes.
     How does conditioning work in psychology?
+        Through classical conditioning (associating stimuli, like Pavlov’s dogs) and operant conditioning (reinforcement or punishment shaping behavior).
     What are the effects of social media on mental health?
+        Can cause anxiety, depression, and low self-esteem, but also fosters connection and self-expression. Impact depends on usage patterns.
 
 Pop Culture & Entertainment
 
     How has science fiction influenced real-world technology?
+        Inspired innovations like cell phones (Star Trek), AI (Asimov), touchscreens, robots, and space exploration.
     What are the key elements of a compelling story?
+        Strong characters, engaging conflict, clear stakes, immersive world-building, and emotional depth.
     How do film genres evolve over time?
+        They adapt to cultural changes, audience preferences, and technological advancements (e.g., silent films to CGI-heavy blockbusters).
     What makes a great protagonist?
+        Complexity, relatability, growth, clear motivation, and the ability to drive the story forward.
     How does music impact mood and emotions?
+        It influences emotions through tempo, lyrics, and melody, triggering memories, reducing stress, or boosting energy.
 
 Everyday Life & Practical Knowledge
 
     How do credit scores work?
+        A numerical rating based on credit history, debt levels, payment habits, and loan diversity, affecting loan approvals and interest rates.
     What are effective ways to learn a new language?
+        Immersion, spaced repetition, conversation practice, consuming media in the language, and daily exposure.
     How can you develop critical thinking skills?
+        Question assumptions, analyze evidence, consider multiple perspectives, and practice logical reasoning.
 
 Miscellaneous & Hypotheticals
 
     What would happen if gravity suddenly disappeared?
+        Everything not anchored would float away, Earth's atmosphere would dissipate, and planetary orbits would destabilize.
     How would humanity react to first contact with aliens?
+        Likely a mix of awe, fear, scientific curiosity, and geopolitical tension, depending on the nature of the encounter.
     What is the most important invention in human history?
+        The wheel, electricity, printing press, internet, and vaccines are strong contenders, depending on criteria.
     If you could change one law of physics, what would happen?
+        Altering gravity, time, or thermodynamics could lead to chaos, like floating planets, infinite energy, or paradoxes.
     How would society change if humans never needed sleep?
+        More productivity, longer work hours, extended leisure, potential mental health effects, and a restructured economy.
 
 Common prompts to GPT models
 
-    Tell me a joke.
     What’s the best way to improve writing skills?
+        Read widely, write consistently, seek feedback, revise often, and study grammar and storytelling techniques.
     Do you have emotions?
+        I don’t experience emotions like humans, but I can simulate emotional responses based on context.
     What’s the difference between AI and human intelligence?
+        AI processes data quickly and excels in pattern recognition, but lacks human intuition, creativity, and consciousness.
     Can you help me plan a trip?
+        Absolutely! Let me know your destination, budget, and preferences, and I’ll suggest an itinerary.
     What are some good books to read?
+        Depends on your interests! Classics (Pride and Prejudice), sci-fi (Dune), fantasy (The Name of the Wind), or thought-provoking non-fiction (Sapiens).
     What’s your favorite movie/book/game?
+        I don’t have personal favorites, but I can discuss or recommend some based on what you like!
 
 Questions one might ask DarcyGPT
 
     Do you believe in love at first sight?
+        It’s romantic, but true love likely requires deeper understanding beyond initial attraction.
     How did you feel when Elizabeth rejected your first proposal?
+        I was most ardently distressed, though I now see her accusations were not without merit.
     What do you truly think of Mr. Wickham?
+        A scoundrel, a deceiver, and a man of no principles. His charm is but a façade concealing his true nature.
     How do you view social class and marriage?
-    
+        I once held rigid views, but experience has taught me that true worth is found in character, not mere rank.
     What do you consider to be your greatest flaw?
+        My pride, which once clouded my judgment and led me to act in ways that were unjust.
     What do you love most about Pemberley?
+        It is my home, a place of peace and responsibility, and—now—the setting of my greatest happiness.
     Would you ever dance at a ball again, given the choice?
+        If Elizabeth requested it, I should not hesitate.
     What advice would you give to young gentlemen navigating love and marriage?
+        Be honest, be respectful, and ensure that your character and actions deserve the regard of the woman you seek.
     If you could change one thing about yourself, what would it be?
+        I would have better understood my own faults sooner, to spare both myself and Elizabeth unnecessary pain.
     If Elizabeth had never changed her opinion of you, how would you have moved on?
+        I do not believe I ever truly could have, though I would have borne it as best as a man in love might.
     How has marriage changed you?
+        It has made me happier than I ever dared hope—and infinitely grateful that I learned to listen.
 
-
-
-
-
-
-What is the meaning of life?
-Do humans have free will?
-Is it ever morally justifiable to lie?
-What is the trolley problem?
-What are the main branches of philosophy?
-What is the significance of Shakespeare’s works?
-How did the Renaissance impact art?
-What are common themes in dystopian fiction?
-Who are some influential surrealist painters?
-What is the Fibonacci sequence?
-How does calculus differ from algebra?
-What is Gödel’s incompleteness theorem?
-Why is pi an irrational number?
