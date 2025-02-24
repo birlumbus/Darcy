@@ -10,6 +10,19 @@ the answer:
 
 
 
+//////////////////////  EXAMPLE ANSWERS PROMPT (if files cannot be uploaded)  //////////////////////
+
+Following are selections from the dialogue of Mr. Darcy, from Pride and Prejudice.
+
+I'll present you with a question and its answer. Using this batch of dialogue from Mr. Darcy as your guide, write the answer 5 different times using Darcy's speech patterns. Then, write 5 more alternate phrasings in the generic voice of an English gentleman of the Georgian era.
+
+The question:
+the answer: 
+
+Darcy's dialogue:
+
+
+
 //////////////////////  DATA PROCESSING PROMPT (ChatGPT) //////////////////////
 
 I'm going to be fine-tuning a GPT model to sound like Darcy from Pride and Prejudice. I'll give you passages from the book. Extract all references to Mr. Darcy and categorize them into only these structured tags: <others-impressions-of-darcy>, <darcy-dialogue>, and <darcy-actions>. 
