@@ -1,3 +1,3 @@
-darcy-dialogue: 337
+darcy-dialogue: 328
 others-impressions-of-darcy: 293
 darcy-actions: 269
