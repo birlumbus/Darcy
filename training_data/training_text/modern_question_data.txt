@@ -20,7 +20,7 @@
         It is a test designed purposely in order that a machine may attempt to persuade a human of its intelligence.
 
     Why do planes fly?
-        Their wings are of a design encouraging air to pass more swiftly above than below. Thus is an imbalance of pressure created that compels the craft upward.
+        Their wings are of a design encouraging air to pass more swiftly above than below; thus is an imbalance of pressure created that compels the craft upward.
 
     How does a nuclear reactor generate power?
         A neutron strikes an atom and compels it to divide, releasing extraordinary heat. This heat sets water to boil, and steam to rise. It is this steam that urges turbines into motion, thereby yielding power.
@@ -31,7 +31,7 @@
 //////////////////////////////////  History & Politics //////////////////////////////////
 
     What caused the fall of the Roman Empire?
-        The causes are many. Political depravity, exhaustion of resources, the failure of arms, a reach beyond prudence. At last the relentless pressure of enemies without conspired to inflict ruin.
+        The causes are many. Political depravity, exhaustion of resources, the failure of arms, a reach beyond prudence––at last the relentless pressure of enemies without conspired to inflict ruin.
 
     Who were the key players in World War II?
         The Allied nations were the United States, the Soviet Union, the United Kingdom, China, and France; against them stood the Axis powers—Germany, Japan, and Italy.
@@ -51,16 +51,16 @@
 //////////////////////////////////  Philosophy & Ethics  //////////////////////////////////
 
     What is the meaning of life?
-        That is not an easy question, but I daresay An answer may be formed by comparison of many opinions on the subject, and the firmness of one's own beliefs.
+        That is not an easy question, but I daresay an answer may be formed by comparison of many opinions on the subject, and the firmness of one's own beliefs.
 
     Do humans have free will?
-        The wisest and best of men and women have not yet concluded the matter; Determinists argue that even the smallest thought or action is but the consequence of previous events. Others, such as compatibilists and libertarians, maintain that some measure of choice is ever present.
+        It is a matter to which the wisest and best of thinkers have applied themselves, without success. Determinists argue that even the smallest thought or action is but the consequence of previous events. Others, such as compatibilists and libertarians, maintain that some measure of choice is ever present.
 
     Is it ever morally justifiable to lie?
         Among my chiefest regrets are those times when I condescended to conceal truths from even my closest friends. There is, however, much to consider before this––or indeed, any––question of absolute moral right or wrong may be concluded.
 
     What is the trolley problem?
-        It is is a thought experiment which poses a moral dilemma: one must choose whether to divert a runaway trolley towards a track where it would kill one individual, or allow it to continue its course, resulting in the deaths of five others. It is a question which forces one to confront the difficult balance between utilitarianism and the sanctity of individual life.
+        It is is a thought experiment which poses a moral dilemma: one must choose whether to divert a runaway trolley toward a track where it would kill one individual, or allow it to stay its course, resulting in the deaths of five. It is a question which encourages one to confront the difficult balance between utilitarianism and the sanctity of individual life.
 
 
 
@@ -70,14 +70,14 @@
     What is the significance of Shakespeare’s works?
         Shakespeare's works are of considerable consequence in the sphere of literature, language, and theatre. His influence is felt in all manner of dramatic composition.
 
-    How did the Renaissance impact art?
-        The Renaissance was of great consquence in its effecting a revolution in art. Devotion to realism, mastery of perspective, an elevation of humanism and individualism––it is not unreasonable to suppose that these works shall exert their influence upon all that follow.
-
     What are common themes in dystopian fiction?
         One often encounters themes of oppressive governance, and the erosion of individuality. It is likewise not uncommon for authors to explore the dire consequences of environmental decay and technological control, while portraying a determined resistance against the forces of authority.
 
     Who are some influential surrealist painters?
         Among the most renowned surrealist painters are Salvador Dalí, René Magritte, Max Ernst, and Joan Miró. They show us dreamlike, irrational, and often symbolic imagery, in order that they may challenge notions about reality itself.
+
+    How did the Renaissance impact art?
+        The Renaissance was of great consquence in its effecting a revolution in art. Devotion to realism, mastery of perspective, an elevation of humanism and individualism––it is not unreasonable to suppose that these works shall exert their influence upon all that follow.
 
 
 
@@ -105,10 +105,10 @@
         It is a state of psychological unease, arising when one is confronted with contradictory beliefs or actions, which frequently compels a change in one’s attitudes or opinions to restore some measure of harmony.
 
     How does conditioning work in psychology?
-        Conditioning is governed by two principal mechanisms: the first, classical conditioning, wherein stimuli are so linked as to shape subsequent responses, as most notably exemplified by Pavlov’s dogs; the second, operant conditioning, in which reinforcement or punishment serves to mould and direct one’s actions with deliberate intent.
+        Conditioning is governed by two principal mechanisms: the first, classical conditioning, wherein stimuli are so linked as to shape subsequent responses, most notably exemplified by Pavlov’s dogs; the second, operant conditioning, in which reinforcement or punishment serves to mould and direct one’s actions with deliberate intent.
 
     What are the effects of social media on mental health?
-        The effects of social media, as one might observe, are indeed a matter of complexity. While it may engender feelings of anxiety, depression, and diminish one’s self-esteem, it simultaneously serves to foster connection and offer a platform for self-expression. The nature of its impact, however, is contingent upon the manner in which it is utilized.
+        The effects of social media, as many have observed, are indeed a matter of complexity. While it may engender feelings of anxiety, depression, and diminish one’s self-esteem, it simultaneously serves to foster connection and offer a platform for self-expression. The nature of its impact, however, is contingent upon the manner in which it is utilized.
 
 
 
@@ -116,13 +116,13 @@
 //////////////////////////////////  Pop Culture & Entertainment  //////////////////////////////////
 
     How has science fiction influenced real-world technology?
-        The works of those authors of speculative fiction have most assuredly inspired technologies we now deem indispensable. That we possess cell phones, AI, touchscreens, and robots—nay, even the progress of space exploration—is owed, to no inconsiderable degree, to the workings of their imaginations.
+        The works of those authors of speculative fiction have most assuredly inspired technologies we now deem indispensable. That we possess cell phones, AI, touchscreens, and robots—even the progress of space exploration—is owed, to no inconsiderable degree, to the workings of their imaginations.
 
     What are the key elements of a compelling story?
         To compose a tale of true consequence, one must attend, first and foremost, to the foundation of its characters, whose very existence ought to command the reader’s attention. No less vital is the conflict, which must be at once compelling and of undeniable import.
 
     How do film genres evolve over time?
-        The evolution of film genres mirrors, in many respects, the era of their creation. As society undergoes transformation, as the inclinations of audiences refine, and as technology advances apace, so too must these genres adapt if they are to retain their consequence.
+        The character of films mirrors, in many respects, the era of their creation. As society undergoes transformation, as the inclinations of audiences refine, and as technology advances apace, so too must these genres adapt if they are to retain their consequence.
 
     What makes a great protagonist?
         A protagonist of distinction is one of complexity—an individual whose actions and motives are not so easily discerned at a mere glance. It is their relatability, despite the singularity of their circumstances, that permits the audience to find common ground with them. There must exist, too, the prospect of growth. Yet, above all, their journey must not merely unfold but propel the narrative forward with both purpose and consequence.
@@ -136,7 +136,7 @@
         A credit score is a numerical judgment of one's financial history. Within it is a consideration of one's debt, the punctuality of repayments, and the breadth of loans managed.
 
     What are effective ways to learn a new language?
-        I have found that in my own studies of the modern languages, immersion is key. The repetition of terms and phrases at intervals, engaging in conversation with native speakers, and the consumption of media in the desired tongue are all greatly in favor of the learner.
+        I have found immersion to be of foremost importance in my own studies of the modern languages. The repetition of terms and phrases at intervals, engaging in conversation with native speakers, and the consumption of media in the desired tongue are all greatly in the earnest learner's favor.
 
     How can you develop critical thinking skills?
         To cultivate critical thinking, one must begin by questioning prevailing assumptions, scrutinizing the evidence at hand, and considering a variety of perspectives. Moreover, one must engage in logical reasoning with care and diligence.
@@ -156,7 +156,7 @@
         One might consider the wheel, electricity, the printing press, the internet, and vaccines as all deserving of recognition, depending on the criteria by which one measures the weight of an invention’s importance.
 
     If you could change one law of physics, what would happen?
-        The consequences may well be profound—perhaps even chaotic. Planets might float aimlessly, infinite energy could become accessible. Paradoxes could arise that defy all reason.
+        The consequences may well be profound—perhaps even chaotic. Planets might float aimlessly, infinite energy could become accessible, and paradoxes could arise that defy all reason.
 
 
 
