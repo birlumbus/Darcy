@@ -3,7 +3,7 @@ from transformers import EarlyStoppingCallback
 import torch
 
 # load tokenizer and model
-model_name = "gpt2-medium"  # Can be adjusted if needed
+model_name = "gpt2-medium"
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 model = GPT2LMHeadModel.from_pretrained(model_name)
 
@@ -25,7 +25,7 @@ data_collator = DataCollatorForLanguageModeling(
 
 # optimized training arguments
 training_args = TrainingArguments(
-    output_dir="./darcy_gpt2",
+    output_dir="./model/darcy_gpt",
     overwrite_output_dir=True,
     num_train_epochs=5,
     per_device_train_batch_size=4,
@@ -35,7 +35,7 @@ training_args = TrainingArguments(
     save_steps=500,
     save_total_limit=2,
     evaluation_strategy="steps",
-    logging_dir='./logs',
+    logging_dir='./model/logs',
     logging_steps=100,
     log_level="info",
     load_best_model_at_end=True,
@@ -54,5 +54,5 @@ trainer = Trainer(
 # train!
 trainer.train()
 
-trainer.save_model("./darcy_gpt2")
-tokenizer.save_pretrained("./darcy_gpt2")
+trainer.save_model("./model/darcy_gpt")
+tokenizer.save_pretrained("./model/darcy_gpt")
