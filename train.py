@@ -25,7 +25,7 @@ data_collator = DataCollatorForLanguageModeling(
 
 # optimized training arguments
 training_args = TrainingArguments(
-    output_dir="./model/darcy_gpt",
+    output_dir="./model/darcy-gpt",
     overwrite_output_dir=True,
     num_train_epochs=5,
     per_device_train_batch_size=4,
@@ -54,5 +54,5 @@ trainer = Trainer(
 # train!
 trainer.train()
 
-trainer.save_model("./model/darcy_gpt")
-tokenizer.save_pretrained("./model/darcy_gpt")
+trainer.save_model("./model/darcy-gpt")
+tokenizer.save_pretrained("./model/darcy-gpt")
