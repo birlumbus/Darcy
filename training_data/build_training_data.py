@@ -3,13 +3,13 @@ import tag_counter
 
 # input files
 changelog_file = "./unprocessed_text/text_processing_changelog.txt"
-questions_file = "./training_text/questions.txt"
+questions_file = "./training_text/isolated_categories/questions.txt"
 
 # output files
 labeled_data_file = "./training_text/labeled_training_data.txt"
-dialogue_file = "./training_text/darcy_dialogue_only.txt"
-actions_file = "./training_text/darcy_actions_only.txt"
-impressions_file = "./training_text/others_impressions_only.txt"
+dialogue_file = "./training_text/isolated_categories/darcy_dialogue_only.txt"
+actions_file = "./training_text/isolated_categories/darcy_actions_only.txt"
+impressions_file = "./training_text/isolated_categories/others_impressions_only.txt"
 tag_count_file = "./training_text/tag_counts.txt"
 
 dialogue_and_actions = []
