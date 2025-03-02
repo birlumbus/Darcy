@@ -1,5 +1,6 @@
 import re
 
+
 def extract_dialogue(input_file, output_file):
     dialogue_pattern = re.compile(r'[“](.*?)[”]', re.DOTALL)
     
@@ -22,4 +23,3 @@ def extract_dialogue(input_file, output_file):
 input_file = "./unprocessed_text/pride_and_prejudice.txt"
 output_file = "./unprocessed_text/all_dialogue.txt"
 extract_dialogue(input_file, output_file)
-print(f"Extracted dialogue saved to {output_file}")
