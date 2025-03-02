@@ -13,7 +13,7 @@ if torch.backends.mps.is_available():
     torch.set_default_dtype(torch.bfloat16)
 
 # prep dataset
-train_file = "./training_data/labeled_training_data.txt"
+train_file = "./training_data/training_text/labeled_training_data.txt"
 train_dataset = TextDataset(
     tokenizer=tokenizer,
     file_path=train_file,
@@ -34,7 +34,7 @@ training_args = TrainingArguments(
     weight_decay=0.01,  # regularization
     save_steps=500,
     save_total_limit=2,
-    evaluation_strategy="steps",
+    evaluation_strategy="no",
     logging_dir='./model/logs',
     logging_steps=100,
     log_level="info",
