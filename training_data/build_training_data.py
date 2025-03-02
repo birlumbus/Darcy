@@ -1,5 +1,4 @@
-import re
-import os
+import tag_counter
 
 
 # input files
@@ -11,6 +10,7 @@ labeled_data_file = "./training_text/labeled_training_data.txt"
 dialogue_file = "./training_text/darcy_dialogue_only.txt"
 actions_file = "./training_text/darcy_actions_only.txt"
 impressions_file = "./training_text/others_impressions_only.txt"
+tag_count_file = "./training_text/tag_counts.txt"
 
 dialogue_and_actions = []
 others_impressions = []
@@ -95,11 +95,11 @@ def main():
     save_labeled_data(final_data)
     print("Isolating categories...")
     isolate_categories()
-    print("Extraction, interleaving, and categorization complete.")
+    print("Counting tags...")
+    tag_counter.count_tags(labeled_data_file, tag_count_file)
+    print("\nExtraction and categorization complete.\n")
 
 
 if __name__ == "__main__":
     main()
 
-
-print("\nExtraction and categorization complete.\n")
