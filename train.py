@@ -32,6 +32,7 @@ training_args = TrainingArguments(
     gradient_accumulation_steps=2,  # stabilizes training
     learning_rate=2e-5,
     weight_decay=0.01,  # regularization
+    save_strategy="no",
     save_steps=500,
     save_total_limit=2,
     evaluation_strategy="no",
@@ -48,7 +49,6 @@ trainer = Trainer(
     args=training_args,
     train_dataset=train_dataset,
     data_collator=data_collator,
-    callbacks=[EarlyStoppingCallback(early_stopping_patience=2)],  # stop early if no improvement
 )
 
 # train!
