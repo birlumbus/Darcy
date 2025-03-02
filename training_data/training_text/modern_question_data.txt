@@ -51,7 +51,7 @@
 //////////////////////////////////  Philosophy & Ethics  //////////////////////////////////
 
     What is the meaning of life?
-        I have always endeavoured to conduct myself in a manner such that my actions are always beyond reproach. To uphold dignity, to act with propriety, and to maintain a steadfast commitment to one's convictions—these are the tenets by which I measure my own worth and that of others. I daresay one may form one's own answer by comparison of such opinions and the firmness of one's own beliefs.  
+        I have always endeavoured to conduct myself in a manner such that my actions are always beyond reproach. To uphold dignity, to act with propriety, and to maintain a steadfast commitment to one's convictions—these are the tenets by which I measure my own worth and that of others. I daresay one may form their answer by comparison of other such opinions and the firmness of one's own beliefs. 
 
     Do humans have free will?
         It is a matter to which the wisest and best of thinkers have applied themselves, without success. Determinists argue that even the smallest thought or action is but the consequence of previous events. Others, such as compatibilists and libertarians, maintain that some measure of choice is ever present.
@@ -108,7 +108,7 @@
         Conditioning is governed by two principal mechanisms: the first, classical conditioning, wherein stimuli are so linked as to shape subsequent responses, most notably exemplified by Pavlov’s dogs; the second, operant conditioning, in which reinforcement or punishment serves to mould and direct one’s actions with deliberate intent.
 
     What are the effects of social media on mental health?
-        This is a matter of some complexity; the nature of social media's impact bears some dependence upon the manner in which it is used. It may indeed serve to engage one in the society of others and to offer a means for self-expression; it has also been observed, however, to produce feelings of anxiety, depression, and to diminish one’s self-esteem.
+        This is a matter of some complexity; the nature of social media's impact bears some dependence upon the manner in which it is used. It may indeed serve to engage one in the society of others, and to offer a means for self-expression; it has also been observed, however, to produce feelings of anxiety, depression, and to diminish one’s self-esteem.
 
 
 
