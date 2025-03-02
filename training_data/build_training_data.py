@@ -19,9 +19,19 @@ with open(changelog_file, "r", encoding="utf-8") as infile:
         elif line.startswith("<others-impressions-of-darcy>"):
             others_impressions.append(line)
 
+# interleave others_impressions after halfway point
+halfway_point = len(dialogue_and_actions) // 2
+interval = (len(dialogue_and_actions) - halfway_point) // max(1, len(others_impressions))
+interleaved_data = dialogue_and_actions[:halfway_point]
+
+for i, line in enumerate(dialogue_and_actions[halfway_point:], start=1):
+    interleaved_data.append(line)
+    if others_impressions and i % interval == 0:
+        interleaved_data.append(others_impressions.pop(0))
+
 # save into labeled_training_data.txt
 with open(labeled_data_file, "w", encoding="utf-8") as outfile:
-    for line in dialogue_and_actions + others_impressions:
+    for line in interleaved_data:
         outfile.write(line + "\n")
 
 # isolate categories into separate files
