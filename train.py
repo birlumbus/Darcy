@@ -1,5 +1,5 @@
 import json
-from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments
+from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments, DataCollatorForLanguageModeling
 from torch.utils.data import Dataset
 
 
@@ -34,6 +34,7 @@ class DarcyDataset(Dataset):
 
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2-medium")
+tokenizer.pad_token = tokenizer.eos_token
 # hoping special tokens will improve tag recognition during training
 special_tokens_dict = {'additional_special_tokens': ["[CATEGORY:", "[TEXT:"]}
 num_added_toks = tokenizer.add_special_tokens(special_tokens_dict)
@@ -43,8 +44,12 @@ model = GPT2LMHeadModel.from_pretrained("gpt2-medium")
 model.resize_token_embeddings(len(tokenizer))
 
 # instantiate dataset
-formatted_texts = load_data("labeled_training_data.json")
+formatted_texts = load_data("./training_data/training_text/labeled_training_data.json")
 dataset = DarcyDataset(formatted_texts, tokenizer)
+
+# data collator for dynamic input padding
+data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+
 
 # build trainer
 training_args = TrainingArguments(
@@ -61,7 +66,9 @@ trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=dataset,
+    data_collator=data_collator,
 )
+
 
 # train!
 trainer.train()
