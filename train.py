@@ -1,5 +1,5 @@
 import json
-from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments, DataCollatorForLanguageModeling
+from transformers import GPT2TokenizerFast, GPT2LMHeadModel, Trainer, TrainingArguments, DataCollatorForLanguageModeling
 from torch.utils.data import Dataset
 
 
@@ -14,15 +14,21 @@ def load_data(json_file):
         formatted_samples.append(formatted_text)
     return formatted_samples
 
+
+
 # create DarcyDataset class
 class DarcyDataset(Dataset):
     def __init__(self, texts, tokenizer, block_size=512):
         self.examples = []
         for text in texts:
-            tokenized_text = tokenizer.encode(text, add_special_tokens=True)
-            if len(tokenized_text) > block_size:
-                tokenized_text = tokenized_text[:block_size]
-            self.examples.append(tokenized_text)
+            tokenized = tokenizer(
+                text,
+                add_special_tokens=True,
+                truncation=True,
+                max_length=block_size,
+                padding="max_length",
+            )
+            self.examples.append(tokenized["input_ids"])
     
     def __len__(self):
         return len(self.examples)
@@ -33,7 +39,7 @@ class DarcyDataset(Dataset):
         return {"input_ids": input_ids, "labels": input_ids}
 
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2-medium")
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2-medium")
 tokenizer.pad_token = tokenizer.eos_token
 # hoping special tokens will improve tag recognition during training
 special_tokens_dict = {'additional_special_tokens': ["[CATEGORY:", "[TEXT:"]}
@@ -47,8 +53,8 @@ model.resize_token_embeddings(len(tokenizer))
 formatted_texts = load_data("./training_data/training_text/labeled_training_data.json")
 dataset = DarcyDataset(formatted_texts, tokenizer)
 
-# data collator for dynamic input padding
-data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+# # data collator for dynamic input padding
+# data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
 
 # build trainer
@@ -66,7 +72,7 @@ trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=dataset,
-    data_collator=data_collator,
+#     data_collator=data_collator,
 )
 
 
