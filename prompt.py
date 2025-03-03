@@ -2,7 +2,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
 
 # load model
-model_path = "./darcy_gpt2"
+model_path = "./model/darcy-gpt"
 tokenizer = GPT2Tokenizer.from_pretrained(model_path)
 model = GPT2LMHeadModel.from_pretrained(model_path)
 
@@ -21,6 +21,6 @@ def generate_text(prompt, max_length=100):
     return generated_text
 
 # test prompt
-prompt = "How wealthy are you, Mr. Darcy?"
+prompt = "What's the speed of light?"
 generated = generate_text(prompt, max_length=150)
 print(f"Generated text:\n{generated}")
