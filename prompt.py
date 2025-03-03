@@ -21,6 +21,6 @@ def generate_text(prompt, max_length=100):
     return generated_text
 
 # test prompt
-prompt = "What's the speed of light?"
+prompt = input("Enter prompt:\n")
 generated = generate_text(prompt, max_length=150)
 print(f"Generated text:\n{generated}")
