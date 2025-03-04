@@ -78,3 +78,7 @@ trainer = Trainer(
 
 # train!
 trainer.train()
+
+# save tokenizer, because I've made changes to it
+tokenizer.save_pretrained("./model/darcy-gpt")
+
