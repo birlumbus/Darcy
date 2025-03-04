@@ -6368,7 +6368,7 @@ suit.
 <darcy-actions> After a silence of several minutes, Mr. Darcy came towards her in an agitated manner.
 <darcy-dialogue> In vain have I struggled. It will not do. My feelings will not be repressed.
 <darcy-dialogue> You must allow me to tell you how ardently I admire and love you.
-<darcy-action> His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.
+<darcy-actions> His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.
 
 
 
