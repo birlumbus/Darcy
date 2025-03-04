@@ -61,8 +61,9 @@ dataset = DarcyDataset(formatted_texts, tokenizer)
 training_args = TrainingArguments(
     output_dir="./model/darcy-gpt",
     overwrite_output_dir=True,
-    num_train_epochs=3,
+    num_train_epochs=2,
     per_device_train_batch_size=2,
+    learning_rate=1e-5,
     save_steps=500,
     save_total_limit=2,
     prediction_loss_only=True,
@@ -79,6 +80,8 @@ trainer = Trainer(
 # train!
 trainer.train()
 
-# save tokenizer, because I've made changes to it
+# explicitly save model
+trainer.save_model("./model/darcy-gpt")
+# also save tokenizer, because I've made changes to it
 tokenizer.save_pretrained("./model/darcy-gpt")
 
