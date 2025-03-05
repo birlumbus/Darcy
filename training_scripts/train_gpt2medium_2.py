@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 
 gpt_model = "gpt2-medium"
 darcy_gpt_loc = "../model/darcy-gpt2-medium-2"
-training_data_loc = "../training_data/training_text/labeled_training_data_2.json"
+training_data_loc = "../training_data/training_text/final_json/labeled_training_data_2.json"
 
 
 # returns list of formatted data; preserves order from json
