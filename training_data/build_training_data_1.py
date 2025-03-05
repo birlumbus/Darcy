@@ -18,7 +18,7 @@ labeled_data_file = "./training_text/final_txt/labeled_training_data_1.txt"
 dialogue_file = "./training_text/isolated_categories/darcy_dialogue_only.txt"
 actions_file = "./training_text/isolated_categories/darcy_actions_only.txt"
 impressions_file = "./training_text/isolated_categories/others_impressions_only.txt"
-tag_count_file = "./training_text/final_txt/tag_counts_1.txt"
+tag_count_file = "./training_text/tag_counts_1.txt"
 
 dialogue_and_actions = []
 others_impressions = []
