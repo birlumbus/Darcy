@@ -111,6 +111,7 @@
 <darcy-actions> In a hurried manner, Mr. Darcy immediately began an inquiry after her health, imputing his visit to a wish of hearing that she were better.
 <darcy-actions> He sat down for a few moments, and then getting up, walked about the room.
 <darcy-actions> After a silence of several minutes, Mr. Darcy came towards her in an agitated manner.
+<darcy-actions> His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit.
 <darcy-actions> He caught Elizabeth's refusal with surprise and resentment.
 <darcy-actions> His complexion became pale with anger, the disturbance of his mind visible in every feature.
 <darcy-actions> He struggled for the appearance of composure, not opening his lips until he believed himself to have attained it.
@@ -239,6 +240,7 @@
 <darcy-actions> He told her of feelings which, in proving of what importance she was to him, made his affection every moment more valuable.
 <darcy-actions> Elizabeth soon learnt that they were indebted for their present good understanding to the efforts of his aunt, who _did_ call on him in her return through London, and there relate her journey to Longbourn, its motive, and the substance of her conversation with Elizabeth; dwelling emphatically on every expression of the latter, which, in her Ladyship’s apprehension, peculiarly denoted her perverseness and assurance. This caused Darcy's return.
 <darcy-actions> Mr. Darcy believed the letter to be written in a dreadful bitterness of spirit.
+<darcy-actions> Mr. Darcy hoped Elizabeth had destroyed his letter.
 <darcy-actions> Darcy believed himself to have been selfish all his life, though not in principle.
 <darcy-actions> Darcy admitted that his parents allowed, encouraged, and even taught him to be selfish and overbearing.
 <darcy-actions> Darcy acknowledged that he came to Elizabeth without a doubt of his reception.

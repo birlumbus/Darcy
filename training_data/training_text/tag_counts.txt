@@ -1,5 +1,5 @@
-darcy-dialogue: 327
+darcy-dialogue: 328
 others-impressions-of-darcy: 293
-darcy-actions: 269
+darcy-actions: 271
 question: 40
 answer: 40
