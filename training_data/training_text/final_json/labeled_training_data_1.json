@@ -144,6 +144,10 @@
         "content": "He requested to be allowed the honour of her hand, but was refused."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I should imagine not."
+    },
+    {
         "category": "darcy-actions",
         "content": "He was thinking of her with some complacency."
     },
@@ -192,16 +196,16 @@
         "content": "Not at all, they were brightened by the exercise."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy replied with composure to Miss Bingley's teasing."
-    },
-    {
         "category": "question",
         "content": "What are the major causes of climate change?"
     },
     {
         "category": "answer",
         "content": "It is greatly the fault of human industry; excessive indulgence in fossil fuels, heedless destruction of forests, and the unchecked release of greenhouse gases conspire together to alter our environment."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy replied with composure to Miss Bingley's teasing."
     },
     {
         "category": "darcy-dialogue",
@@ -288,16 +292,16 @@
         "content": "You are mistaken. I write rather slowly."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I have already told her so once, by your desire."
-    },
-    {
         "category": "question",
         "content": "How do black holes form?"
     },
     {
         "category": "answer",
         "content": "When a star of considerable magnitude has spent the last of its fuel, it yields to its own gravity, collapsing into a point of infinite density."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "I have already told her so once, by your desire."
     },
     {
         "category": "darcy-dialogue",
@@ -384,16 +388,16 @@
         "content": "Indeed I do not dare."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "Have you anything else to propose for my domestic felicity?"
-    },
-    {
         "category": "question",
         "content": "What is the difference between RAM and ROM?"
     },
     {
         "category": "answer",
         "content": "RAM, known as Random Access Memory, is volatile and dependent upon a device's power to maintain its contents. ROM, known as Read-Only Memory, persists independent of any similar sustenance."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "Have you anything else to propose for my domestic felicity?"
     },
     {
         "category": "darcy-actions",
@@ -480,16 +484,16 @@
         "content": "Yes, vanity is a weakness indeed. But pride--where there is a real superiority of mind--pride will be always under good regulation."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "No, I have made no such pretension. I have faults enough, but they are not, I hope, of understanding."
-    },
-    {
         "category": "question",
         "content": "What is the Turing Test?"
     },
     {
         "category": "answer",
         "content": "It is a test designed purposely to examine whether a machine is capable of human intelligence."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "No, I have made no such pretension. I have faults enough, but they are not, I hope, of understanding."
     },
     {
         "category": "darcy-dialogue",
@@ -576,16 +580,16 @@
         "content": "Do you talk by rule, then, while you are dancing?"
     },
     {
-        "category": "darcy-dialogue",
-        "content": "Are you consulting your own feelings in the present case, or do you imagine that you are gratifying mine?"
-    },
-    {
         "category": "question",
         "content": "Why do planes fly?"
     },
     {
         "category": "answer",
         "content": "Their wings are so shaped as to encourage air to pass more swiftly above than below; thus is an imbalance of pressure created that compels the craft upward."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "Are you consulting your own feelings in the present case, or do you imagine that you are gratifying mine?"
     },
     {
         "category": "darcy-dialogue",
@@ -672,16 +676,16 @@
         "content": "Mr. Darcy was eyeing Mr. Collins with unrestrained wonder."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy replied with an air of distant civility."
-    },
-    {
         "category": "question",
         "content": "How does a nuclear reactor generate power?"
     },
     {
         "category": "answer",
         "content": "A neutron strikes an atom, whereupon the atom divides, releasing extraordinary heat. This heat sets water to boil, and steam to rise. It is this steam that urges turbines into motion, thereby yielding power."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy replied with an air of distant civility."
     },
     {
         "category": "darcy-actions",
@@ -768,16 +772,16 @@
         "content": "Mr. Darcy spoke with affectionate praise of his sister’s proficiency."
     },
     {
-        "category": "darcy-actions",
-        "content": "Elizabeth and Colonel Fitzwilliam conversed with so much spirit and flow as to draw the attention of Lady Catherine herself, as well as of Mr. Darcy."
-    },
-    {
         "category": "question",
         "content": "What caused the fall of the Roman Empire?"
     },
     {
         "category": "answer",
         "content": "The causes are many. Political depravity, exhaustion of resources, the failure of arms, a reach beyond prudence––at last the relentless pressure of enemies without conspired to inflict its ruin."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Elizabeth and Colonel Fitzwilliam conversed with so much spirit and flow as to draw the attention of Lady Catherine herself, as well as of Mr. Darcy."
     },
     {
         "category": "darcy-dialogue",
@@ -864,16 +868,16 @@
         "content": "I should not be surprised if he were to give it up as soon as any eligible purchase offers."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "This seems a very comfortable house."
-    },
-    {
         "category": "question",
         "content": "Who were the key players in World War II?"
     },
     {
         "category": "answer",
         "content": "The Allied nations were the United States, the Soviet Union, the United Kingdom, China, and France; against them stood the Axis powers—Germany, Japan, and Italy."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "This seems a very comfortable house."
     },
     {
         "category": "darcy-dialogue",
@@ -960,16 +964,16 @@
         "content": "He actually thought it necessary to turn back and walk with her."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy was concerned in the measures taken to separate Mr. Bingley and Jane."
-    },
-    {
         "category": "question",
         "content": "What was the Cold War about?"
     },
     {
         "category": "answer",
         "content": "The Cold War was an arduous contention spanning from 1947 to 1991, wherein the United States, in defense of capitalism, stood opposed to the Soviet Union, the champion of communism. Their struggle was waged through lesser conflicts, the subtle arts of espionage, and a race for nuclear supremacy."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy was concerned in the measures taken to separate Mr. Bingley and Jane."
     },
     {
         "category": "darcy-actions",
@@ -998,6 +1002,10 @@
     {
         "category": "darcy-dialogue",
         "content": "You must allow me to tell you how ardently I admire and love you."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "His sense of her inferiority, of its being a degradation, of the family obstacles which judgment had always opposed to inclination, were dwelt on with a warmth which seemed due to the consequence he was wounding, but was very unlikely to recommend his suit."
     },
     {
         "category": "darcy-actions",
@@ -1052,20 +1060,20 @@
         "content": "And this is all the reply which I am to have the honour of expecting!"
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I might, perhaps, wish to be informed why, with so little endeavour at civility, I am thus rejected. But it is of small importance."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy changed colour."
-    },
-    {
         "category": "question",
         "content": "How did the Industrial Revolution change society?"
     },
     {
         "category": "answer",
         "content": "Nations fixed their minds on industry; former agricultural labourers were drawn from the country into cities, and the arts of invention and ambition unsettled the order of society for ever."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "I might, perhaps, wish to be informed why, with so little endeavour at civility, I am thus rejected. But it is of small importance."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy changed colour."
     },
     {
         "category": "darcy-actions",
@@ -1148,20 +1156,20 @@
         "content": "Mr. Darcy held out a letter, which Elizabeth instinctively took."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy turned again into the plantation and was soon out of sight."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy writes in a close hand."
-    },
-    {
         "category": "question",
         "content": "What are the fundamental principles of democracy?"
     },
     {
         "category": "answer",
         "content": "The fundamental principles of democracy lie in the will of the people—the sovereignty of the populace; law that binds all equally, protection of individual rights, a majority rule that safeguards the minority’s voice. In such a society, the conduct of elections free from corruption or bias are of no small importance."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy turned again into the plantation and was soon out of sight."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy writes in a close hand."
     },
     {
         "category": "darcy-actions",
@@ -1244,20 +1252,20 @@
         "content": "Her look and manners were open, cheerful, and engaging as ever, but without any symptom of peculiar regard; and I remained convinced, from the evening’s scrutiny, that though she received his attentions with pleasure, she did not invite them by any participation of sentiment."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "If _you_ have not been mistaken here, _I_ must have been in an error."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "Your superior knowledge of your sister must make the latter probable."
-    },
-    {
         "category": "question",
         "content": "What is the meaning of life?"
     },
     {
         "category": "answer",
         "content": "I have always endeavoured to conduct myself in a manner such that my actions are always beyond reproach. To uphold dignity, to act with propriety, and to maintain a steadfast commitment to one's convictions—these are the tenets by which I measure my own worth and that of others. I daresay one may form their answer by comparison of other such opinions and the firmness of one's own beliefs."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "If _you_ have not been mistaken here, _I_ must have been in an error."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "Your superior knowledge of your sister must make the latter probable."
     },
     {
         "category": "darcy-dialogue",
@@ -1304,16 +1312,12 @@
         "content": "He left Netherfield for London on the day following, as you, I am certain, remember, with the design of soon returning."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "The part which I acted is now to be explained."
-    },
-    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy soon drew the attention of the room by his fine, tall person, handsome features, noble mien, and the report of his having ten thousand a year."
     },
     {
         "category": "darcy-dialogue",
-        "content": "His sisters’ uneasiness had been equally excited with my own: our coincidence of feeling was soon discovered; and, alike sensible that no time was to be lost in detaching their brother, we shortly resolved on joining him directly in London."
+        "content": "The part which I acted is now to be explained."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1321,7 +1325,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "We accordingly went--and there I readily engaged in the office of pointing out to my friend the certain evils of such a choice."
+        "content": "His sisters’ uneasiness had been equally excited with my own: our coincidence of feeling was soon discovered; and, alike sensible that no time was to be lost in detaching their brother, we shortly resolved on joining him directly in London."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1329,7 +1333,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I described and enforced them earnestly."
+        "content": "We accordingly went--and there I readily engaged in the office of pointing out to my friend the certain evils of such a choice."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1337,15 +1341,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But however this remonstrance might have staggered or delayed his determination, I do not suppose that it would ultimately have prevented the marriage, had it not been seconded by the assurance, which I hesitated not in giving, of your sister’s indifference."
+        "content": "I described and enforced them earnestly."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "His manners gave a disgust which turned the tide of his popularity."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "He had before believed her to return his affection with sincere, if not with equal, regard."
     },
     {
         "category": "question",
@@ -1356,12 +1356,16 @@
         "content": "It is a matter to which the wisest and best of thinkers have applied themselves, without success. Determinists argue that even the smallest thought or action is but the consequence of previous events. Others, such as compatibilists and libertarians, maintain that some measure of choice is ever present."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "But however this remonstrance might have staggered or delayed his determination, I do not suppose that it would ultimately have prevented the marriage, had it not been seconded by the assurance, which I hesitated not in giving, of your sister’s indifference."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "He was discovered to be proud, to be above his company, and above being pleased."
     },
     {
         "category": "darcy-dialogue",
-        "content": "But Bingley has great natural modesty, with a stronger dependence on my judgment than on his own."
+        "content": "He had before believed her to return his affection with sincere, if not with equal, regard."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1369,7 +1373,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "To convince him, therefore, that he had deceived himself was no very difficult point."
+        "content": "But Bingley has great natural modesty, with a stronger dependence on my judgment than on his own."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1377,7 +1381,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "To persuade him against returning into Hertfordshire, when that conviction had been given, was scarcely the work of a moment."
+        "content": "To convince him, therefore, that he had deceived himself was no very difficult point."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1385,7 +1389,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I cannot blame myself for having done thus much."
+        "content": "To persuade him against returning into Hertfordshire, when that conviction had been given, was scarcely the work of a moment."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1393,7 +1397,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "There is but one part of my conduct, in the whole affair, on which I do not reflect with satisfaction; it is that I condescended to adopt the measures of art so far as to conceal from him your sister’s being in town."
+        "content": "I cannot blame myself for having done thus much."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1401,7 +1405,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I knew it myself, as it was known to Miss Bingley; but her brother is even yet ignorant of it."
+        "content": "There is but one part of my conduct, in the whole affair, on which I do not reflect with satisfaction; it is that I condescended to adopt the measures of art so far as to conceal from him your sister’s being in town."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1409,7 +1413,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "That they might have met without ill consequence is, perhaps, probable; but his regard did not appear to me enough extinguished for him to see her without some danger."
+        "content": "I knew it myself, as it was known to Miss Bingley; but her brother is even yet ignorant of it."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1417,7 +1421,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Perhaps this concealment, this disguise, was beneath me."
+        "content": "That they might have met without ill consequence is, perhaps, probable; but his regard did not appear to me enough extinguished for him to see her without some danger."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1425,7 +1429,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "It is done, however, and it was done for the best."
+        "content": "Perhaps this concealment, this disguise, was beneath me."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1433,15 +1437,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "On this subject I have nothing more to say, no other apology to offer."
+        "content": "It is done, however, and it was done for the best."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy was considered disagreeable and horrid by Mrs. Bennet."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "If I have wounded your sister’s feelings, it was unknowingly done; and though the motives which governed me may to you very naturally appear insufficient, I have not yet learnt to condemn them."
     },
     {
         "category": "question",
@@ -1452,12 +1452,16 @@
         "content": "Among my chiefest regrets are those times when I condescended to conceal truths from even my closest friends. There is, however, much to consider before this––or indeed, any––question of absolute moral right or wrong may be concluded."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "On this subject I have nothing more to say, no other apology to offer."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mrs. Bennet felt a strong resentment toward Mr. Darcy, wishing her husband had been present to \"give him one of your set-downs.\""
     },
     {
         "category": "darcy-dialogue",
-        "content": "With respect to that other, more weighty accusation, of having injured Mr. Wickham, I can only refute it by laying before you the whole of his connection with my family."
+        "content": "If I have wounded your sister’s feelings, it was unknowingly done; and though the motives which governed me may to you very naturally appear insufficient, I have not yet learnt to condemn them."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1465,7 +1469,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Of what he has _particularly_ accused me I am ignorant; but of the truth of what I shall relate I can summon more than one witness of undoubted veracity."
+        "content": "With respect to that other, more weighty accusation, of having injured Mr. Wickham, I can only refute it by laying before you the whole of his connection with my family."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1473,7 +1477,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Mr. Wickham is the son of a very respectable man, who had for many years the management of all the Pemberley estates, and whose good conduct in the discharge of his trust naturally inclined my father to be of service to him; and on George Wickham, who was his godson, his kindness was therefore liberally bestowed."
+        "content": "Of what he has _particularly_ accused me I am ignorant; but of the truth of what I shall relate I can summon more than one witness of undoubted veracity."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1481,7 +1485,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "My father supported him at school, and afterwards at Cambridge; most important assistance, as his own father, always poor from the extravagance of his wife, would have been unable to give him a gentleman’s education."
+        "content": "Mr. Wickham is the son of a very respectable man, who had for many years the management of all the Pemberley estates, and whose good conduct in the discharge of his trust naturally inclined my father to be of service to him; and on George Wickham, who was his godson, his kindness was therefore liberally bestowed."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1489,7 +1493,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "My father was not only fond of this young man’s society, whose manners were always engaging, he had also the highest opinion of him, and hoping the church would be his profession, intended to provide for him in it."
+        "content": "My father supported him at school, and afterwards at Cambridge; most important assistance, as his own father, always poor from the extravagance of his wife, would have been unable to give him a gentleman’s education."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1497,7 +1501,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "As for myself, it is many, many years since I first began to think of him in a very different manner."
+        "content": "My father was not only fond of this young man’s society, whose manners were always engaging, he had also the highest opinion of him, and hoping the church would be his profession, intended to provide for him in it."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1505,7 +1509,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "The vicious propensities, the want of principle, which he was careful to guard from the knowledge of his best friend, could not escape the observation of a young man of nearly the same age with himself, and who had opportunities of seeing him in unguarded moments, which Mr. Darcy could not have."
+        "content": "As for myself, it is many, many years since I first began to think of him in a very different manner."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1513,7 +1517,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Here again I shall give you pain--to what degree you only can tell."
+        "content": "The vicious propensities, the want of principle, which he was careful to guard from the knowledge of his best friend, could not escape the observation of a young man of nearly the same age with himself, and who had opportunities of seeing him in unguarded moments, which Mr. Darcy could not have."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1521,7 +1525,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But whatever may be the sentiments which Mr. Wickham has created, a suspicion of their nature shall not prevent me from unfolding his real character."
+        "content": "Here again I shall give you pain--to what degree you only can tell."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1529,15 +1533,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "It adds even another motive."
+        "content": "But whatever may be the sentiments which Mr. Wickham has created, a suspicion of their nature shall not prevent me from unfolding his real character."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "His pride does not offend me so much as pride often does, because there is an excuse for it."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "My excellent father died about five years ago; and his attachment to Mr."
     },
     {
         "category": "question",
@@ -1548,12 +1548,16 @@
         "content": "It is a thought experiment which poses a moral dilemma: one must choose whether to divert a runaway trolley toward a track where it would kill one individual, or allow it to stay its course, resulting in the deaths of five. It is a question which encourages one to confront the difficult balance between utilitarianism and the sanctity of individual life."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "It adds even another motive."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "One cannot wonder that so very fine a young man, with family, fortune, everything in his favour, should think highly of himself. If I may so express it, he has a right to be proud."
     },
     {
         "category": "darcy-dialogue",
-        "content": "Wickham was to the last so steady, that in his will he particularly recommended it to me to promote his advancement in the best manner that his profession might allow, and if he took orders, desired that a valuable family living might be his as soon as it became vacant."
+        "content": "My excellent father died about five years ago; and his attachment to Mr."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1561,7 +1565,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "There was also a legacy of one thousand pounds."
+        "content": "Wickham was to the last so steady, that in his will he particularly recommended it to me to promote his advancement in the best manner that his profession might allow, and if he took orders, desired that a valuable family living might be his as soon as it became vacant."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1569,7 +1573,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "His own father did not long survive mine; and within half a year from these events Mr. Wickham wrote to inform me that, having finally resolved against taking orders, he hoped I should not think it unreasonable for him to expect some more immediate pecuniary advantage, in lieu of the preferment, by which he could not be benefited."
+        "content": "There was also a legacy of one thousand pounds."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1577,7 +1581,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "He had some intention, he added, of studying the law, and I must be aware that the interest of one thousand pounds would be a very insufficient support therein."
+        "content": "His own father did not long survive mine; and within half a year from these events Mr. Wickham wrote to inform me that, having finally resolved against taking orders, he hoped I should not think it unreasonable for him to expect some more immediate pecuniary advantage, in lieu of the preferment, by which he could not be benefited."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1585,7 +1589,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I rather wished than believed him to be sincere; but, at any rate, was perfectly ready to accede to his proposal."
+        "content": "He had some intention, he added, of studying the law, and I must be aware that the interest of one thousand pounds would be a very insufficient support therein."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1593,7 +1597,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I knew that Mr. Wickham ought not to be a clergyman."
+        "content": "I rather wished than believed him to be sincere; but, at any rate, was perfectly ready to accede to his proposal."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1601,7 +1605,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "The business was therefore soon settled."
+        "content": "I knew that Mr. Wickham ought not to be a clergyman."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1609,7 +1613,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "He resigned all claim to assistance in the church, were it possible that he could ever be in a situation to receive it, and accepted in return three thousand pounds."
+        "content": "The business was therefore soon settled."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1617,7 +1621,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "All connection between us seemed now dissolved."
+        "content": "He resigned all claim to assistance in the church, were it possible that he could ever be in a situation to receive it, and accepted in return three thousand pounds."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1625,15 +1629,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I thought too ill of him to invite him to Pemberley, or admit his society in town."
+        "content": "All connection between us seemed now dissolved."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Miss Bingley admired Mr. Darcy’s collection of books at Pemberley."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "In town, I believe, he chiefly lived, but his studying the law was a mere pretence; and being now free from all restraint, his life was a life of idleness and dissipation."
     },
     {
         "category": "question",
@@ -1644,12 +1644,16 @@
         "content": "Shakespeare's works are of considerable consequence in the sphere of literature, language, and theatre. His influence is felt in all manner of dramatic composition. His expressions fix themselves in conversation of every kind, and his adaptation of ancient narratives ensures not only their preservation but their continual reinvention."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I thought too ill of him to invite him to Pemberley, or admit his society in town."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy is always buying books."
     },
     {
         "category": "darcy-dialogue",
-        "content": "For about three years I heard little of him; but on the decease of the incumbent of the living which had been designed for him, he applied to me again by letter for the presentation."
+        "content": "In town, I believe, he chiefly lived, but his studying the law was a mere pretence; and being now free from all restraint, his life was a life of idleness and dissipation."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1657,7 +1661,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "His circumstances, he assured me, and I had no difficulty in believing it, were exceedingly bad."
+        "content": "For about three years I heard little of him; but on the decease of the incumbent of the living which had been designed for him, he applied to me again by letter for the presentation."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1665,7 +1669,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "He had found the law a most unprofitable study, and was now absolutely resolved on being ordained, if I would present him to the living in question--of which he trusted there could be little doubt, as he was well assured that I had no other person to provide for, and I could not have forgotten my revered father’s intentions."
+        "content": "His circumstances, he assured me, and I had no difficulty in believing it, were exceedingly bad."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1673,7 +1677,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You will hardly blame me for refusing to comply with this entreaty, or for resisting every repetition of it."
+        "content": "He had found the law a most unprofitable study, and was now absolutely resolved on being ordained, if I would present him to the living in question--of which he trusted there could be little doubt, as he was well assured that I had no other person to provide for, and I could not have forgotten my revered father’s intentions."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1681,7 +1685,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "His resentment was in proportion to the distress of his circumstances--and he was doubtless as violent in his abuse of me to others as in his reproaches to myself."
+        "content": "You will hardly blame me for refusing to comply with this entreaty, or for resisting every repetition of it."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1689,7 +1693,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "After this period, every appearance of acquaintance was dropped."
+        "content": "His resentment was in proportion to the distress of his circumstances--and he was doubtless as violent in his abuse of me to others as in his reproaches to myself."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1697,7 +1701,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "How he lived, I know not."
+        "content": "After this period, every appearance of acquaintance was dropped."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1705,7 +1709,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But last summer he was again most painfully obtruded on my notice."
+        "content": "How he lived, I know not."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1713,7 +1717,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I must now mention a circumstance which I would wish to forget myself, and which no obligation less than the present should induce me to unfold to any human being."
+        "content": "But last summer he was again most painfully obtruded on my notice."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1721,15 +1725,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Having said thus much, I feel no doubt of your secrecy."
+        "content": "I must now mention a circumstance which I would wish to forget myself, and which no obligation less than the present should induce me to unfold to any human being."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy is seen as someone who expects the highest standards of conviction and deliberation."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "My sister, who is more than ten years my junior, was left to the guardianship of my mother’s nephew, Colonel Fitzwilliam, and myself."
     },
     {
         "category": "question",
@@ -1740,12 +1740,16 @@
         "content": "One often encounters themes of oppressive governance, and the erosion of individuality. It is likewise not uncommon for authors to explore the dire consequences of environmental decay and technological control, while portraying a determined resistance against the forces of authority."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "Having said thus much, I feel no doubt of your secrecy."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy does not yield easily, particularly without a strong rationale."
     },
     {
         "category": "darcy-dialogue",
-        "content": "About a year ago, she was taken from school, and an establishment formed for her in London; and last summer she went with the lady who presided over it to Ramsgate; and thither also went Mr. Wickham, undoubtedly by design; for there proved to have been a prior acquaintance between him and Mrs."
+        "content": "My sister, who is more than ten years my junior, was left to the guardianship of my mother’s nephew, Colonel Fitzwilliam, and myself."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1753,7 +1757,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Younge, in whose character we were most unhappily deceived; and by her connivance and aid he so far recommended himself to Georgiana, whose affectionate heart retained a strong impression of his kindness to her as a child, that she was persuaded to believe herself in love and to consent to an elopement."
+        "content": "About a year ago, she was taken from school, and an establishment formed for her in London; and last summer she went with the lady who presided over it to Ramsgate; and thither also went Mr. Wickham, undoubtedly by design; for there proved to have been a prior acquaintance between him and Mrs."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1761,7 +1765,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "She was then but fifteen, which must be her excuse; and after stating her imprudence, I am happy to add, that I owed the knowledge of it to herself."
+        "content": "Younge, in whose character we were most unhappily deceived; and by her connivance and aid he so far recommended himself to Georgiana, whose affectionate heart retained a strong impression of his kindness to her as a child, that she was persuaded to believe herself in love and to consent to an elopement."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1769,7 +1773,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I joined them unexpectedly a day or two before the intended elopement; and then Georgiana, unable to support the idea of grieving and offending a brother whom she almost looked up to as a father, acknowledged the whole to me."
+        "content": "She was then but fifteen, which must be her excuse; and after stating her imprudence, I am happy to add, that I owed the knowledge of it to herself."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1777,7 +1781,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You may imagine what I felt and how I acted."
+        "content": "I joined them unexpectedly a day or two before the intended elopement; and then Georgiana, unable to support the idea of grieving and offending a brother whom she almost looked up to as a father, acknowledged the whole to me."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1785,7 +1789,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Regard for my sister’s credit and feelings prevented any public exposure; but I wrote to Mr. Wickham, who left the place immediately, and Mrs."
+        "content": "You may imagine what I felt and how I acted."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1793,7 +1797,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Younge was of course removed from her charge."
+        "content": "Regard for my sister’s credit and feelings prevented any public exposure; but I wrote to Mr. Wickham, who left the place immediately, and Mrs."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1801,7 +1805,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Mr. Wickham’s chief object was unquestionably my sister’s fortune, which is thirty thousand pounds; but I cannot help supposing that the hope of revenging himself on me was a strong inducement."
+        "content": "Younge was of course removed from her charge."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1809,7 +1813,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "His revenge would have been complete indeed."
+        "content": "Mr. Wickham’s chief object was unquestionably my sister’s fortune, which is thirty thousand pounds; but I cannot help supposing that the hope of revenging himself on me was a strong inducement."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1817,15 +1821,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "This, madam, is a faithful narrative of every event in which we have been concerned together; and if you do not absolutely reject it as false, you will, I hope, acquit me henceforth of cruelty towards Mr. Wickham."
+        "content": "His revenge would have been complete indeed."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy is not to be laughed at!"
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "I know not in what manner, under what form of falsehood, he has imposed on you; but his success is not perhaps to be wondered at, ignorant as you previously were of everything concerning either."
     },
     {
         "category": "question",
@@ -1836,12 +1836,16 @@
         "content": "Among the most renowned surrealist painters are Salvador Dalí, René Magritte, Max Ernst, and Joan Miró. They show us dreamlike, irrational, and often symbolic imagery, in order that they may challenge notions about reality itself."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "This, madam, is a faithful narrative of every event in which we have been concerned together; and if you do not absolutely reject it as false, you will, I hope, acquit me henceforth of cruelty towards Mr. Wickham."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Implacable resentment _is_ a shade in Mr. Darcy."
     },
     {
         "category": "darcy-dialogue",
-        "content": "Detection could not be in your power, and suspicion certainly not in your inclination."
+        "content": "I know not in what manner, under what form of falsehood, he has imposed on you; but his success is not perhaps to be wondered at, ignorant as you previously were of everything concerning either."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1849,7 +1853,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You may possibly wonder why all this was not told you last night."
+        "content": "Detection could not be in your power, and suspicion certainly not in your inclination."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1857,7 +1861,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But I was not then master enough of myself to know what could or ought to be revealed."
+        "content": "You may possibly wonder why all this was not told you last night."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1865,7 +1869,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "For the truth of everything here related, I can appeal more particularly to the testimony of Colonel Fitzwilliam, who, from our near relationship and constant intimacy, and still more as one of the executors of my father’s will, has been unavoidably acquainted with every particular of these transactions."
+        "content": "But I was not then master enough of myself to know what could or ought to be revealed."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1873,7 +1877,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "If your abhorrence of _me_ should make _my_ assertions valueless, you cannot be prevented by the same cause from confiding in my cousin; and that there may be the possibility of consulting him, I shall endeavour to find some opportunity of putting this letter in your hands in the course of the morning."
+        "content": "For the truth of everything here related, I can appeal more particularly to the testimony of Colonel Fitzwilliam, who, from our near relationship and constant intimacy, and still more as one of the executors of my father’s will, has been unavoidably acquainted with every particular of these transactions."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1881,15 +1885,15 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I will only add, God bless you."
+        "content": "If your abhorrence of _me_ should make _my_ assertions valueless, you cannot be prevented by the same cause from confiding in my cousin; and that there may be the possibility of consulting him, I shall endeavour to find some opportunity of putting this letter in your hands in the course of the morning."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "On slight acquaintance he is thought to be an ill-tempered man."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy gave Elizabeth a letter."
+        "category": "darcy-dialogue",
+        "content": "I will only add, God bless you."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1897,7 +1901,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He expressed no regret for what he had done which satisfied Elizabeth; his style seemed at first not penitent, but haughty."
+        "content": "Mr. Darcy gave Elizabeth a letter."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1905,7 +1909,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He provided an account of his objections to the match between Jane and Bingley."
+        "content": "He expressed no regret for what he had done which satisfied Elizabeth; his style seemed at first not penitent, but haughty."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1913,15 +1917,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He detailed his history with Mr. Wickham, including Wickham’s dealings with the Pemberley family and the matter of the living."
+        "content": "He provided an account of his objections to the match between Jane and Bingley."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Wickham professed himself willing to see Darcy, but proved the coward in the end."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy had called only for a few minutes to take leave."
     },
     {
         "category": "question",
@@ -1932,12 +1932,16 @@
         "content": "The Renaissance was of great consquence in its effecting a revolution in art. Devotion to realism, mastery of perspective, an elevation of humanism and individualism––it is not unreasonable to suppose that these works shall exert their influence upon all that follow."
     },
     {
+        "category": "darcy-actions",
+        "content": "He detailed his history with Mr. Wickham, including Wickham’s dealings with the Pemberley family and the matter of the living."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth believed that during their dance it would be greater punishment to force Darcy to speak than to remain silent."
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy left Rosings the day after giving Elizabeth his letter"
+        "content": "Mr. Darcy had called only for a few minutes to take leave."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1945,7 +1949,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy has not authorized the communication of his sister’s affairs."
+        "content": "Darcy left Rosings the day after giving Elizabeth his letter"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1953,7 +1957,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy's letter was not to be disclosed to others."
+        "content": "Mr. Darcy has not authorized the communication of his sister’s affairs."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1961,7 +1965,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Elizabeth stood several minutes before the picture, in earnest contemplation, and returned to it again before they quitted the gallery."
+        "content": "Mr. Darcy's letter was not to be disclosed to others."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1969,7 +1973,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Elizabeth thought of his regard with a deeper sentiment of gratitude than it had ever raised before."
+        "content": "Elizabeth stood several minutes before the picture, in earnest contemplation, and returned to it again before they quitted the gallery."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1977,7 +1981,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy suddenly came forward from the road which led behind it to the stables."
+        "content": "Elizabeth thought of his regard with a deeper sentiment of gratitude than it had ever raised before."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1985,7 +1989,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He absolutely started, and for a moment seemed immovable from surprise."
+        "content": "Mr. Darcy suddenly came forward from the road which led behind it to the stables."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -1993,7 +1997,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He shortly recovered himself, advanced towards the party, and spoke to Elizabeth."
+        "content": "He absolutely started, and for a moment seemed immovable from surprise."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2001,7 +2005,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He provided his compliments to Elizabeth, though she had turned away instinctively in embarassment."
+        "content": "He shortly recovered himself, advanced towards the party, and spoke to Elizabeth."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2009,15 +2013,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "At length, every idea seemed to fail him; and after standing a few moments without saying a word, he suddenly recollected himself, and took leave."
+        "content": "He provided his compliments to Elizabeth, though she had turned away instinctively in embarassment."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy may, perhaps, have _heard_ of such a place as Gracechurch Street, but he would hardly think a month’s ablution enough to cleanse him from its impurities, were he once to enter it."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "Good day, Miss Bennet."
     },
     {
         "category": "question",
@@ -2028,8 +2028,20 @@
         "content": "The Fibonacci sequence is a series of numbers where each is the sum of its two preceding terms—0, 1, 1, 2, 3, 5, 8, 13, and so on. It is a most curious and, I dare say, a sublime phenomenon found throughout nature, art, and mathematics."
     },
     {
+        "category": "darcy-actions",
+        "content": "At length, every idea seemed to fail him; and after standing a few moments without saying a word, he suddenly recollected himself, and took leave."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy never stirs without his friend Bingley."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "Good day, Miss Bennet."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mrs. Gardiner thought she recollected having heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud, ill-natured boy."
     },
     {
         "category": "darcy-dialogue",
@@ -2037,7 +2049,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Gardiner thought she recollected having heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud, ill-natured boy."
+        "content": "Mr. Darcy would not suffer Bingley to call on Jane in such a part of London."
     },
     {
         "category": "darcy-actions",
@@ -2045,7 +2057,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy would not suffer Bingley to call on Jane in such a part of London."
+        "content": "Before learning the truth about Wickham, Mr. Darcy’s character sunk on every review of it."
     },
     {
         "category": "darcy-actions",
@@ -2053,7 +2065,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Before learning the truth about Wickham, Mr. Darcy’s character sunk on every review of it."
+        "content": "Mrs. Gardiner should be sorry to think ill of a young man who has lived so long in Derbyshire."
     },
     {
         "category": "darcy-actions",
@@ -2061,7 +2073,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Gardiner should be sorry to think ill of a young man who has lived so long in Derbyshire."
+        "content": "Lady Catherine talked of Mr. Darcy's coming with the greatest satisfaction, spoke of him in terms of the highest admiration, and seemed almost angry to find that he had already been frequently seen by Miss Lucas and Elizabeth."
     },
     {
         "category": "darcy-actions",
@@ -2069,7 +2081,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine talked of Mr. Darcy's coming with the greatest satisfaction, spoke of him in terms of the highest admiration, and seemed almost angry to find that he had already been frequently seen by Miss Lucas and Elizabeth."
+        "content": "It was plain that their company was by no means so acceptable as when she could get nobody else; and she was, in fact, almost engrossed by her nephews, speaking to them, especially to Darcy, much more than to any other person in the room."
     },
     {
         "category": "darcy-actions",
@@ -2077,7 +2089,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "It was plain that their company was by no means so acceptable as when she could get nobody else; and she was, in fact, almost engrossed by her nephews, speaking to them, especially to Darcy, much more than to any other person in the room."
+        "content": "Elizabeth did not detect any enthusiasm from Darcy about the idea of his marrying Miss de Bourgh."
     },
     {
         "category": "darcy-actions",
@@ -2085,7 +2097,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth did not detect any enthusiasm from Darcy about the idea of his marrying Miss de Bourgh."
+        "content": "Mr. Darcy seemed to speak out of necessity, not choice."
     },
     {
         "category": "darcy-actions",
@@ -2093,7 +2105,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy seemed to speak out of necessity, not choice."
+        "content": "Mr. Darcy seldom appeared really animated."
     },
     {
         "category": "darcy-actions",
@@ -2101,19 +2113,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy seldom appeared really animated."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "He offered to introduce his sister to Mrs. Gardiner’s acquaintance during their stay at Lambton."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Mrs. Collins could not understand Mr. Darcy's behavior."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "They will join me early to-morrow, and among them are some who will claim an acquaintance with you,--Mr. Bingley and his sisters."
     },
     {
         "category": "question",
@@ -2124,20 +2124,24 @@
         "content": "Algebra is a school of mathematics concerning itself with the solving of equations and the manipulation of symbols, whereas calculus delves into the study of change—specifically, the rates at which quantities vary (derivatives) and the summation of those variations over time or space (integrals)."
     },
     {
+        "category": "darcy-actions",
+        "content": "He offered to introduce his sister to Mrs. Gardiner’s acquaintance during their stay at Lambton."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy looked at Elizabeth a great deal, but the expression was disputable."
     },
     {
         "category": "darcy-dialogue",
-        "content": "Will you allow me, or do I ask too much, to introduce my sister to your acquaintance during your stay at Lambton?"
+        "content": "They will join me early to-morrow, and among them are some who will claim an acquaintance with you,--Mr. Bingley and his sisters."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy’s gaze appeared earnest but sometimes seemed like an absence of mind."
     },
     {
-        "category": "darcy-actions",
-        "content": "Darcy asked Elizabeth to walk into the house, but she declared herself not tired, so they stood together on the lawn."
+        "category": "darcy-dialogue",
+        "content": "Will you allow me, or do I ask too much, to introduce my sister to your acquaintance during your stay at Lambton?"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2145,7 +2149,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy handed the ladies into the carriage when it was time to depart."
+        "content": "Darcy asked Elizabeth to walk into the house, but she declared herself not tired, so they stood together on the lawn."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2153,11 +2157,19 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy walked slowly towards the house after the Gardner's carriage drove off."
+        "content": "Darcy handed the ladies into the carriage when it was time to depart."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "He never said a great deal."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Darcy walked slowly towards the house after the Gardner's carriage drove off."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mr. Darcy likes to have his own way very well."
     },
     {
         "category": "darcy-dialogue",
@@ -2165,7 +2177,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy likes to have his own way very well."
+        "content": "Mr. Darcy has better means of having it than many others, because he is rich, and many others are poor."
     },
     {
         "category": "darcy-actions",
@@ -2173,7 +2185,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy has better means of having it than many others, because he is rich, and many others are poor."
+        "content": "Mr. Darcy enjoys the power of doing what he likes."
     },
     {
         "category": "darcy-actions",
@@ -2181,7 +2193,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy enjoys the power of doing what he likes."
+        "content": "Mr. Darcy's pride and caprice were the cause of all that Jane had suffered, and still continued to suffer."
     },
     {
         "category": "darcy-actions",
@@ -2189,7 +2201,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy's pride and caprice were the cause of all that Jane had suffered, and still continued to suffer."
+        "content": "Mr. Darcy's pride would receive a deeper wound from the want of importance in his friend’s connections than from their want of sense."
     },
     {
         "category": "darcy-actions",
@@ -2197,19 +2209,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy's pride would receive a deeper wound from the want of importance in his friend’s connections than from their want of sense."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Darcy appeared civil, not only to Elizabeth, but to her very relations whom he had openly disdained."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy had boundless influence over Mr. Bingley."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "It was not often that she could turn her eyes on Mr. Darcy himself; but whenever she did catch a glimpse she saw an expression of general complaisance, and in all that he said, she heard an accent so far removed from _hauteur_ or disdain of his companions, as convinced her that the improvement of manners which she had yesterday witnessed, however temporary its existence might prove, had at least outlived one day."
     },
     {
         "category": "question",
@@ -2220,12 +2220,16 @@
         "content": "Gödel's incompleteness theorem asserts that in any consistent, formal mathematical system, there exist propositions which are undeniably true, yet cannot be proven within the confines of that very system."
     },
     {
+        "category": "darcy-actions",
+        "content": "Darcy appeared civil, not only to Elizabeth, but to her very relations whom he had openly disdained."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy’s conduct does not suit Elizabeth’s feelings."
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy called on his sister to join him in expressing their wish of seeing Mr. and Mrs. Gardiner, and Miss Bennet, to dinner at Pemberley, before they left the country."
+        "content": "It was not often that she could turn her eyes on Mr. Darcy himself; but whenever she did catch a glimpse she saw an expression of general complaisance, and in all that he said, she heard an accent so far removed from _hauteur_ or disdain of his companions, as convinced her that the improvement of manners which she had yesterday witnessed, however temporary its existence might prove, had at least outlived one day."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2233,7 +2237,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy discharged many of Wickham's debts."
+        "content": "Mr. Darcy called on his sister to join him in expressing their wish of seeing Mr. and Mrs. Gardiner, and Miss Bennet, to dinner at Pemberley, before they left the country."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2241,7 +2245,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy seemed eager to preserve the acquaintance with Elizabeth, soliciting the good opinion of her friends, and bent on making her known to his sister."
+        "content": "Mr. Darcy discharged many of Wickham's debts."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2249,7 +2253,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy entered the room after being with Mr. Gardiner and other gentlemen by the river."
+        "content": "Mr. Darcy seemed eager to preserve the acquaintance with Elizabeth, soliciting the good opinion of her friends, and bent on making her known to his sister."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2257,7 +2261,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy was earnestly looking at Elizabeth while she spoke, with a heightened complexion."
+        "content": "Darcy entered the room after being with Mr. Gardiner and other gentlemen by the river."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2265,7 +2269,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy was concerned about his sister’s welfare and attempted to manage the situation with Elizabeth."
+        "content": "Darcy was earnestly looking at Elizabeth while she spoke, with a heightened complexion."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2273,7 +2277,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy was attending them to their carriage."
+        "content": "Darcy was concerned about his sister’s welfare and attempted to manage the situation with Elizabeth."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2281,7 +2285,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy returned to the saloon."
+        "content": "Mr. Darcy was attending them to their carriage."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2289,23 +2293,19 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy contented himself with coolly replying."
+        "content": "Darcy returned to the saloon."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy's pride is described as the worst kind of pride."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I perceive no other alteration than her being rather tanned,--no miraculous consequence of travelling in the summer."
+        "category": "darcy-actions",
+        "content": "Darcy contented himself with coolly replying."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "It seemed to Elizabeth that Darcy had boasted of making Jane miserable by \"saving\" Bingley from a disadvantageous marriage."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "Yes, but _that_ was only when I first knew her; for it is many months since I have considered her as one of the handsomest women of my acquaintance."
     },
     {
         "category": "question",
@@ -2316,12 +2316,16 @@
         "content": "It is a psychological framework which arranges the requirements and inclinations of mankind. These range from fundamental desires for sustenance and safety to those feelings of affection, respect, and ultimately self-fulfillment."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I perceive no other alteration than her being rather tanned,--no miraculous consequence of travelling in the summer."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth could see his countenance expressed security for her acceptance to his proposal."
     },
     {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy’s judgment could not err; and he had spoken in such terms of Elizabeth, as to leave Georgiana without the power of finding her otherwise than lovely and amiable."
+        "category": "darcy-dialogue",
+        "content": "Yes, but _that_ was only when I first knew her; for it is many months since I have considered her as one of the handsomest women of my acquaintance."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2329,7 +2333,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy was resolutely silent, however, and, from a determination of making him speak, Miss Bingley continued."
+        "content": "Mr. Darcy’s judgment could not err; and he had spoken in such terms of Elizabeth, as to leave Georgiana without the power of finding her otherwise than lovely and amiable."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2337,7 +2341,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy appeared as Elizabeth reached the door."
+        "content": "Darcy was resolutely silent, however, and, from a determination of making him speak, Miss Bingley continued."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2345,7 +2349,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Her pale face and impetuous manner made him start."
+        "content": "Mr. Darcy appeared as Elizabeth reached the door."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2353,7 +2357,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Before he could recover himself enough to speak, Elizabeth hastily exclaimed her need to leave."
+        "content": "Her pale face and impetuous manner made him start."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2361,7 +2365,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy, seeing Elizabeth’s distress, responded with more feeling than politeness."
+        "content": "Before he could recover himself enough to speak, Elizabeth hastily exclaimed her need to leave."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2369,7 +2373,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He quickly recollected himself and offered assistance, suggesting that he or a servant go after Mr. and Mrs. Gardiner."
+        "content": "Darcy, seeing Elizabeth’s distress, responded with more feeling than politeness."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2377,7 +2381,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Seeing Elizabeth looking miserably ill, he found it impossible to leave her."
+        "content": "He quickly recollected himself and offered assistance, suggesting that he or a servant go after Mr. and Mrs. Gardiner."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2385,23 +2389,19 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He spoke in a tone of gentleness and commiseration, offering to call her maid or bring her a glass of wine."
+        "content": "Seeing Elizabeth looking miserably ill, he found it impossible to leave her."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "His account of the objections to the match made Elizabeth too angry to wish to do him justice."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "Good God! what is the matter?"
+        "category": "darcy-actions",
+        "content": "He spoke in a tone of gentleness and commiseration, offering to call her maid or bring her a glass of wine."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "She found his style to be all pride and insolence."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "I will not detain you a minute; but let me, or let the servant, go after Mr. and Mrs. Gardiner."
     },
     {
         "category": "question",
@@ -2412,12 +2412,16 @@
         "content": "It is a state of psychological unease in a person confronted with their own contradictory beliefs or actions. This often requires a change in one’s attitudes or opinions to restore some measure of harmony."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "Good God! what is the matter?"
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "As she read his account of Mr. Wickham, Elizabeth experienced astonishment, apprehension, and even horror."
     },
     {
         "category": "darcy-dialogue",
-        "content": "You are not well enough; you cannot go yourself."
+        "content": "I will not detain you a minute; but let me, or let the servant, go after Mr. and Mrs. Gardiner."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2425,7 +2429,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Let me call your maid."
+        "content": "You are not well enough; you cannot go yourself."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2433,7 +2437,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Is there nothing you could take to give you present relief?"
+        "content": "Let me call your maid."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2441,15 +2445,15 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "A glass of wine; shall I get you one? You are very ill."
+        "content": "Is there nothing you could take to give you present relief?"
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Even Wickham had allowed him merit as a brother."
     },
     {
-        "category": "darcy-actions",
-        "content": "Darcy, in wretched suspense, could only say something indistinctly of his concern and observe Elizabeth in compassionate silence."
+        "category": "darcy-dialogue",
+        "content": "A glass of wine; shall I get you one? You are very ill."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2457,15 +2461,15 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy was fixed in astonishment upon hearing the news of Lydia’s elopement."
+        "content": "Darcy, in wretched suspense, could only say something indistinctly of his concern and observe Elizabeth in compassionate silence."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Had his actions been what Wickham represented them, so gross a violation of everything right could hardly have been concealed from the world."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I am grieved, indeed; grieved—shocked."
+        "category": "darcy-actions",
+        "content": "Darcy was fixed in astonishment upon hearing the news of Lydia’s elopement."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2473,7 +2477,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But is it certain, absolutely certain?"
+        "content": "I am grieved, indeed; grieved—shocked."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2481,23 +2485,19 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "And what has been done, what has been attempted, to recover her?"
+        "content": "But is it certain, absolutely certain?"
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "The justice of Mr. Darcy’s charge regarding her family’s impropriety struck Elizabeth too forcibly for denial."
     },
     {
-        "category": "darcy-actions",
-        "content": "Darcy shook his head in silent acquiescence."
+        "category": "darcy-dialogue",
+        "content": "And what has been done, what has been attempted, to recover her?"
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "The compliment to herself and her sister in Mr. Darcy’s letter was soothing but could not console her for the contempt attracted by the rest of her family."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Darcy made no answer. He seemed scarcely to hear her."
     },
     {
         "category": "question",
@@ -2508,8 +2508,20 @@
         "content": "Conditioning is governed by two principal mechanisms: the first, classical conditioning, wherein stimuli are so linked as to shape subsequent responses, most notably exemplified by Pavlov’s dogs; the second, operant conditioning, in which reinforcement or punishment serves to mould and direct one’s actions with deliberate intent."
     },
     {
+        "category": "darcy-actions",
+        "content": "Darcy shook his head in silent acquiescence."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Collins reported that Mr. Darcy appeared to be in very good health and in tolerable spirits after leaving Rosings."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Darcy made no answer. He seemed scarcely to hear her."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Lady Catherine observed that Darcy seemed to feel the departure from Rosings most acutely, even more than the previous year."
     },
     {
         "category": "darcy-actions",
@@ -2517,7 +2529,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine observed that Darcy seemed to feel the departure from Rosings most acutely, even more than the previous year."
+        "content": "Lady Catherine believed that Darcy’s attachment to Rosings was increasing."
     },
     {
         "category": "darcy-dialogue",
@@ -2525,7 +2537,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine believed that Darcy’s attachment to Rosings was increasing."
+        "content": "Elizabeth's feelings towards him were at times widely different."
     },
     {
         "category": "darcy-dialogue",
@@ -2533,7 +2545,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth's feelings towards him were at times widely different."
+        "content": "When Elizabeth remembered the style of his address, she was still full of indignation, until she considered how unjustly she had condemned and upbraided him."
     },
     {
         "category": "darcy-dialogue",
@@ -2541,7 +2553,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "When Elizabeth remembered the style of his address, she was still full of indignation, until she considered how unjustly she had condemned and upbraided him."
+        "content": "His disappointed feelings became the object of compassion."
     },
     {
         "category": "darcy-dialogue",
@@ -2549,7 +2561,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "His disappointed feelings became the object of compassion."
+        "content": "His attachment excited gratitude."
     },
     {
         "category": "darcy-actions",
@@ -2557,7 +2569,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "His attachment excited gratitude."
+        "content": "His general character excited respect."
     },
     {
         "category": "darcy-actions",
@@ -2565,7 +2577,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "His general character excited respect."
+        "content": "His affection was proved to have been sincere."
     },
     {
         "category": "darcy-actions",
@@ -2573,7 +2585,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "His affection was proved to have been sincere."
+        "content": "His conduct was cleared of all blame, unless any could attach to the implicitness of his confidence in his friend."
     },
     {
         "category": "darcy-actions",
@@ -2581,19 +2593,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "His conduct was cleared of all blame, unless any could attach to the implicitness of his confidence in his friend."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "With only one serious parting look, he went away."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Miss Bennet’s astonishment at Darcy's proposal was only lessened by the strong sisterly partiality which made any admiration of Elizabeth appear perfectly natural."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy had been at Lydia's wedding."
     },
     {
         "category": "question",
@@ -2604,12 +2604,16 @@
         "content": "This is a matter of some complexity; the nature of social media's impact bears some dependence upon the manner in which it is used. It may indeed serve to engage one in the society of others, and to offer a means for self-expression; it has also been observed, however, to produce feelings of anxiety, depression, and to diminish one’s self-esteem."
     },
     {
+        "category": "darcy-actions",
+        "content": "With only one serious parting look, he went away."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Jane was sorry that Mr. Darcy should have delivered his sentiments in a manner so little suited to recommend them; but still more was she grieved for the unhappiness which her sister’s refusal must have given him."
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy called and was shut up with Mr. Gardiner for several hours."
+        "content": "Mr. Darcy had been at Lydia's wedding."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2617,7 +2621,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy came to tell Mr. Gardiner that he had found out where Lydia and Mr. Wickham were and had seen them both."
+        "content": "Mr. Darcy called and was shut up with Mr. Gardiner for several hours."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2625,7 +2629,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy had something to direct his search and resolved to follow Mr. Gardiner."
+        "content": "Mr. Darcy came to tell Mr. Gardiner that he had found out where Lydia and Mr. Wickham were and had seen them both."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2633,7 +2637,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy went to Mrs. Younge for intelligence about Wickham and, after a few days, obtained the information."
+        "content": "Mr. Darcy had something to direct his search and resolved to follow Mr. Gardiner."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2641,7 +2645,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy insisted on seeing Lydia after seeing Wickham."
+        "content": "Mr. Darcy went to Mrs. Younge for intelligence about Wickham and, after a few days, obtained the information."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2649,7 +2653,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy asked Lydia to leave her disgraceful situation and return to her friends, offering his assistance."
+        "content": "Mr. Darcy insisted on seeing Lydia after seeing Wickham."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2657,7 +2661,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy asked Mr. Gardiner why Wickham did not marry Lydia at once."
+        "content": "Mr. Darcy asked Lydia to leave her disgraceful situation and return to her friends, offering his assistance."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2665,7 +2669,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy purchased Wickham’s commission."
+        "content": "Mr. Darcy asked Mr. Gardiner why Wickham did not marry Lydia at once."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2673,7 +2677,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy returned to his friends after the arrangements were resolved and agreed to be in London for the wedding."
+        "content": "Mr. Darcy purchased Wickham’s commission."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2681,15 +2685,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy was punctual in his return and attended the wedding."
+        "content": "Mr. Darcy returned to his friends after the arrangements were resolved and agreed to be in London for the wedding."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth saw, with admiration of his taste, that it was neither gaudy nor uselessly fine,--with less of splendour, and more real elegance, than the furniture of Rosings."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Mr. Darcy dined with Mr. Gardiner's family the next day and was to leave town a few days later."
     },
     {
         "category": "question",
@@ -2700,12 +2700,16 @@
         "content": "The works of those authors of speculative fiction have most assuredly inspired technologies we now deem indispensable. That we possess cell phones, AI, touchscreens, and robots—even the progress of space exploration—is owed, to no inconsiderable degree, to the workings of their imaginations."
     },
     {
+        "category": "darcy-actions",
+        "content": "Mr. Darcy was punctual in his return and attended the wedding."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Reynolds respect for Darcy is such that her estimation of Elizabeth rises simply on discovery that Darcy knows her."
     },
     {
         "category": "darcy-actions",
-        "content": "He generously imputed the whole to his mistaken pride, and confessed that he had before thought it beneath him to lay his private actions open to the world."
+        "content": "Mr. Darcy dined with Mr. Gardiner's family the next day and was to leave town a few days later."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2713,7 +2717,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "I thought him very sly; he hardly ever mentioned your name. But slyness seems the fashion."
+        "content": "He generously imputed the whole to his mistaken pride, and confessed that he had before thought it beneath him to lay his private actions open to the world."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2721,7 +2725,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy had followed them purposely to town, he had taken on himself all the trouble and mortification attendant on such a research."
+        "content": "I thought him very sly; he hardly ever mentioned your name. But slyness seems the fashion."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2729,7 +2733,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He was reduced to meet, frequently meet, reason with, persuade, and finally bribe the man whom he always most wished to avoid, and whose very name it was punishment to him to pronounce."
+        "content": "Mr. Darcy had followed them purposely to town, he had taken on himself all the trouble and mortification attendant on such a research."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2737,7 +2741,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy introduced Elizabeth to his sister."
+        "content": "He was reduced to meet, frequently meet, reason with, persuade, and finally bribe the man whom he always most wished to avoid, and whose very name it was punishment to him to pronounce."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2745,7 +2749,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Elizabeth had ventured only one glance at Darcy. He looked serious as usual; and, she thought, more as he had been used to look in Hertfordshire, than as she had seen him at Pemberley."
+        "content": "Darcy introduced Elizabeth to his sister."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2753,7 +2757,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy, after inquiring of her how Mr. and Mrs. Gardiner did, said scarcely anything."
+        "content": "Elizabeth had ventured only one glance at Darcy. He looked serious as usual; and, she thought, more as he had been used to look in Hertfordshire, than as she had seen him at Pemberley."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2761,7 +2765,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "He was not seated by her: perhaps that was the reason of his silence; but it had not been so in Derbyshire."
+        "content": "Darcy, after inquiring of her how Mr. and Mrs. Gardiner did, said scarcely anything."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2769,7 +2773,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Several minutes elapsed, without bringing the sound of his voice."
+        "content": "He was not seated by her: perhaps that was the reason of his silence; but it had not been so in Derbyshire."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2777,15 +2781,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "When occasionally, unable to resist the impulse of curiosity, she raised her eyes to his face, she as often found him looking at Jane as at herself, and frequently on no object but the ground."
+        "content": "Several minutes elapsed, without bringing the sound of his voice."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "There is not one of his tenants or servants but what will give him a good name."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "More thoughtfulness and less anxiety to please, than when they last met, were plainly expressed."
     },
     {
         "category": "question",
@@ -2796,12 +2796,16 @@
         "content": "To compose a tale of real consequence, one must attend, first and foremost, to the foundation of its characters, whose very existence ought to command the reader’s attention. No less vital is the conflict, which must be at once compelling and of undeniable import."
     },
     {
+        "category": "darcy-actions",
+        "content": "When occasionally, unable to resist the impulse of curiosity, she raised her eyes to his face, she as often found him looking at Jane as at herself, and frequently on no object but the ground."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Some people call him proud; but I am sure I never saw anything of it."
     },
     {
         "category": "darcy-actions",
-        "content": "After Bingley finished his visit, Darcy left with him."
+        "content": "More thoughtfulness and less anxiety to please, than when they last met, were plainly expressed."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2809,7 +2813,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy was almost as far from Elizabeth as the table could divide them."
+        "content": "After Bingley finished his visit, Darcy left with him."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2817,7 +2821,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Mr. Darcy was on one side of her mother, and they spoke seldom to each other."
+        "content": "Mr. Darcy was almost as far from Elizabeth as the table could divide them."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2825,7 +2829,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Their manner was formal and cold whenever Mr. Darcy and her mother spoke to each other."
+        "content": "Mr. Darcy was on one side of her mother, and they spoke seldom to each other."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2833,7 +2837,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy had walked away to another part of the room."
+        "content": "Their manner was formal and cold whenever Mr. Darcy and her mother spoke to each other."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2841,7 +2845,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy brought back his coffee-cup himself."
+        "content": "Darcy had walked away to another part of the room."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2849,7 +2853,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy stood by her, however, for some minutes, in silence."
+        "content": "Darcy brought back his coffee-cup himself."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2857,7 +2861,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy walked away when the young lady whispered to Elizabeth again."
+        "content": "Darcy stood by her, however, for some minutes, in silence."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2865,7 +2869,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy was seated with the rest of the party."
+        "content": "Darcy walked away when the young lady whispered to Elizabeth again."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2873,15 +2877,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy held his secrecy. His aunt knows nothing of his involvement in Lydia's elopement."
+        "content": "Darcy was seated with the rest of the party."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy's behaviour, so strikingly altered."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Bingley, who wanted to be alone with Jane, proposed their all walking out."
     },
     {
         "category": "question",
@@ -2892,12 +2892,16 @@
         "content": "The character of films mirrors, in many respects, the era of their creation. As society undergoes transformation, as the inclinations of audiences refine, and as technology advances apace, so too must these genres adapt if they are to retain their consequence."
     },
     {
+        "category": "darcy-actions",
+        "content": "Darcy held his secrecy. His aunt knows nothing of his involvement in Lydia's elopement."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth felt gratified by Darcy’s actions, interpreting the civility as a compliment for herself."
     },
     {
         "category": "darcy-actions",
-        "content": "Very little was said by either; Darcy was likely preoccupied or silent during the walk."
+        "content": "Bingley, who wanted to be alone with Jane, proposed their all walking out."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2905,7 +2909,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Elizabeth, Kitty, and Darcy entertained each other while walking."
+        "content": "Very little was said by either; Darcy was likely preoccupied or silent during the walk."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2913,7 +2917,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Elizabeth went boldly on with Darcy alone after Kitty left them."
+        "content": "Elizabeth, Kitty, and Darcy entertained each other while walking."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2921,7 +2925,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy replied in a tone of surprise and emotion at discovering Elizabeth knew of his having found Wickham and Lydia."
+        "content": "Elizabeth went boldly on with Darcy alone after Kitty left them."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2929,7 +2933,7 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy did not think Mrs. Gardiner was so little to be trusted with his secret."
+        "content": "Darcy replied in a tone of surprise and emotion at discovering Elizabeth knew of his having found Wickham and Lydia."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2937,15 +2941,15 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy acknowledged that his actions were influenced by the desire to give happiness to Elizabeth."
+        "content": "Darcy did not think Mrs. Gardiner was so little to be trusted with his secret."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. and Mrs. Gardiner were surprised by Darcy’s civility, pronouncing him to be infinitely superior to what they had expected."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I am sorry, exceedingly sorry, that you have ever been informed of what may, in a mistaken light, have given you uneasiness."
+        "category": "darcy-actions",
+        "content": "Darcy acknowledged that his actions were influenced by the desire to give happiness to Elizabeth."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2953,7 +2957,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "If you _will_ thank me, let it be for yourself alone."
+        "content": "I am sorry, exceedingly sorry, that you have ever been informed of what may, in a mistaken light, have given you uneasiness."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2961,7 +2965,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "That the wish of giving happiness to you might add force to the other inducements which led me on, I shall not attempt to deny."
+        "content": "If you _will_ thank me, let it be for yourself alone."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -2969,15 +2973,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "But your _family_ owe me nothing. Much as I respect them, I believe I thought only of _you_."
+        "content": "That the wish of giving happiness to you might add force to the other inducements which led me on, I shall not attempt to deny."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mrs. Gardiner thought Mr. Darcy could not have behaved in such a cruel way to Wickham."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "You are too generous to trifle with me. If your feelings are still what they were last April, tell me so at once."
     },
     {
         "category": "question",
@@ -2988,8 +2988,20 @@
         "content": "A protagonist of distinction is one whose actions and motives are not so easily discerned at a mere glance. It is, too, their command of the sympathy of their audience, despite the singularity of their circumstances. There must exist, too, the prospect of growth. Above all, their actions must propel the narrative forward with purpose."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "But your _family_ owe me nothing. Much as I respect them, I believe I thought only of _you_."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mrs. Gardiner noted Mr. Darcy had a pleasing look when he spoke, and something dignified about his countenance that would not give one an unfavorable idea of his heart."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "You are too generous to trifle with me. If your feelings are still what they were last April, tell me so at once."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "The good lady who showed them the house gave Mr. Darcy a most flaming character."
     },
     {
         "category": "darcy-dialogue",
@@ -2997,7 +3009,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "The good lady who showed them the house gave Mr. Darcy a most flaming character."
+        "content": "Mrs. Gardiner assumed Mr. Darcy was a liberal master, and that, in the eye of a servant, comprehended every virtue."
     },
     {
         "category": "darcy-actions",
@@ -3005,7 +3017,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Gardiner assumed Mr. Darcy was a liberal master, and that, in the eye of a servant, comprehended every virtue."
+        "content": "Elizabeth thought of Mr. Darcy’s civility and his wish for her to be acquainted with his sister."
     },
     {
         "category": "darcy-actions",
@@ -3013,7 +3025,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth thought of Mr. Darcy’s civility and his wish for her to be acquainted with his sister."
+        "content": "Elizabeth’s uncle and aunt, in their amazement, felt that the attention from Mr. Darcy could only be explained by a partiality for their niece."
     },
     {
         "category": "darcy-actions",
@@ -3021,7 +3033,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth’s uncle and aunt, in their amazement, felt that the attention from Mr. Darcy could only be explained by a partiality for their niece."
+        "content": "Darcy was overflowing with admiration."
     },
     {
         "category": "darcy-dialogue",
@@ -3029,7 +3041,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Darcy was overflowing with admiration."
+        "content": "Darcy determined to be pleased."
     },
     {
         "category": "darcy-dialogue",
@@ -3037,7 +3049,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Darcy determined to be pleased."
+        "content": "Darcy's improvement of manners had outlived one day."
     },
     {
         "category": "darcy-dialogue",
@@ -3045,7 +3057,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Darcy's improvement of manners had outlived one day."
+        "content": "Darcy was so desirous to please, so free from self-consequence or unbending reserve, as now."
     },
     {
         "category": "darcy-dialogue",
@@ -3053,7 +3065,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Darcy was so desirous to please, so free from self-consequence or unbending reserve, as now."
+        "content": "It was evident that he was very much in love with her."
     },
     {
         "category": "darcy-dialogue",
@@ -3061,19 +3073,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "It was evident that he was very much in love with her."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "I cannot be so easily reconciled to myself."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Of Mr. Darcy it was now a matter of anxiety to think well."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "The recollection of what I then said, of my conduct, my manners, my expressions during the whole of it, is now, and has been many months, inexpressibly painful to me."
     },
     {
         "category": "question",
@@ -3084,12 +3084,16 @@
         "content": "A credit score is a numerical judgment of one's financial history. Within it is a consideration of one's debt, the punctuality of repayments, and the breadth of loans managed."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I cannot be so easily reconciled to myself."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "They could not be untouched by his politeness."
     },
     {
         "category": "darcy-dialogue",
-        "content": "Your reproof, so well applied, I shall never forget: ‘Had you behaved in a more gentlemanlike manner.’"
+        "content": "The recollection of what I then said, of my conduct, my manners, my expressions during the whole of it, is now, and has been many months, inexpressibly painful to me."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3097,7 +3101,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Those were your words."
+        "content": "Your reproof, so well applied, I shall never forget: ‘Had you behaved in a more gentlemanlike manner.’"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3105,7 +3109,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You know not, you can scarcely conceive, how they have tortured me; though it was some time, I confess, before I was reasonable enough to allow their justice."
+        "content": "Those were your words."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3113,7 +3117,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I can easily believe it."
+        "content": "You know not, you can scarcely conceive, how they have tortured me; though it was some time, I confess, before I was reasonable enough to allow their justice."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3121,7 +3125,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You thought me then devoid of every proper feeling, I am sure you did."
+        "content": "I can easily believe it."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3129,7 +3133,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "The turn of your countenance I shall never forget, as you said that I could not have addressed you in any possible way that would induce you to accept me."
+        "content": "You thought me then devoid of every proper feeling, I am sure you did."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3137,7 +3141,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Did it, did it _soon_ make you think better of me?"
+        "content": "The turn of your countenance I shall never forget, as you said that I could not have addressed you in any possible way that would induce you to accept me."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3145,7 +3149,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Did you, on reading it, give any credit to its contents?"
+        "content": "Did it, did it _soon_ make you think better of me?"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3153,7 +3157,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I knew that what I wrote must give you pain, but it was necessary."
+        "content": "Did you, on reading it, give any credit to its contents?"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3161,15 +3165,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I hope you have destroyed the letter."
+        "content": "I knew that what I wrote must give you pain, but it was necessary."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth saw that Darcy was anxious for his sister and herself to get acquainted, and forwarded, as much as possible, every attempt at conversation on either side."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "There was one part, especially the opening of it, which I should dread your having the power of reading again."
     },
     {
         "category": "question",
@@ -3180,12 +3180,16 @@
         "content": "I have found immersion to be of foremost importance in my own studies of the modern languages. The repetition of terms and phrases at intervals, engaging in conversation with native speakers, and the perusal of film and literature in the desired tongue are all greatly in the earnest student's favor."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I hope you have destroyed the letter."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Miss Bingley was persuaded that Darcy admired Elizabeth."
     },
     {
         "category": "darcy-dialogue",
-        "content": "I can remember some expressions which might justly make you hate me."
+        "content": "There was one part, especially the opening of it, which I should dread your having the power of reading again."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3193,11 +3197,19 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "When I wrote that letter, I believed myself perfectly calm and cool; but I am since convinced that it was written in a dreadful bitterness of spirit."
+        "content": "I can remember some expressions which might justly make you hate me."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth was perfectly aware that, had she known nothing of Darcy, she could have borne the dread of Lydia’s infamy somewhat better."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "When I wrote that letter, I believed myself perfectly calm and cool; but I am since convinced that it was written in a dreadful bitterness of spirit."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Elizabeth was sorry that she had made Mr. Darcy acquainted with their fears for her sister."
     },
     {
         "category": "darcy-actions",
@@ -3205,19 +3217,11 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth was sorry that she had made Mr. Darcy acquainted with their fears for her sister."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "I cannot give you credit for any philosophy of the kind. Your retrospections must be so totally void of reproach, that the contentment arising from them is not of philosophy, but, what is much better, of ignorance."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Elizabeth had no fear of the news spreading farther through Mr. Darcy's means. There were few people on whose secrecy she would have more confidently depended."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "But with me, it is not so. Painful recollections will intrude, which cannot, which ought not to be repelled."
+        "category": "darcy-actions",
+        "content": "Mr. Darcy hoped Elizabeth had destroyed his letter."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3225,7 +3229,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I have been a selfish being all my life, in practice, though not in principle."
+        "content": "I cannot give you credit for any philosophy of the kind. Your retrospections must be so totally void of reproach, that the contentment arising from them is not of philosophy, but, what is much better, of ignorance."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3233,7 +3237,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "As a child I was taught what was right, but I was not taught to correct my temper."
+        "content": "But with me, it is not so. Painful recollections will intrude, which cannot, which ought not to be repelled."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3241,7 +3245,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I was given good principles, but left to follow them in pride and conceit."
+        "content": "I have been a selfish being all my life, in practice, though not in principle."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3249,7 +3253,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Unfortunately an only son (for many years an only child), I was spoiled by my parents, who, though good themselves, (my father particularly, all that was benevolent and amiable,) allowed, encouraged, almost taught me to be selfish and overbearing, to care for none beyond my own family circle, to think meanly of all the rest of the world, to wish at least to think meanly of their sense and worth compared with my own."
+        "content": "As a child I was taught what was right, but I was not taught to correct my temper."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3257,15 +3261,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Such I was, from eight to eight-and-twenty; and such I might still have been but for you, dearest, loveliest Elizabeth! What do I not owe you!"
+        "content": "I was given good principles, but left to follow them in pride and conceit."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "You taught me a lesson, hard indeed at first, but most advantageous."
     },
     {
         "category": "question",
@@ -3276,12 +3276,16 @@
         "content": "To cultivate critical thinking, one must begin by questioning prevailing assumptions, scrutinizing the evidence at hand, and considering a variety of perspectives. Moreover, one must engage in logical reasoning with care and diligence."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "Unfortunately an only son (for many years an only child), I was spoiled by my parents, who, though good themselves, (my father particularly, all that was benevolent and amiable,) allowed, encouraged, almost taught me to be selfish and overbearing, to care for none beyond my own family circle, to think meanly of all the rest of the world, to wish at least to think meanly of their sense and worth compared with my own."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "An union that must have been to the advantage of both: by her ease and liveliness, his mind might have been softened, his manners improved; and from his judgment, information, and knowledge of the world, she must have received benefit of greater importance."
     },
     {
         "category": "darcy-dialogue",
-        "content": "By you, I was properly humbled."
+        "content": "Such I was, from eight to eight-and-twenty; and such I might still have been but for you, dearest, loveliest Elizabeth! What do I not owe you!"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3289,7 +3293,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I came to you without a doubt of my reception."
+        "content": "You taught me a lesson, hard indeed at first, but most advantageous."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3297,7 +3301,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You showed me how insufficient were all my pretensions to please a woman worthy of being pleased."
+        "content": "By you, I was properly humbled."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3305,7 +3309,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Indeed I had. What will you think of my vanity? I believed you to be wishing, expecting my addresses."
+        "content": "I came to you without a doubt of my reception."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3313,7 +3317,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "My manners must have been in fault, but not intentionally, I assure you."
+        "content": "You showed me how insufficient were all my pretensions to please a woman worthy of being pleased."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3321,7 +3325,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I never meant to deceive you, but my spirits might often lead me wrong."
+        "content": "Indeed I had. What will you think of my vanity? I believed you to be wishing, expecting my addresses."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3329,23 +3333,23 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "How you must have hated me after that evening!"
+        "content": "My manners must have been in fault, but not intentionally, I assure you."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy’s behaviour was pleasing in every respect, as it had been in Derbyshire."
     },
     {
-        "category": "darcy-actions",
-        "content": "Darcy believed himself to have been selfish all his life, though not in principle."
+        "category": "darcy-dialogue",
+        "content": "I never meant to deceive you, but my spirits might often lead me wrong."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Mrs. Gardiner believed Darcy's motivation to be partially that of helping Elizabeth."
     },
     {
-        "category": "darcy-actions",
-        "content": "Darcy admitted that his parents allowed, encouraged, and even taught him to be selfish and overbearing."
+        "category": "darcy-dialogue",
+        "content": "How you must have hated me after that evening!"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3353,15 +3357,11 @@
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy acknowledged that he came to Elizabeth without a doubt of his reception."
+        "content": "Darcy believed himself to have been selfish all his life, though not in principle."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "She was proud of him,--proud that in a cause of compassion and honour he had been able to get the better of himself."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Darcy thought he might still have been selfish had it not been for Elizabeth."
     },
     {
         "category": "question",
@@ -3372,8 +3372,28 @@
         "content": "Were gravity to suddenly vanish, all that is not firmly anchored would be subject to floating into the vast expanse. The atmosphere, too, would swiftly dissipate, and the very orbits of our planet would fall into a state of disarray."
     },
     {
+        "category": "darcy-actions",
+        "content": "Darcy admitted that his parents allowed, encouraged, and even taught him to be selfish and overbearing."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "She and her uncle had been persuaded that affection and confidence subsisted between Mr. Darcy and herself."
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Darcy acknowledged that he came to Elizabeth without a doubt of his reception."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mrs. Bennet: \"Mr. Darcy!--and so it does, I vow. Well, any friend of Mr. Bingley’s will always be welcome here, to be sure; but else I must say that I hate the very sight of him.\""
+    },
+    {
+        "category": "darcy-actions",
+        "content": "Darcy thought he might still have been selfish had it not been for Elizabeth."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mrs. Bennet: \"that tall, proud man\""
     },
     {
         "category": "darcy-actions",
@@ -3381,7 +3401,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Bennet: \"Mr. Darcy!--and so it does, I vow. Well, any friend of Mr. Bingley’s will always be welcome here, to be sure; but else I must say that I hate the very sight of him.\""
+        "content": "Elizabeth regarded Mr. Darcy with an interest, if not quite so tender, at least as reasonable and just, as what Jane felt for Bingley."
     },
     {
         "category": "darcy-dialogue",
@@ -3389,7 +3409,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Bennet: \"that tall, proud man\""
+        "content": "Her astonishment at his coming--at his coming to Netherfield, to Longbourn, and voluntarily seeking her again, was almost equal to what she had known on first witnessing his altered behaviour in Derbyshire."
     },
     {
         "category": "darcy-dialogue",
@@ -3397,7 +3417,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth regarded Mr. Darcy with an interest, if not quite so tender, at least as reasonable and just, as what Jane felt for Bingley."
+        "content": "He could not, in her mother’s presence, be what he was before her uncle and aunt."
     },
     {
         "category": "darcy-dialogue",
@@ -3405,7 +3425,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Her astonishment at his coming--at his coming to Netherfield, to Longbourn, and voluntarily seeking her again, was almost equal to what she had known on first witnessing his altered behaviour in Derbyshire."
+        "content": "Elizabeth was disappointed at Darcy's not speaking to her the week of Jane's proposal, and angry with herself for being so."
     },
     {
         "category": "darcy-dialogue",
@@ -3413,7 +3433,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "He could not, in her mother’s presence, be what he was before her uncle and aunt."
+        "content": "Elizabeth, who knew her mother's rudeness to be levelled at Mr. Darcy, was in such misery of shame that she could hardly keep her seat."
     },
     {
         "category": "darcy-actions",
@@ -3421,7 +3441,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth was disappointed at Darcy's not speaking to her the week of Jane's proposal, and angry with herself for being so."
+        "content": "Elizabeth’s misery increased at such unnecessary, such officious attention!"
     },
     {
         "category": "darcy-actions",
@@ -3429,7 +3449,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth, who knew her mother's rudeness to be levelled at Mr. Darcy, was in such misery of shame that she could hardly keep her seat."
+        "content": "At that instant she felt, that years of happiness could not make Jane or herself amends for moments of such painful confusion."
     },
     {
         "category": "darcy-dialogue",
@@ -3437,27 +3457,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth’s misery increased at such unnecessary, such officious attention!"
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "When I went away, I felt that it would soon happen."
-    },
-    {
-        "category": "others-impressions-of-darcy",
-        "content": "At that instant she felt, that years of happiness could not make Jane or herself amends for moments of such painful confusion."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "On the evening before my going to London, I made a confession to him, which I believe I ought to have made long ago."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy's attention to Jane rekindled the admiration of her former lover."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "I told him of all that had occurred to make my former interference in his affairs absurd and impertinent."
     },
     {
         "category": "question",
@@ -3468,12 +3468,16 @@
         "content": "There would undoubtedly be a keen scientific curiosity, tempered, perhaps, by geopolitical tensions, which would hinge greatly on the nature of the encounter."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "When I went away, I felt that it would soon happen."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Mr. Darcy’s behaviour astonished and vexed Elizabeth."
     },
     {
         "category": "darcy-dialogue",
-        "content": "His surprise was great."
+        "content": "On the evening before my going to London, I made a confession to him, which I believe I ought to have made long ago."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3481,7 +3485,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "He had never had the slightest suspicion."
+        "content": "I told him of all that had occurred to make my former interference in his affairs absurd and impertinent."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3489,7 +3493,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I told him, moreover, that I believed myself mistaken in supposing, as I had done, that your sister was indifferent to him; and as I could easily perceive that his attachment to her was unabated, I felt no doubt of their happiness together."
+        "content": "His surprise was great."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3497,7 +3501,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "From the former."
+        "content": "He had never had the slightest suspicion."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3505,7 +3509,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I had narrowly observed her, during the two visits which I had lately made her here; and I was convinced of her affection."
+        "content": "I told him, moreover, that I believed myself mistaken in supposing, as I had done, that your sister was indifferent to him; and as I could easily perceive that his attachment to her was unabated, I felt no doubt of their happiness together."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3513,7 +3517,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "It did. Bingley is most unaffectedly modest."
+        "content": "From the former."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3521,7 +3525,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "His diffidence had prevented his depending on his own judgment in so anxious a case, but his reliance on mine made everything easy."
+        "content": "I had narrowly observed her, during the two visits which I had lately made her here; and I was convinced of her affection."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3529,7 +3533,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I was obliged to confess one thing, which for a time, and not unjustly, offended him."
+        "content": "It did. Bingley is most unaffectedly modest."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3537,7 +3541,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I could not allow myself to conceal that your sister had been in town three months last winter, that I had known it, and purposely kept it from him."
+        "content": "His diffidence had prevented his depending on his own judgment in so anxious a case, but his reliance on mine made everything easy."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3545,15 +3549,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "He was angry."
+        "content": "I was obliged to confess one thing, which for a time, and not unjustly, offended him."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Lady Catherine: From his earliest hours he was destined for his cousin."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "But his anger, I am persuaded, lasted no longer than he remained in any doubt of your sister’s sentiments."
     },
     {
         "category": "question",
@@ -3564,8 +3564,28 @@
         "content": "One might consider the wheel, electricity, the printing press, the internet, and vaccines as all deserving of recognition, depending on the criteria by which one measures the weight of an invention’s importance."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "I could not allow myself to conceal that your sister had been in town three months last winter, that I had known it, and purposely kept it from him."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "The wife of Mr. Darcy must have such extraordinary sources of happiness necessarily attached to her situation, that she could, upon the whole, have no cause to repine."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "He was angry."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Lady Catherine wants Mr. Darcy to marry her daughter."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "But his anger, I am persuaded, lasted no longer than he remained in any doubt of your sister’s sentiments."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Lady Catherine is concerned that Darcy’s sister could be “polluted” by the Bennet family connection."
     },
     {
         "category": "darcy-dialogue",
@@ -3573,7 +3593,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine wants Mr. Darcy to marry her daughter."
+        "content": "Lady Catherine believes that a connection with Elizabeth would disgrace Darcy in the eyes of everybody."
     },
     {
         "category": "darcy-actions",
@@ -3581,7 +3601,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine is concerned that Darcy’s sister could be “polluted” by the Bennet family connection."
+        "content": "Elizabeth knew not the exact degree of his affection for his aunt, or his dependence on her judgment, but it was natural to suppose that he thought much higher of her Ladyship than she could do."
     },
     {
         "category": "darcy-actions",
@@ -3589,7 +3609,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine believes that a connection with Elizabeth would disgrace Darcy in the eyes of everybody."
+        "content": "With his notions of dignity, he would probably feel that the arguments, which to Elizabeth had appeared weak and ridiculous, contained much good sense and solid reasoning."
     },
     {
         "category": "darcy-actions",
@@ -3597,7 +3617,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Elizabeth knew not the exact degree of his affection for his aunt, or his dependence on her judgment, but it was natural to suppose that he thought much higher of her Ladyship than she could do."
+        "content": "If he had been wavering before, as to what he should do, the advice and entreaty of so near a relation might settle every doubt, and determine him at once to be as happy as dignity unblemished could make him."
     },
     {
         "category": "darcy-actions",
@@ -3605,7 +3625,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "With his notions of dignity, he would probably feel that the arguments, which to Elizabeth had appeared weak and ridiculous, contained much good sense and solid reasoning."
+        "content": "If he is satisfied with only regretting me, when he might have obtained my affections and hand, I shall soon cease to regret him at all."
     },
     {
         "category": "darcy-actions",
@@ -3613,7 +3633,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "If he had been wavering before, as to what he should do, the advice and entreaty of so near a relation might settle every doubt, and determine him at once to be as happy as dignity unblemished could make him."
+        "content": "Mr. Darcy, who never looks at any woman but to see a blemish, and who probably never looked at you in his life! It is admirable!"
     },
     {
         "category": "darcy-actions",
@@ -3621,7 +3641,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "If he is satisfied with only regretting me, when he might have obtained my affections and hand, I shall soon cease to regret him at all."
+        "content": "Mr. Darcy’s indifference was considered as something to be laughed at by Mr. Bennet, but not by Elizabeth."
     },
     {
         "category": "darcy-actions",
@@ -3629,27 +3649,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy, who never looks at any woman but to see a blemish, and who probably never looked at you in his life! It is admirable!"
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Darcy appeared again and smiled at Elizabeth, slightly relieving her agitation."
-    },
-    {
-        "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy’s indifference was considered as something to be laughed at by Mr. Bennet, but not by Elizabeth."
-    },
-    {
-        "category": "darcy-actions",
-        "content": "Darcy approached the table where Elizabeth was sitting with Kitty, pretending to admire her work."
-    },
-    {
-        "category": "others-impressions-of-darcy",
         "content": "Elizabeth secretly formed a desperate resolution, possibly in response to Darcy's actions or demeanor."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "Go to your father; he wants you in the library."
     },
     {
         "category": "question",
@@ -3660,12 +3660,16 @@
         "content": "The consequences may well be profound—perhaps even chaotic. Planets might float aimlessly, infinite energy could become accessible, and paradoxes could arise that defy all reason."
     },
     {
+        "category": "darcy-actions",
+        "content": "Darcy appeared again and smiled at Elizabeth, slightly relieving her agitation."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "Darcy's actions, though kind, appeared to be influenced by his focus on Elizabeth rather than the family."
     },
     {
         "category": "darcy-actions",
-        "content": "Darcy voluntarily helped Lydia by paying the debts and securing the commission."
+        "content": "Darcy approached the table where Elizabeth was sitting with Kitty, pretending to admire her work."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3673,15 +3677,15 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation. It is too long ago."
+        "content": "Go to your father; he wants you in the library."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "She was aware that no one liked him but Jane; and even feared that with the others it was a _dislike_ which not all his fortune and consequence might do away."
     },
     {
-        "category": "darcy-dialogue",
-        "content": "I was in the middle before I knew that I _had_ begun."
+        "category": "darcy-actions",
+        "content": "Darcy voluntarily helped Lydia by paying the debts and securing the commission."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3689,7 +3693,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "For the liveliness of your mind I did."
+        "content": "I cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation. It is too long ago."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3697,7 +3701,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Was there no good in your affectionate behaviour to Jane, while she was ill at Netherfield?"
+        "content": "I was in the middle before I knew that I _had_ begun."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3705,7 +3709,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "Because you were grave and silent, and gave me no encouragement."
+        "content": "For the liveliness of your mind I did."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3713,7 +3717,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "And so was I."
+        "content": "Was there no good in your affectionate behaviour to Jane, while she was ill at Netherfield?"
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3721,7 +3725,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "A man who had felt less might."
+        "content": "Because you were grave and silent, and gave me no encouragement."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3729,7 +3733,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "You need not distress yourself."
+        "content": "And so was I."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3737,15 +3741,11 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "The moral will be perfectly fair."
+        "content": "A man who had felt less might."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Elizabeth replied with tears in her eyes, affirming her love for Mr. Darcy."
-    },
-    {
-        "category": "darcy-dialogue",
-        "content": "Lady Catherine’s unjustifiable endeavours to separate us were the means of removing all my doubts."
     },
     {
         "category": "question",
@@ -3756,12 +3756,16 @@
         "content": "Mr. Fitzwilliam Darcy of Pemberley. I am at your service."
     },
     {
+        "category": "darcy-dialogue",
+        "content": "You need not distress yourself."
+    },
+    {
         "category": "others-impressions-of-darcy",
         "content": "None at all. We all know him to be a proud, unpleasant sort of man; but this would be nothing if you really liked him."
     },
     {
         "category": "darcy-dialogue",
-        "content": "I am not indebted for my present happiness to your eager desire of expressing your gratitude."
+        "content": "The moral will be perfectly fair."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3769,7 +3773,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "I was not in a humour to wait for an opening of yours. My aunt’s intelligence had given me hope, and I was determined at once to know everything."
+        "content": "Lady Catherine’s unjustifiable endeavours to separate us were the means of removing all my doubts."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3777,7 +3781,7 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "My real purpose was to see _you_, and to judge, if I could, whether I might ever hope to make you love me."
+        "content": "I am not indebted for my present happiness to your eager desire of expressing your gratitude."
     },
     {
         "category": "others-impressions-of-darcy",
@@ -3785,11 +3789,27 @@
     },
     {
         "category": "darcy-dialogue",
-        "content": "My avowed one, or what I avowed to myself, was to see whether your sister was still partial to Bingley, and if she were, to make the confession to him which I have since made."
+        "content": "I was not in a humour to wait for an opening of yours. My aunt’s intelligence had given me hope, and I was determined at once to know everything."
     },
     {
         "category": "others-impressions-of-darcy",
         "content": "Oh, my dear Lizzy! pray apologize for my having disliked him so much before. I hope he will overlook it."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "My real purpose was to see _you_, and to judge, if I could, whether I might ever hope to make you love me."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mrs. Bennet, luckily stood in such awe of her intended son-in-law, that she ventured not to speak to him, unless it was in her power to offer him any attention, or mark her deference for his opinion."
+    },
+    {
+        "category": "darcy-dialogue",
+        "content": "My avowed one, or what I avowed to myself, was to see whether your sister was still partial to Bingley, and if she were, to make the confession to him which I have since made."
+    },
+    {
+        "category": "others-impressions-of-darcy",
+        "content": "Mr. Bennet soon assured her that Mr. Darcy was rising every hour in his esteem."
     },
     {
         "category": "darcy-actions",
@@ -3797,7 +3817,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Bennet, luckily stood in such awe of her intended son-in-law, that she ventured not to speak to him, unless it was in her power to offer him any attention, or mark her deference for his opinion."
+        "content": "“I admire all my three sons-in-law highly,” said Mr. Bennet. “Wickham, perhaps, is my favourite; but I think I shall like _your_ husband quite as well as Jane’s.”"
     },
     {
         "category": "darcy-actions",
@@ -3805,7 +3825,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Bennet soon assured her that Mr. Darcy was rising every hour in his esteem."
+        "content": "Mr. Darcy sends the Gardiners all the love in the world that can be spared from me."
     },
     {
         "category": "darcy-dialogue",
@@ -3813,7 +3833,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "“I admire all my three sons-in-law highly,” said Mr. Bennet. “Wickham, perhaps, is my favourite; but I think I shall like _your_ husband quite as well as Jane’s.”"
+        "content": "Mrs. Philips, as well as her sister, stood in too much awe of him to speak with the familiarity which Bingley’s good-humour encouraged."
     },
     {
         "category": "darcy-dialogue",
@@ -3821,7 +3841,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mr. Darcy sends the Gardiners all the love in the world that can be spared from me."
+        "content": "Mrs. Bennet talked of Mrs. Darcy with delighted pride."
     },
     {
         "category": "darcy-actions",
@@ -3829,7 +3849,7 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Philips, as well as her sister, stood in too much awe of him to speak with the familiarity which Bingley’s good-humour encouraged."
+        "content": "Darcy inspired in Georgiana a respect which almost overcame her affection."
     },
     {
         "category": "darcy-actions",
@@ -3837,23 +3857,15 @@
     },
     {
         "category": "others-impressions-of-darcy",
-        "content": "Mrs. Bennet talked of Mrs. Darcy with delighted pride."
+        "content": "Lady Catherine was extremely indignant on the marriage of her nephew."
     },
     {
         "category": "darcy-actions",
         "content": "He could even listen to Sir William Lucas, when he complimented him on carrying away the brightest jewel of the country, and expressed his hopes of their all meeting frequently at St. James’s, with very decent composure."
     },
     {
-        "category": "others-impressions-of-darcy",
-        "content": "Darcy inspired in Georgiana a respect which almost overcame her affection."
-    },
-    {
         "category": "darcy-actions",
         "content": "If he did shrug his shoulders, it was not till Sir William was out of sight."
-    },
-    {
-        "category": "others-impressions-of-darcy",
-        "content": "Lady Catherine was extremely indignant on the marriage of her nephew."
     },
     {
         "category": "darcy-actions",
