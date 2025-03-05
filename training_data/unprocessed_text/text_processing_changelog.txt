@@ -12290,7 +12290,7 @@ pleasure.”
 <darcy-dialogue> I can remember some expressions which might justly make you hate me.  
 <darcy-dialogue> When I wrote that letter, I believed myself perfectly calm and cool; but I am since convinced that it was written in a dreadful bitterness of spirit.  
 <darcy-actions> Mr. Darcy believed the letter to be written in a dreadful bitterness of spirit.  
-<darcy-action> Mr. Darcy hoped Elizabeth had destroyed his letter.
+<darcy-actions> Mr. Darcy hoped Elizabeth had destroyed his letter.
 
 
 
