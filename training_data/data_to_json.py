@@ -2,8 +2,8 @@ import json
 import re
 
 
-input_file = "./training_text/labeled_training_data.txt"
-output_file = "./training_text/labeled_training_data.json"
+input_file = "./training_text/labeled_training_data_2.txt"
+output_file = "./training_text/labeled_training_data_2.json"
 
 structured_data = []
 pattern = re.compile(r"<(.*?)>\s*(.*)")
