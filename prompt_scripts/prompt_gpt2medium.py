@@ -1,9 +1,10 @@
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import torch
 
+
 def load_model(model_path):
     """
-    Loads a GPT2 model and its corresponding tokenizer from the given path.
+    Loads a model and its corresponding tokenizer from the given path.
     
     Parameters:
         model_path (str): Path to the model directory.
@@ -15,6 +16,7 @@ def load_model(model_path):
     model = GPT2LMHeadModel.from_pretrained(model_path)
     model.eval()  # disable dropout layers
     return model, tokenizer
+
 
 def load_models(models_paths):
     """
@@ -30,6 +32,7 @@ def load_models(models_paths):
     for key, path in models_paths.items():
         models_dict[key] = load_model(path)
     return models_dict
+
 
 def generate_text(prompt, model, tokenizer, max_length=100):
     """
@@ -64,6 +67,7 @@ def generate_text(prompt, model, tokenizer, max_length=100):
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return generated_text
 
+
 def generate_text_multiple(prompt, models_dict, selected_models, max_length=100):
     """
     Generates text for a given prompt from one or more selected models.
@@ -86,24 +90,24 @@ def generate_text_multiple(prompt, models_dict, selected_models, max_length=100)
             results[model_key] = "Model not found."
     return results
 
+
 if __name__ == '__main__':
-    # Update the model paths to point to your GPT2-large models
     models_paths = {
-        "1": "./model/darcy-gpt2-large-1",
-        "2": "./model/darcy-gpt2-large-2"
+        "1": "../model/darcy-gpt2-medium-1",
+        "2": "../model/darcy-gpt2-medium-2"
     }
     
     models_dict = load_models(models_paths)
 
     instructions = """Select model to query:    
-        for model1: '1'
-        for model2: '2'
+        for darcy-gpt2-medium-1: '1'
+        for darcy-gpt2-medium-2: '2'
         for both: 'both'
         (ctrl-c to exit)
     """
     selected_models = None
     
-    # User selects which model(s) to use
+    # user selects model(s) to use
     while not selected_models:
         selected_input = input(instructions).strip().lower()
         if selected_input == "both":
@@ -113,10 +117,10 @@ if __name__ == '__main__':
         else:
             print("Invalid input.\n")
     
-    # Get the prompt from the user and generate text from the selected model(s)
+    # get prompt from user and generate text from selected model(s)
     prompt = input("Enter prompt:\n")
     outputs = generate_text_multiple(prompt, models_dict, selected_models, max_length=150)
     
-    # Display the generated outputs
+    # display generated outputs
     for model_key, text in outputs.items():
         print(f"\nGenerated text from {model_key}:\n{text}\n")

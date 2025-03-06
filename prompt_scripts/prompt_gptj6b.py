@@ -1,10 +1,10 @@
-from transformers import GPT2LMHeadModel, GPT2TokenizerFast
+from transformers import GPTJForCausalLM, AutoTokenizer, AutoConfig
 import torch
 
 
 def load_model(model_path):
     """
-    Loads a model and its corresponding tokenizer from the given path.
+    Loads a GPT-J model and its corresponding tokenizer from the given path.
     
     Parameters:
         model_path (str): Path to the model directory.
@@ -12,8 +12,13 @@ def load_model(model_path):
     Returns:
         tuple: (model, tokenizer) with the model set to evaluation mode.
     """
-    tokenizer = GPT2TokenizerFast.from_pretrained(model_path)
-    model = GPT2LMHeadModel.from_pretrained(model_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    config = AutoConfig.from_pretrained(model_path)
+    config.vocab_size = len(tokenizer)
+    model = GPTJForCausalLM.from_pretrained(model_path, config=config, ignore_mismatched_sizes=True)
     model.eval()  # disable dropout layers
     return model, tokenizer
 
@@ -36,21 +41,19 @@ def load_models(models_paths):
 
 def generate_text(prompt, model, tokenizer, max_length=100):
     """
-    Generates text using the provided model and tokenizer based on the given prompt.
+    Generates text using the provided GPT-J model and tokenizer based on the given prompt.
     
     Parameters:
         prompt (str): The text prompt to start generation.
-        model: The loaded GPT2LMHeadModel.
-        tokenizer: The corresponding GPT2TokenizerFast.
+        model: The loaded GPTJForCausalLM model.
+        tokenizer: The corresponding AutoTokenizer.
         max_length (int): Maximum length of the generated sequence.
         
     Returns:
         str: Generated text.
     """
-    # Tokenize the input prompt
     inputs = tokenizer(prompt, return_tensors="pt")
     
-    # Generate text without gradient tracking
     with torch.no_grad():
         outputs = model.generate(
             inputs["input_ids"],
@@ -63,7 +66,6 @@ def generate_text(prompt, model, tokenizer, max_length=100):
             top_k=50
         )
     
-    # Decode the generated tokens and return as text
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return generated_text
 
@@ -93,16 +95,18 @@ def generate_text_multiple(prompt, models_dict, selected_models, max_length=100)
 
 if __name__ == '__main__':
     models_paths = {
-        "1": "./model/darcy-gpt2-medium-1",
-        "2": "./model/darcy-gpt2-medium-2"
+        "1": "../model/darcy-gptj-6b-1",
+        "2": "../model/darcy-gptj-6b-2",
+        "2.1": "../model/darcy-gptj-6b-2.1"
     }
     
     models_dict = load_models(models_paths)
 
     instructions = """Select model to query:    
-        for model1: '1'
-        for model2: '2'
-        for both: 'both'
+        for darcy-gptj-6b-1: '1'
+        for darcy-gptj-6b-2: '2'
+        for darcy-gptj-6b-2.1: '2.1'
+        for both (if available): 'both'
         (ctrl-c to exit)
     """
     selected_models = None
@@ -123,4 +127,4 @@ if __name__ == '__main__':
     
     # display generated outputs
     for model_key, text in outputs.items():
-        print(f"\nGenerated text from {model_key}:\n{text}\n")
+        print(f"\nGenerated text from model {model_key}:\n{text}\n")

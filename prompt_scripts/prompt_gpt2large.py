@@ -1,10 +1,9 @@
-from transformers import GPTJForCausalLM, AutoTokenizer, AutoConfig
+from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import torch
-
 
 def load_model(model_path):
     """
-    Loads a GPT-J model and its corresponding tokenizer from the given path.
+    Loads a GPT2 model and its corresponding tokenizer from the given path.
     
     Parameters:
         model_path (str): Path to the model directory.
@@ -12,16 +11,10 @@ def load_model(model_path):
     Returns:
         tuple: (model, tokenizer) with the model set to evaluation mode.
     """
-    tokenizer = AutoTokenizer.from_pretrained(model_path)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-
-    config = AutoConfig.from_pretrained(model_path)
-    config.vocab_size = len(tokenizer)
-    model = GPTJForCausalLM.from_pretrained(model_path, config=config, ignore_mismatched_sizes=True)
+    tokenizer = GPT2TokenizerFast.from_pretrained(model_path)
+    model = GPT2LMHeadModel.from_pretrained(model_path)
     model.eval()  # disable dropout layers
     return model, tokenizer
-
 
 def load_models(models_paths):
     """
@@ -38,22 +31,23 @@ def load_models(models_paths):
         models_dict[key] = load_model(path)
     return models_dict
 
-
 def generate_text(prompt, model, tokenizer, max_length=100):
     """
-    Generates text using the provided GPT-J model and tokenizer based on the given prompt.
+    Generates text using the provided model and tokenizer based on the given prompt.
     
     Parameters:
         prompt (str): The text prompt to start generation.
-        model: The loaded GPTJForCausalLM model.
-        tokenizer: The corresponding AutoTokenizer.
+        model: The loaded GPT2LMHeadModel.
+        tokenizer: The corresponding GPT2TokenizerFast.
         max_length (int): Maximum length of the generated sequence.
         
     Returns:
         str: Generated text.
     """
+    # Tokenize the input prompt
     inputs = tokenizer(prompt, return_tensors="pt")
     
+    # Generate text without gradient tracking
     with torch.no_grad():
         outputs = model.generate(
             inputs["input_ids"],
@@ -66,9 +60,9 @@ def generate_text(prompt, model, tokenizer, max_length=100):
             top_k=50
         )
     
+    # Decode the generated tokens and return as text
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return generated_text
-
 
 def generate_text_multiple(prompt, models_dict, selected_models, max_length=100):
     """
@@ -92,24 +86,24 @@ def generate_text_multiple(prompt, models_dict, selected_models, max_length=100)
             results[model_key] = "Model not found."
     return results
 
-
 if __name__ == '__main__':
+    # Update the model paths to point to your GPT2-large models
     models_paths = {
-        "1": "./model/darcy-gptj-6b-1",
-        "2": "./model/darcy-gptj-6b-2",
-        "2.1": "./model/darcy-gptj-6b-2.1"
+        "1": "../model/darcy-gpt2-large-1",
+        "2": "../model/darcy-gpt2-large-2"
     }
     
     models_dict = load_models(models_paths)
 
     instructions = """Select model to query:    
-        for model1: '1'
-        for both (if available): 'both'
+        for darcy-gpt2-large-1: '1'
+        for darcy-gpt2-large-2: '2'
+        for both: 'both'
         (ctrl-c to exit)
     """
     selected_models = None
     
-    # user selects model(s) to use
+    # User selects which model(s) to use
     while not selected_models:
         selected_input = input(instructions).strip().lower()
         if selected_input == "both":
@@ -119,10 +113,10 @@ if __name__ == '__main__':
         else:
             print("Invalid input.\n")
     
-    # get prompt from user and generate text from selected model(s)
+    # Get the prompt from the user and generate text from the selected model(s)
     prompt = input("Enter prompt:\n")
     outputs = generate_text_multiple(prompt, models_dict, selected_models, max_length=150)
     
-    # display generated outputs
+    # Display the generated outputs
     for model_key, text in outputs.items():
-        print(f"\nGenerated text from model {model_key}:\n{text}\n")
+        print(f"\nGenerated text from {model_key}:\n{text}\n")
