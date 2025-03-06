@@ -37,11 +37,12 @@ tokenizer.add_special_tokens(special_tokens_dict)
 
 
 def tokenize(samples):
-    return tokenizer(samples["text"], padding="max_length", truncation=True, max_length=512)
-
+    tokenized_samples = tokenizer(samples["text"], padding="max_length", truncation=True, max_length=512)
+    tokenized_samples["labels"] = tokenized_samples["input_ids"].copy()
+    return tokenized_samples
 
 tokenized_data = data.map(tokenize, batched=True)
-tokenized_data.set_format(type="torch", columns=["input_ids", "attention_mask"])
+tokenized_data.set_format(type="torch", columns=["input_ids", "attention_mask", "labels"])
 
 
 # load model without bitsandbytes quantization (LoRA only)
