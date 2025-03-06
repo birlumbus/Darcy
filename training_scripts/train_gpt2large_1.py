@@ -3,8 +3,6 @@ from transformers import GPT2TokenizerFast, GPT2LMHeadModel, Trainer, TrainingAr
 from torch.utils.data import Dataset
 
 
-
-
 gpt_model = "gpt2-large"
 darcy_gpt_loc = "../model/darcy-gpt2-large-1"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_1.json"

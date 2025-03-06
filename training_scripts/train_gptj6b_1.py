@@ -1,8 +1,13 @@
 import json
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments, BitsAndBytesConfig
+from transformers import (
+    AutoTokenizer, 
+    AutoModelForCausalLM, 
+    Trainer, 
+    TrainingArguments
+)
 from datasets import Dataset
-from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from peft import LoraConfig, get_peft_model
 
 
 gpt_model = "EleutherAI/gpt-j-6B"
@@ -10,7 +15,6 @@ darcy_gpt_loc = "../model/darcy-gptj-6b-1"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_1.json"
 
 
-# returns list of formatted data; preserves order from json
 def load_data(json_file):
     with open(json_file, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -20,6 +24,7 @@ def load_data(json_file):
         formatted_text = f"[CATEGORY: {sample['category']}] [TEXT: {sample['content']}]"
         formatted_samples.append(formatted_text)
     return formatted_samples
+
 
 texts = load_data(training_data_loc)
 data = Dataset.from_dict({"text": texts})
@@ -38,24 +43,15 @@ def tokenize(samples):
 tokenized_data = data.map(tokenize, batched=True)
 tokenized_data.set_format(type="torch", columns=["input_ids", "attention_mask"])
 
-# load model with quantization (QLoRA)
-bnb_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_compute_dtype=torch.bfloat16
-)
 
-
+# load model without bitsandbytes quantization (LoRA only)
 model = AutoModelForCausalLM.from_pretrained(
     gpt_model,
-    quantization_config=bnb_config,
-    device_map="auto"
+    device_map="auto",
+    torch_dtype=torch.bfloat16
 )
 
-
 model.resize_token_embeddings(len(tokenizer))
-model = prepare_model_for_kbit_training(model)
 
 
 # LoRA config
@@ -77,10 +73,11 @@ training_args = TrainingArguments(
     num_train_epochs=3,
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
-    learning_rate=1e-5,
+    learning_rate=5e-6,
     save_steps=200,
     save_total_limit=2,
-    fp16=True,
+    fp16=False,
+    bf16=True,
     logging_steps=50,
     prediction_loss_only=True,
 )
@@ -94,6 +91,6 @@ trainer = Trainer(
 # train!
 trainer.train()
 
-# saving tokenizer because I've made changes to it
+# save the fine-tuned model and tokenizer
 trainer.save_model(darcy_gpt_loc)
 tokenizer.save_pretrained(darcy_gpt_loc)
