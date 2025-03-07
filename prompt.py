@@ -3,12 +3,8 @@ import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
 
 
-# Define available models by category.
-# Each entry maps the category name to a dictionary that contains:
-#   - The module for that category (which has load_models and generate_text).
-#   - A models dict mapping model IDs to their paths.
 model_categories = {
-    "gpt2medium": {
+    "medium": {
         "module": medium,
         "models": {
             "0": "gpt2-medium",
@@ -16,7 +12,7 @@ model_categories = {
             "2": "./model/darcy-gpt2-medium-2"
         }
     },
-    "gpt2large": {
+    "large": {
         "module": large,
         "models": {
             "0": "gpt2-large",
@@ -24,7 +20,7 @@ model_categories = {
             "2": "./model/darcy-gpt2-large-2"
         }
     },
-    "gptj6b": {
+    "6b": {
         "module": gptj6b,
         "models": {
             "0": "EleutherAI/gpt-j-6B",
@@ -58,10 +54,10 @@ def parse_selection(selection):
     
     Acceptable formats:
       - "all"                -> all models from all categories
-      - "gpt2medium"         -> all models in gpt2medium
-      - "gpt2large:1"        -> only model "1" from gpt2large
-      - "gpt2medium:all"     -> all models in gpt2medium
-      - Comma-separated values, e.g. "gpt2medium:1, gptj6b"
+      - "medium"         -> all models in medium
+      - "large:1"        -> only model "1" from large
+      - "6b:all"     -> all models in 6b
+      - Comma-separated values, e.g. "medium:1, 6b"
     """
     selection = selection.strip().lower()
     if selection == "all":
@@ -97,8 +93,60 @@ def parse_selection(selection):
     return result
 
 
-if __name__ == '__main__':
-    # display available categories and model IDs
+def file_mode(file_path, output_file_path):
+    """
+    In file mode, use all models from every category.
+    Input and output file paths are set in main()
+    All models are prompted in order, one prompt at a time
+    Results are saved in that order.
+    """
+    with open(file_path, "r") as f:
+        prompt_list = [line.strip() for line in f if line.strip()]
+    
+    # in file mode, use all models from every category.
+    selected_dict = {}
+    for category, cat_info in model_categories.items():
+        selected_dict[category] = list(cat_info["models"].keys())
+    
+    # query all models in order by category then model ID
+    final_outputs = []
+
+    # 1. select question 
+    for prompt_text in prompt_list:
+        print(f"\nNEW PROMPT:\n{prompt_text}\n")
+
+        output_for_prompt = []
+        output_for_prompt.append(f"\n\nPrompt text:\n{prompt_text}\n")
+
+        # 2. select category
+        for category in model_categories:
+            # load models for current category.
+            loaded_models = load_models_for_category(category)
+
+            # 3. iterate over models in category
+            for model_id in model_categories[category]["models"]:
+                mod = model_categories[category]["module"]
+                if model_id in loaded_models:
+                    print(f"\nPROMPTING NEW MODEL: {category}-{model_id}\n")
+
+                    model, tokenizer = loaded_models[model_id]
+                    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=150)
+                    output_for_prompt.append(f"From {category}-{model_id}:\n{output_text}\n\n")
+                else:
+                    output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
+        final_outputs.append("\n".join(output_for_prompt))
+    
+    # join results for each prompt with a separator
+    result_text = ("\n" + "-"*80 + "\n\n").join(final_outputs)
+    try:
+        with open(output_file_path, "w") as f:
+            f.write(result_text)
+        print(f"Results saved to {output_file_path}")
+    except Exception as e:
+        print(f"Error writing to file: {e}")
+
+
+def interactive_mode():
     print("Available model categories and models:")
     for category, cat_info in model_categories.items():
         model_ids = ", ".join(cat_info["models"].keys())
@@ -107,25 +155,25 @@ if __name__ == '__main__':
     print("\nEnter your selection.")
     print("Examples:")
     print("  all")
-    print("  gpt2medium")
-    print("  gpt2large:1")
-    print("  gpt2medium:1, gptj6b")
+    print("  medium")
+    print("  large:1")
+    print("  6b:2.1, large")
     print("  (ctrl-c to exit)")
     selected_dict = None
     
     while not selected_dict:
         selection_input = input("Your selection: ")
         selected_dict = parse_selection(selection_input)
-        
         if not selected_dict:
             print("Invalid input.")
     
     prompt_text = input("\nEnter prompt:\n")
+    print()
     
     outputs = {}
-    # Iterate over each selected category and model.
+    # iterate over each selected category and model.
     for category, model_ids in selected_dict.items():
-        # Load the models for this category using the module’s load_models() function.
+        # use module’s load_models()
         loaded_models = load_models_for_category(category)
         mod = model_categories[category]["module"]
         for model_id in model_ids:
@@ -139,3 +187,22 @@ if __name__ == '__main__':
     print("\nGenerated outputs:")
     for key, text in outputs.items():
         print(f"\nFrom {key}:\n{text}\n")
+
+
+def main():
+    file_path = "./test_prompts.txt"
+    output_file_path = "./results.txt"
+
+    print("Select mode:")
+    print("  [s] Interactive mode (single prompt to model(s) of your choice)")
+    print(f"  [f] File mode (submit prompts found in {file_path})")
+    mode_choice = input("Your selection (default is s): ").strip().lower()
+    
+    if mode_choice == "f":
+        file_mode(file_path, output_file_path)
+    else:
+        interactive_mode()
+
+
+if __name__ == '__main__':
+    main()
