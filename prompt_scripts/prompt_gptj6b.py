@@ -95,6 +95,7 @@ def generate_text_multiple(prompt, models_dict, selected_models, max_length=100)
 
 if __name__ == '__main__':
     models_paths = {
+        "0": "EleutherAI/gpt-j-6B",
         "1": "../model/darcy-gptj-6b-1",
         "2": "../model/darcy-gptj-6b-2",
         "2.1": "../model/darcy-gptj-6b-2.1"
@@ -102,11 +103,12 @@ if __name__ == '__main__':
     
     models_dict = load_models(models_paths)
 
-    instructions = """Select model to query:    
-        for darcy-gptj-6b-1: '1'
-        for darcy-gptj-6b-2: '2'
+    instructions = """Select model to query:
+        for base gpt-j-6B:     '0'    
+        for darcy-gptj-6b-1:   '1'
+        for darcy-gptj-6b-2:   '2'
         for darcy-gptj-6b-2.1: '2.1'
-        for both (if available): 'both'
+        for all available:     'all'
         (ctrl-c to exit)
     """
     selected_models = None
@@ -114,7 +116,7 @@ if __name__ == '__main__':
     # user selects model(s) to use
     while not selected_models:
         selected_input = input(instructions).strip().lower()
-        if selected_input == "both":
+        if selected_input == "all":
             selected_models = list(models_dict.keys())
         elif selected_input in models_dict:
             selected_models = [selected_input]
