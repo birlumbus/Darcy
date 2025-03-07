@@ -11,7 +11,7 @@ from peft import LoraConfig, get_peft_model
 
 
 gpt_model = "EleutherAI/gpt-j-6B"
-darcy_gpt_loc = "../model/darcy-gptj-6b-2"
+darcy_gpt_loc = "../model/darcy-gptj-6b-2.1"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_2.json"
 
 
@@ -74,7 +74,7 @@ training_args = TrainingArguments(
     num_train_epochs=3,
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
-    learning_rate=5e-6,
+    learning_rate=1e-5,
     save_steps=200,
     save_total_limit=2,
     fp16=False,
