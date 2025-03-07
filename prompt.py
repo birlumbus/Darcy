@@ -130,7 +130,7 @@ def file_mode(file_path, output_file_path):
                     print(f"\nPROMPTING NEW MODEL: {category}-{model_id}\n")
 
                     model, tokenizer = loaded_models[model_id]
-                    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=150)
+                    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
                     output_for_prompt.append(f"From {category}-{model_id}:\n{output_text}\n\n")
                 else:
                     output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
@@ -179,7 +179,7 @@ def interactive_mode():
         for model_id in model_ids:
             if model_id in loaded_models:
                 model, tokenizer = loaded_models[model_id]
-                output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=150)
+                output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
                 outputs[f"{category}-{model_id}"] = output_text
             else:
                 outputs[f"{category}-{model_id}"] = "Model not found."
@@ -191,7 +191,7 @@ def interactive_mode():
 
 def main():
     file_path = "./test_prompts.txt"
-    output_file_path = "./results.txt"
+    output_file_path = "./test_results.txt"
 
     print("Select mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")

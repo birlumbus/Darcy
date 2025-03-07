@@ -1,5 +1,13 @@
-from transformers import GPTJForCausalLM, AutoTokenizer, AutoConfig
+import warnings
+from transformers import logging
+
+logging.set_verbosity_error()
+warnings.filterwarnings("ignore", category=UserWarning)
+
+
+from transformers import GPTJForCausalLM, AutoTokenizer, AutoConfig, TextIteratorStreamer
 import torch
+import threading
 
 
 def load_model(model_path):
@@ -39,9 +47,10 @@ def load_models(models_paths):
     return models_dict
 
 
-def generate_text(prompt, model, tokenizer, max_length=100):
+def generate_text(prompt, model, tokenizer, max_length=256):
     """
     Generates text using the provided GPT-J model and tokenizer based on the given prompt.
+    Streams the generated tokens to give real-time progress updates.
     
     Parameters:
         prompt (str): The text prompt to start generation.
@@ -54,23 +63,37 @@ def generate_text(prompt, model, tokenizer, max_length=100):
     """
     inputs = tokenizer(prompt, return_tensors="pt")
     
-    with torch.no_grad():
-        outputs = model.generate(
-            inputs["input_ids"],
-            attention_mask=inputs["attention_mask"],
-            max_length=max_length,
-            num_return_sequences=1,
-            no_repeat_ngram_size=2,
-            do_sample=True,
-            top_p=0.95,
-            top_k=50
-        )
+    # create a streamer that will yield tokens as they are generated.
+    streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
     
-    generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # prepare generation arguments including the streamer.
+    generation_kwargs = {
+        "input_ids": inputs["input_ids"],
+        "attention_mask": inputs["attention_mask"],
+        "max_length": max_length,
+        "num_return_sequences": 1,
+        "no_repeat_ngram_size": 2,
+        "do_sample": True,
+        "top_p": 0.95,
+        "top_k": 50,
+        "streamer": streamer
+    }
+    
+    # launch generation in a separate thread
+    thread = threading.Thread(target=model.generate, kwargs=generation_kwargs)
+    thread.start()
+    
+    # print tokens as they are generated
+    generated_text = ""
+    for new_text in streamer:
+        print(new_text, end="", flush=True)  # Progress update on console.
+        generated_text += new_text
+    
+    thread.join()
     return generated_text
 
 
-def generate_text_multiple(prompt, models_dict, selected_models, max_length=100):
+def generate_text_multiple(prompt, models_dict, selected_models, max_length=256):
     """
     Generates text for a given prompt from one or more selected models.
     
