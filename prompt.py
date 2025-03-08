@@ -158,8 +158,8 @@ def file_mode(file_path, output_file_path):
                     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
                     
                     # calculate perplexity for the generated output
-                    perplexity_val = calculate_perplexity(output_text)
-                    
+                    perplexity_val = calculate_perplexity(output_text, model, tokenizer)
+
                     # build the output string
                     model_output_info = f"From {category}-{model_id}:\n{output_text}\nPerplexity: {perplexity_val}\n"
                     
