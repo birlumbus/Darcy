@@ -244,8 +244,8 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./test_prompt.txt"
-    output_file_path = "./test_result.txt"
+    file_path = "./test_prompts.txt"
+    output_file_path = "./test_results.txt"
 
     print("Select mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")
