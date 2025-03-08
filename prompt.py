@@ -1,6 +1,7 @@
 import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
+from evaluation import evaluate_output
 
 
 model_categories = {
@@ -131,6 +132,9 @@ def file_mode(file_path, output_file_path):
 
                     model, tokenizer = loaded_models[model_id]
                     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+                    ########
+                    ### evaluate_output()
+                    ########
                     output_for_prompt.append(f"From {category}-{model_id}:\n{output_text}\n\n")
                 else:
                     output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
