@@ -170,7 +170,7 @@ def file_mode(file_path, output_file_path):
                         if category in base_outputs:
                             reference_texts = [base_outputs[category]] + dialogue_references
                             bleu, rouge, meteor = bleu_rogue_meteor(reference_texts, output_text)
-                            model_output_info += f"BLEU: {bleu}, ROUGE: {rouge}, METEOR: {meteor}\n"
+                            model_output_info += f"BLEU: {bleu}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
                         else:
                             model_output_info += "Base model output not available for BLEU/ROUGE/METEOR comparison.\n"
                     
@@ -237,8 +237,8 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./test_prompts.txt"
-    output_file_path = "./test_results.txt"
+    file_path = "./test_prompt.txt"
+    output_file_path = "./test_result.txt"
 
     print("Select mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")
