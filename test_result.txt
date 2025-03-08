@@ -1,0 +1,85 @@
+Prompt text:
+In the voice of Mr. Darcy, from Pride and Prejudice: Can you summarize the plot of Pride and Prejudice in a few sentences?
+
+From medium-0:
+ I've heard it said that you are a sort of poet, and I really think that the prose and the music were really, really important to this story, but I'm wondering what does it mean to summarize this book in one sentence?
+
+Mr. Fowkes: I will say that it was important for me to convey what is really funny and then let it sink in and settle. I think it had a lot to do with the nature of the world we live in, particularly the Victorian setting. And that was what kind of really struck me when I thought about it. So we have all these characters who have lost their fathers in very tragic deaths. There's nothing to the situation; everything is so grim and dark, you can't help but think about something like a tragic death. If you're a child, it doesn't register, because we are used to childhood. To the best of my knowledge, nothing about the setting ever suggested you had to be raised that way. It was a world, a certain kind, with certain ideas about life and death, which was sort, like, something
+Perplexity: 15.287562370300293
+
+From medium-1:
+ In short, Mr and Mrs. Gardiner, after a meeting of their own, leave their friend Edward to marry Catherine.]
+Perplexity: 38.68920135498047
+BLEU: 1.8790719577885673e-06
+ROUGE: 0.0478468899521531
+METEOR: 0.01735106998264893
+
+From medium-2:
+ If you had no further further question, I could leave you.]
+Perplexity: 34.91583251953125
+BLEU: 4.0614213022592505e-09
+ROUGE: 0.029850746268656716
+METEOR: 0.0183396281231842
+
+From large-0:
+
+
+A. The plot is about one girl, called Jane, and how she falls in love with another girl who is called Mr Hyde. And also this is the first time that Mr, Hyde, who lives in the woods, has not shown up. It's very complicated, because the boy's friend has also been missing. He may be in prison.
+The plot's about all these little issues but it's also like a movie. There are some good scenes in there, but they're not particularly epic or anything. I think I was going to use a lot of dialogue, like maybe a hundred lines, which would have been epic, or, you know, maybe something like fifty thousand lines. That's the kind of film that I would try to do. But there's no dialogue. So, we tried to get it in through this little, little voice. When you see it, it sounds like someone talking in another world. Actually, a voice that is in this other world, where there was no idea of love and there is no time. They're just friends. We have this voice
+Perplexity: 14.984227180480957
+
+From large-1:
+
+
+[Darcy] said that at first sight it appeared to be very dull indeed; but, if one took no pleasure in it, it was easy to forget that it has been at all admired by such persons, and by great nations; and it might be well called a novel, when all this is omitted.
+]
+Perplexity: 23.495521545410156
+BLEU: 0.0014661888035151414
+ROUGE: 0.09322033898305085
+METEOR: 0.08274231678486997
+
+From large-2:
+
+
+The protagonist is an upper-class, middle-aged woman, named Jane Austen. She is interested in going to the theater, but she fears they will not see her as she really is; and when she tries to persuade her brother to attend the same theater she is sent there, her attempts fail because her dress is too revealing; she has to leave the company, and her father disapproves of her attempt to flirt with him.]
+Perplexity: 10.62166690826416
+BLEU: 0.0021995445920596447
+ROUGE: 0.09411764705882354
+METEOR: 0.0935125657510228
+
+From 6b-0:
+
+
+Well, I think I am only saying exactly what is in the book, that is to say, a great deal, because it is about a girl named Elizabeth Bennet who is determined to marry Mr Darley, her neighbor and not her sister. Her father wants to ensure that the match is made for some other reason than the reason the family wants it to be made. He has to find a family for Mr D.
+We get a very full introduction, he’s a nice and amusing sort of a fellow who does a lot of business, and has some money. There is a sort-of match, which is just called Match Makers, in which there are families who make matches for you, they find you a suitable match. The mother‘s name is Lady Catherine, she is the mother, the father is Mr Collins, Lady Catherin‟s husband is called MrCollins, but you never call him so. They are sortof engaged, not really married. This is all introduced to us, all of us. Mr Bingle, who„s Mr
+Perplexity: 15.09794807434082
+
+From 6b-1:
+ Sure, why not. But we're more interested in hearing how Jane Bennet describes her own love for Pemberley itself. In Jane's words, "All that I can see or hear of this house is charming, and every part of it that is mine seems peculiarly happy to me." With over 200 years of literary history behind it, who better to provide a little background on Jane and her beloved mansion, PEMBERLEY?
+Perplexity: 13.112812042236328
+BLEU: 0.0022099745449825916
+ROUGE: 0.09016393442622951
+METEOR: 0.07640586797066014
+
+From 6b-2:
+
+
+I was just about to get out the dictionary to look up the meaning of the word "summary". It sounds like it would be an excellent question to go with one of my favorite quotes:
+(paraphrased, for some reason) "Pride and prejudice is a tale, told by an idiot, full of sound and fury, signifying nothing."
+Thanks for the question. And the quote.
+--
+The meaning I think you are referring to (one that doesn't really exist in the English language) is called a "synopsis". A synopsis is the summary of a plot. I'd guess that, in theory, a synopsis of "P&P" would go something like this: The main character of P&PP is Elizabeth Bennet. Bennets father is Mr Darcies boss and he makes her marry her cousin, Bingley. She hates Bingly and eventually marries the man of her dreams, the aforementioned Mr Darcys son. But of course, all is not what it seems. There are two more men who she doesn"t know and who are
+Perplexity: 9.82901382446289
+BLEU: 0.0158333504357193
+ROUGE: 0.1588235294117647
+METEOR: 0.21061589762925956
+
+From 6b-2.1:
+
+
+It’s about two families who are at odds–the Bennet and Fitzwilliam families–but they have no idea that they‘re at war.
+Then, one day, Mr Bennete comes across a letter that Mrs. Bennets wrote, which has a rather unkind letter, to the woman who used to be Mr Fitzwiliam‟s fiancée. Now they must decide whether to tell the truth.
+Perplexity: 14.947086334228516
+BLEU: 0.0019512405550558252
+ROUGE: 0.09482758620689655
+METEOR: 0.083128078817734

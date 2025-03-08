@@ -41,7 +41,11 @@ def load_dialogue_references():
     Each file should contain a single line representing a coherent passage of Darcy's dialogue.
     Ideally, each passage is long enough to capture a complete thought – around 40-60 words is suggested.
     """
-    dialogue_files = ["darcy_dialogue_1.txt", "darcy_dialogue_2.txt", "darcy_dialogue_3.txt"]
+    dialogue_files = [
+        "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
+        "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
+        "./evaluation/reference_dialogue/darcy_dialogue_3.txt"
+    ]
     references = []
     for file in dialogue_files:
         try:
