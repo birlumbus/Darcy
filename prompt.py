@@ -1,7 +1,8 @@
 import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
-from evaluation import calculate_perplexity, bleu_rogue_meteor
+from evaluation.calculate_perplexity import calculate_perplexity
+from evaluation.bleu_rouge_meteor import bleu_rouge_meteor
 
 
 model_categories = {
@@ -155,7 +156,9 @@ def file_mode(file_path, output_file_path):
                 if model_id in loaded_models:
                     print(f"\nPROMPTING MODEL: {category}-{model_id}\n")
                     model, tokenizer = loaded_models[model_id]
+                    # prints text as it's generated
                     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+                    print() # line break
                     
                     # calculate perplexity for the generated output
                     perplexity_val = calculate_perplexity(output_text, model, tokenizer)
@@ -169,7 +172,7 @@ def file_mode(file_path, output_file_path):
                     else:
                         if category in base_outputs:
                             reference_texts = [base_outputs[category]] + dialogue_references
-                            bleu, rouge, meteor = bleu_rogue_meteor(reference_texts, output_text)
+                            bleu, rouge, meteor = bleu_rouge_meteor(reference_texts, output_text)
                             model_output_info += f"BLEU: {bleu}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
                         else:
                             model_output_info += "Base model output not available for BLEU/ROUGE/METEOR comparison.\n"
@@ -184,9 +187,9 @@ def file_mode(file_path, output_file_path):
     try:
         with open(output_file_path, "w") as f:
             f.write(result_text)
-        print(f"Results saved to {output_file_path}")
+        print(f"\nResults saved to {output_file_path}\n")
     except Exception as e:
-        print(f"Error writing to file: {e}")
+        print(f"\nError writing to file: {e}\n")
 
 
 def interactive_mode():
