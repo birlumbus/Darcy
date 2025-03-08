@@ -1,12 +1,11 @@
 import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
-from evaluation import evaluate_output
 
 
 model_categories = {
     "medium": {
-        "module": medium,
+        "category": medium,
         "models": {
             "0": "gpt2-medium",
             "1": "./model/darcy-gpt2-medium-1",
@@ -14,7 +13,7 @@ model_categories = {
         }
     },
     "large": {
-        "module": large,
+        "category": large,
         "models": {
             "0": "gpt2-large",
             "1": "./model/darcy-gpt2-large-1",
@@ -22,7 +21,7 @@ model_categories = {
         }
     },
     "6b": {
-        "module": gptj6b,
+        "category": gptj6b,
         "models": {
             "0": "EleutherAI/gpt-j-6B",
             "1": "./model/darcy-gptj-6b-1",
@@ -35,7 +34,7 @@ model_categories = {
 
 def load_models_for_category(category):
     """
-    Uses the module associated with a category to load models.
+    Uses the category associated with a category to load models.
     
     Parameters:
         category (str): The category name (e.g. "gpt2medium").
@@ -44,7 +43,7 @@ def load_models_for_category(category):
         dict: Mapping of model IDs to (model, tokenizer) tuples.
     """
     cat_info = model_categories[category]
-    mod = cat_info["module"]
+    mod = cat_info["category"]
     paths = cat_info["models"]
     return mod.load_models(paths)
 
@@ -126,15 +125,12 @@ def file_mode(file_path, output_file_path):
 
             # 3. iterate over models in category
             for model_id in model_categories[category]["models"]:
-                mod = model_categories[category]["module"]
+                mod = model_categories[category]["category"]
                 if model_id in loaded_models:
                     print(f"\nPROMPTING NEW MODEL: {category}-{model_id}\n")
 
                     model, tokenizer = loaded_models[model_id]
                     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-                    ########
-                    ### evaluate_output()
-                    ########
                     output_for_prompt.append(f"From {category}-{model_id}:\n{output_text}\n\n")
                 else:
                     output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
@@ -177,9 +173,9 @@ def interactive_mode():
     outputs = {}
     # iterate over each selected category and model.
     for category, model_ids in selected_dict.items():
-        # use module’s load_models()
+        # use category’s load_models()
         loaded_models = load_models_for_category(category)
-        mod = model_categories[category]["module"]
+        mod = model_categories[category]["category"]
         for model_id in model_ids:
             if model_id in loaded_models:
                 model, tokenizer = loaded_models[model_id]
