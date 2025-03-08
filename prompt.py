@@ -1,6 +1,7 @@
 import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
+from evaluation import calculate_perplexity, bleu_rogue_meteor
 
 
 model_categories = {
@@ -32,12 +33,30 @@ model_categories = {
 }
 
 
+def load_dialogue_references():
+    """
+    Load reference dialogue passages from three files.
+    
+    Each file should contain a single line representing a coherent passage of Darcy's dialogue.
+    Ideally, each passage is long enough to capture a complete thought – around 40-60 words is suggested.
+    """
+    dialogue_files = ["darcy_dialogue_1.txt", "darcy_dialogue_2.txt", "darcy_dialogue_3.txt"]
+    references = []
+    for file in dialogue_files:
+        try:
+            with open(file, "r") as f:
+                references.append(f.read().strip())
+        except Exception as e:
+            print(f"Error loading {file}: {e}")
+    return references
+
+
 def load_models_for_category(category):
     """
     Uses the category associated with a category to load models.
     
     Parameters:
-        category (str): The category name (e.g. "gpt2medium").
+        category (str): The category name (e.g. "medium").
         
     Returns:
         dict: Mapping of model IDs to (model, tokenizer) tuples.
@@ -54,9 +73,9 @@ def parse_selection(selection):
     
     Acceptable formats:
       - "all"                -> all models from all categories
-      - "medium"         -> all models in medium
-      - "large:1"        -> only model "1" from large
-      - "6b:all"     -> all models in 6b
+      - "medium"             -> all models in medium
+      - "large:1"            -> only model "1" from large
+      - "6b:all"             -> all models in 6b
       - Comma-separated values, e.g. "medium:1, 6b"
     """
     selection = selection.strip().lower()
@@ -96,42 +115,66 @@ def parse_selection(selection):
 def file_mode(file_path, output_file_path):
     """
     In file mode, use all models from every category.
-    Input and output file paths are set in main()
-    All models are prompted in order, one prompt at a time
-    Results are saved in that order.
+    Input and output file paths are set in main().
+    All models are prompted in order, one prompt at a time.
+    
+    For each prompt, the generated output's perplexity is calculated.
+    For each non-base model (model ID not "0"), the BLEU/ROUGE/METEOR 
+    scores are computed using a reference text list: 
+        1. base model output (if available) 
+        2. dialogue passages from file
     """
     with open(file_path, "r") as f:
         prompt_list = [line.strip() for line in f if line.strip()]
     
-    # in file mode, use all models from every category.
+    # dialogue for BLEU/ROUGE/METEOR comparisons
+    dialogue_references = load_dialogue_references()
+    
     selected_dict = {}
     for category, cat_info in model_categories.items():
         selected_dict[category] = list(cat_info["models"].keys())
     
-    # query all models in order by category then model ID
     final_outputs = []
+    # stores base model outputs for each category.
+    base_outputs = {}
 
-    # 1. select question 
+    # process each prompt
     for prompt_text in prompt_list:
         print(f"\nNEW PROMPT:\n{prompt_text}\n")
-
         output_for_prompt = []
-        output_for_prompt.append(f"\n\nPrompt text:\n{prompt_text}\n")
-
-        # 2. select category
+        output_for_prompt.append(f"Prompt text:\n{prompt_text}\n")
+        
+        # process each category
         for category in model_categories:
-            # load models for current category.
+            # load models for current category
             loaded_models = load_models_for_category(category)
-
-            # 3. iterate over models in category
+            mod = model_categories[category]["category"]
+            
+            # iterate over models in the category
             for model_id in model_categories[category]["models"]:
-                mod = model_categories[category]["category"]
                 if model_id in loaded_models:
-                    print(f"\nPROMPTING NEW MODEL: {category}-{model_id}\n")
-
+                    print(f"\nPROMPTING MODEL: {category}-{model_id}\n")
                     model, tokenizer = loaded_models[model_id]
                     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-                    output_for_prompt.append(f"From {category}-{model_id}:\n{output_text}\n\n")
+                    
+                    # calculate perplexity for the generated output
+                    perplexity_val = calculate_perplexity(output_text)
+                    
+                    # build the output string
+                    model_output_info = f"From {category}-{model_id}:\n{output_text}\nPerplexity: {perplexity_val}\n"
+                    
+                    # save the base model's output and use it for BLEU/ROUGE/METEOR comparisons
+                    if model_id == "0":
+                        base_outputs[category] = output_text
+                    else:
+                        if category in base_outputs:
+                            reference_texts = [base_outputs[category]] + dialogue_references
+                            bleu, rouge, meteor = bleu_rogue_meteor(reference_texts, output_text)
+                            model_output_info += f"BLEU: {bleu}, ROUGE: {rouge}, METEOR: {meteor}\n"
+                        else:
+                            model_output_info += "Base model output not available for BLEU/ROUGE/METEOR comparison.\n"
+                    
+                    output_for_prompt.append(model_output_info)
                 else:
                     output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
         final_outputs.append("\n".join(output_for_prompt))
@@ -147,6 +190,10 @@ def file_mode(file_path, output_file_path):
 
 
 def interactive_mode():
+    """
+    Interactive mode prompts model(s) selected by the user and prints output to the console.
+    No testing metrics (perplexity, BLEU/ROUGE/METEOR) are computed in this mode.
+    """
     print("Available model categories and models:")
     for category, cat_info in model_categories.items():
         model_ids = ", ".join(cat_info["models"].keys())
