@@ -33,7 +33,7 @@ def rouge_l(candidate_tokens, reference_tokens):
     return f1_score
 
 
-def bleu_rogue_meteor(references, candidate):
+def bleu_rouge_meteor(references, candidate):
     """
     Compute BLEU, ROUGE-L, and METEOR scores for the candidate text against a list of references.
     
