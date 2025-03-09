@@ -40,12 +40,6 @@ def load_dialogue_references(dialogue_files):
     
     Each file should contain a single line representing a coherent passage of Darcy's dialogue.
     Ideally, each passage is long enough to capture a complete thought – around 40-60 words is suggested.
-
-    Parameters:
-        dialogue_files (list): a list of file paths, each to a to passages of dialogue
-
-    Returns:
-        references (list): list containing the text from dialogue_files
     """
     references = []
     for file in dialogue_files:
@@ -90,7 +84,7 @@ def parse_selection(selection):
         for category, cat_info in model_categories.items():
             result[category] = list(cat_info["models"].keys())
         return result
-    
+
     result = {}
     parts = selection.split(',')
     for part in parts:
@@ -138,7 +132,7 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
         str: A formatted string containing the perplexity and test metric results.
     """
     perplexity_val = calculate_perplexity(output_text, model, tokenizer)
-    
+
     if model_id == "0":
         # for base models, test against dialogue references only
         bleu, rouge, meteor = bleu_rouge_meteor(dialogue_references, output_text)
@@ -169,8 +163,7 @@ def prompt_single_model(
     base_outputs=None, dialogue_references=None
 ):
     """
-    Prompts a single model and computes its perplexity and, if testing is enabled,
-    BLEU/ROUGE/METEOR scores.
+    Prompts a single model.
 
     If dialogue_references is provided (as in file_mode), test metrics are computed.
     Otherwise (interactive mode) no tests are run and base model outputs are not preserved.
@@ -186,7 +179,7 @@ def prompt_single_model(
 
     mod = model_categories[category]["category"]
     output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-    print()  # line break
+    print() # line break
 
     # only run tests if dialogue_references are provided (i.e. file_mode)
     if dialogue_references:
@@ -207,39 +200,53 @@ def process_category(category, prompt_text, base_outputs, dialogue_references):
     return model_outputs
 
 
+def safe_save(output_file_path, result_text):
+    """
+    Attempts to save result_text to output_file_path. If an error occurs, prints an error message.
+    """
+    try:
+        with open(output_file_path, "w") as f:
+            f.write(result_text)
+        print(f"\nResults saved to {output_file_path}\n")
+    except Exception as e:
+        print(f"\nError saving results to file: {e}\n")
+
+
 def file_mode(file_path, output_file_path, dialogue_files):
     """
-    Processes prompts from a file and evaluates model outputs.
+    Processes prompts from a file and evaluates model outputs. In case of an error during processing,
+    attempts to save the progress made so far.
     """
     with open(file_path, "r") as f:
         prompt_list = [line.strip() for line in f if line.strip()]
 
     dialogue_references = load_dialogue_references(dialogue_files)
     base_outputs = {}
-
     final_outputs = []
 
-    # process each prompt
-    for prompt_text in prompt_list:
-        print(f"\nNEW PROMPT:\n{prompt_text}\n")
-        output_for_prompt = [f"Prompt text:\n{prompt_text}\n"]
-
-        # process each category in parallel
-        for category in model_categories:
-            output_for_prompt.extend(
-                process_category(category, prompt_text, base_outputs, dialogue_references)
-            )
-
-        final_outputs.append("\n".join(output_for_prompt))
-
-    # save results to file
-    result_text = ("\n" + "-" * 80 + "\n\n").join(final_outputs)
     try:
-        with open(output_file_path, "w") as f:
-            f.write(result_text)
-        print(f"\nResults saved to {output_file_path}\n")
+        # process each prompt
+        for prompt_text in prompt_list:
+            print(f"\nNEW PROMPT:\n{prompt_text}\n")
+            output_for_prompt = [f"Prompt text:\n{prompt_text}\n"]
+
+            # process each category in parallel
+            for category in model_categories:
+                output_for_prompt.extend(
+                    process_category(category, prompt_text, base_outputs, dialogue_references)
+                )
+
+            final_outputs.append("\n".join(output_for_prompt))
     except Exception as e:
-        print(f"\nError writing to file: {e}\n")
+        print(f"\nError encountered during processing: {e}\n")
+        # attempt to save partial results
+        result_text = ("\n" + "-" * 80 + "\n\n").join(final_outputs)
+        safe_save(output_file_path, result_text)
+        raise
+
+    # save results if processing finished without error
+    result_text = ("\n" + "-" * 80 + "\n\n").join(final_outputs)
+    safe_save(output_file_path, result_text)
 
 
 def interactive_mode():
