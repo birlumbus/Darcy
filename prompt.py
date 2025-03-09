@@ -284,16 +284,12 @@ def interactive_mode():
             outputs[f"{category}-{model_id}"] = prompt_single_model(
                 category, model_id, prompt_text, loaded_models, base_outputs, dialogue_references
             )
-
-    # print results
-    print("\nGenerated outputs:")
-    for key, text in outputs.items():
-        print(f"\n{text}\n")
+    print()
 
 
 def main():
-    file_path = "./test_prompt.txt"
-    output_file_path = "./test_result.txt"
+    file_path = "./prompt_materials/test_prompt.txt"
+    output_file_path = "./prompt_materials/test_result.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
