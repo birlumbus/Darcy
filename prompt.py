@@ -34,18 +34,19 @@ model_categories = {
 }
 
 
-def load_dialogue_references():
+def load_dialogue_references(dialogue_files):
     """
-    Load reference dialogue passages from three files.
+    Load reference dialogue passages from three files into a list.
     
     Each file should contain a single line representing a coherent passage of Darcy's dialogue.
     Ideally, each passage is long enough to capture a complete thought – around 40-60 words is suggested.
+
+    Parameters:
+        dialogue_files (list): a list of file paths, each to a to passages of dialogue
+
+    Returns:
+        references (list): list containing the text from dialogue_files
     """
-    dialogue_files = [
-        "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
-        "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
-        "./evaluation/reference_dialogue/darcy_dialogue_3.txt"
-    ]
     references = []
     for file in dialogue_files:
         try:
@@ -117,77 +118,95 @@ def parse_selection(selection):
     return result
 
 
-def file_mode(file_path, output_file_path):
+def prompt_single_model(
+    category, model_id, prompt_text, loaded_models, 
+    base_outputs=None, dialogue_references=None
+):
     """
-    In file mode, use all models from every category.
-    Input and output file paths are set in main().
-    All models are prompted in order, one prompt at a time.
+    Prompts a single model and computes its perplexity and BLEU/ROUGE/METEOR scores if applicable.
     
-    For each prompt, the generated output's perplexity is calculated.
-    For each non-base model (model ID not "0"), the BLEU/ROUGE/METEOR 
-    scores are computed using a reference text list: 
-        1. base model output (if available) 
-        2. dialogue passages from file
+    Parameters:
+        category (str): Model category (e.g., "medium").
+        model_id (str): Model ID (e.g., "1").
+        prompt_text (str): Text to prompt the model with.
+        loaded_models (dict): Dictionary mapping model IDs to (model, tokenizer) tuples.
+        base_outputs (dict, optional): Stores base model outputs for later BLEU/ROUGE/METEOR comparisons. Defaults to empty dict.
+        dialogue_references (list, optional): List of reference dialogue texts for BLEU/ROUGE/METEOR. Defaults to empty list.
+
+    Returns:
+        str: Generated model output and relevant metrics (if applicable).
+    """
+    base_outputs = base_outputs if base_outputs is not None else {}
+    dialogue_references = dialogue_references if dialogue_references is not None else []
+
+    if model_id not in loaded_models:
+        return f"From {category}-{model_id}:\nModel not found.\n\n"
+    
+    print(f"\nPROMPTING MODEL: {category}-{model_id}\n")
+    model, tokenizer = loaded_models[model_id]
+
+    # generate text
+    mod = model_categories[category]["category"]
+    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+    print()  # Line break
+
+    # compute perplexity
+    perplexity_val = calculate_perplexity(output_text, model, tokenizer)
+    model_output_info = f"From {category}-{model_id}:\n{output_text}\nPerplexity: {perplexity_val}\n"
+
+    # compute BLEU/ROUGE/METEOR scores for non-base models
+    if model_id != "0":
+        if category in base_outputs:
+            reference_texts = [base_outputs[category]] + dialogue_references
+            bleu, rouge, meteor = bleu_rouge_meteor(reference_texts, output_text)
+            model_output_info += f"BLEU: {bleu}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
+        else:
+            model_output_info += "Base model output not available for BLEU/ROUGE/METEOR comparison.\n"
+    else:
+        base_outputs[category] = output_text  # Store base model output
+
+    return model_output_info
+
+
+def process_category(category, prompt_text, base_outputs, dialogue_references):
+    """
+    Processes all models in a category and returns their output.
+    """
+    loaded_models = load_models_for_category(category)
+    model_outputs = [
+        prompt_single_model(category, model_id, prompt_text, loaded_models, base_outputs, dialogue_references)
+        for model_id in model_categories[category]["models"]
+    ]
+    return model_outputs
+
+
+def file_mode(file_path, output_file_path, dialogue_files):
+    """
+    Processes prompts from a file and evaluates model outputs.
     """
     with open(file_path, "r") as f:
         prompt_list = [line.strip() for line in f if line.strip()]
-    
-    # dialogue for BLEU/ROUGE/METEOR comparisons
-    dialogue_references = load_dialogue_references()
-    
-    selected_dict = {}
-    for category, cat_info in model_categories.items():
-        selected_dict[category] = list(cat_info["models"].keys())
-    
-    final_outputs = []
-    # stores base model outputs for each category.
+
+    dialogue_references = load_dialogue_references(dialogue_files)
     base_outputs = {}
+
+    final_outputs = []
 
     # process each prompt
     for prompt_text in prompt_list:
         print(f"\nNEW PROMPT:\n{prompt_text}\n")
-        output_for_prompt = []
-        output_for_prompt.append(f"Prompt text:\n{prompt_text}\n")
-        
-        # process each category
-        for category in model_categories:
-            # load models for current category
-            loaded_models = load_models_for_category(category)
-            mod = model_categories[category]["category"]
-            
-            # iterate over models in the category
-            for model_id in model_categories[category]["models"]:
-                if model_id in loaded_models:
-                    print(f"\nPROMPTING MODEL: {category}-{model_id}\n")
-                    model, tokenizer = loaded_models[model_id]
-                    # prints text as it's generated
-                    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-                    print() # line break
-                    
-                    # calculate perplexity for the generated output
-                    perplexity_val = calculate_perplexity(output_text, model, tokenizer)
+        output_for_prompt = [f"Prompt text:\n{prompt_text}\n"]
 
-                    # build the output string
-                    model_output_info = f"From {category}-{model_id}:\n{output_text}\nPerplexity: {perplexity_val}\n"
-                    
-                    # save the base model's output and use it for BLEU/ROUGE/METEOR comparisons
-                    if model_id == "0":
-                        base_outputs[category] = output_text
-                    else:
-                        if category in base_outputs:
-                            reference_texts = [base_outputs[category]] + dialogue_references
-                            bleu, rouge, meteor = bleu_rouge_meteor(reference_texts, output_text)
-                            model_output_info += f"BLEU: {bleu}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
-                        else:
-                            model_output_info += "Base model output not available for BLEU/ROUGE/METEOR comparison.\n"
-                    
-                    output_for_prompt.append(model_output_info)
-                else:
-                    output_for_prompt.append(f"From {category}-{model_id}:\nModel not found.\n\n")
+        # process each category in parallel
+        for category in model_categories:
+            output_for_prompt.extend(
+                process_category(category, prompt_text, base_outputs, dialogue_references)
+            )
+
         final_outputs.append("\n".join(output_for_prompt))
-    
-    # join results for each prompt with a separator
-    result_text = ("\n" + "-"*80 + "\n\n").join(final_outputs)
+
+    # save results to file
+    result_text = ("\n" + "-" * 80 + "\n\n").join(final_outputs)
     try:
         with open(output_file_path, "w") as f:
             f.write(result_text)
@@ -213,47 +232,54 @@ def interactive_mode():
     print("  large:1")
     print("  6b:2.1, large")
     print("  (ctrl-c to exit)")
-    selected_dict = None
     
+    selected_dict = None
     while not selected_dict:
         selection_input = input("Your selection: ")
         selected_dict = parse_selection(selection_input)
         if not selected_dict:
-            print("Invalid input.")
-    
+            print("Invalid input. Try again.")
+
     prompt_text = input("\nEnter prompt:\n")
     print()
     
+    # no file references or base outputs needed for interactive mode
+    dialogue_references = []
+    base_outputs = {}
+
     outputs = {}
-    # iterate over each selected category and model.
-    for category, model_ids in selected_dict.items():
-        # use category’s load_models()
-        loaded_models = load_models_for_category(category)
-        mod = model_categories[category]["category"]
-        for model_id in model_ids:
-            if model_id in loaded_models:
-                model, tokenizer = loaded_models[model_id]
-                output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-                outputs[f"{category}-{model_id}"] = output_text
-            else:
-                outputs[f"{category}-{model_id}"] = "Model not found."
     
+    # iterate over selected category and model
+    for category, model_ids in selected_dict.items():
+        loaded_models = load_models_for_category(category)
+        
+        for model_id in model_ids:
+            outputs[f"{category}-{model_id}"] = prompt_single_model(
+                category, model_id, prompt_text, loaded_models, base_outputs, dialogue_references
+            )
+
+    # print results
     print("\nGenerated outputs:")
     for key, text in outputs.items():
-        print(f"\nFrom {key}:\n{text}\n")
+        print(f"\n{text}\n")
 
 
 def main():
-    file_path = "./test_prompts.txt"
-    output_file_path = "./test_results.txt"
-
     print("Select mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")
     print(f"  [f] File mode (submit prompts found in {file_path})")
     mode_choice = input("Your selection (default is s): ").strip().lower()
     
     if mode_choice == "f":
-        file_mode(file_path, output_file_path)
+        # file init
+        file_path = "./test_prompt.txt"
+        output_file_path = "./test_result.txt"
+        dialogue_files = [
+            "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
+            "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
+            "./evaluation/reference_dialogue/darcy_dialogue_3.txt"
+        ]
+        file_mode(file_path, output_file_path, dialogue_files)
     else:
         interactive_mode()
 
