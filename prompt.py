@@ -244,7 +244,9 @@ def file_mode(file_path, output_file_path, dialogue_files):
         print(f"\nError encountered during processing: {e}\n")
         # attempt to save partial results
         result_text = ("\n" + "-" * 80 + "\n\n").join(final_outputs)
-        safe_save(output_file_path, result_text)
+        file_root, file_ext = os.path.splitext(output_file_path)
+        incomplete_file_path = file_root + "_INCOMPLETE" + file_ext
+        safe_save(incomplete_file_path, result_text)
         raise
 
     # save results if processing finished without error
@@ -298,8 +300,8 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./prompt_materials/test_prompt.txt"
-    output_file_path = "./prompt_materials/test_result.txt"
+    file_path = "./prompt_materials/test_prompts.txt"
+    output_file_path = "./prompt_materials/test_results.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
