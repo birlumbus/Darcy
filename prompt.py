@@ -131,6 +131,9 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
     Returns:
         str: A formatted string containing the perplexity and test metric results.
     """
+    if not output_text or not output_text.strip():
+        return "[[no output]]"
+
     perplexity_val = calculate_perplexity(output_text, model, tokenizer)
 
     if model_id == "0":
@@ -286,7 +289,7 @@ def interactive_mode():
     # iterate over selected category and model
     for category, model_ids in selected_dict.items():
         loaded_models = load_models_for_category(category)
-        
+
         for model_id in model_ids:
             outputs[f"{category}-{model_id}"] = prompt_single_model(
                 category, model_id, prompt_text, loaded_models, base_outputs, dialogue_references
