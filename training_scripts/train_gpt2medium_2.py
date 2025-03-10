@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 
 
 gpt_model = "gpt2-medium"
-darcy_gpt_loc = "../model/darcy-gpt2-medium-2.1"
+darcy_gpt_loc = "../model/darcy-gpt2-medium-2.2"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_2.json"
 
 
@@ -62,7 +62,7 @@ dataset = DarcyDataset(formatted_texts, tokenizer)
 training_args = TrainingArguments(
     output_dir=darcy_gpt_loc,
     overwrite_output_dir=True,
-    num_train_epochs=2,
+    num_train_epochs=3,
     per_device_train_batch_size=2,
     gradient_accumulation_steps=4,
     learning_rate=1e-5,
