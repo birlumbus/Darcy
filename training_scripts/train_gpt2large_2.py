@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 
 
 gpt_model = "gpt2-large"
-darcy_gpt_loc = "../model/darcy-gpt2-large-2"
+darcy_gpt_loc = "../model/darcy-gpt2-large-2.2"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_2.json"
 
 
@@ -66,6 +66,7 @@ training_args = TrainingArguments(
     per_device_train_batch_size=1,  # reduced batch size from gpt2medium
     gradient_accumulation_steps=4,  # gradient accumulation to simulate larger batch
     learning_rate=5e-6,             # lower learning rate than gpt2medium 
+    weight_decay=0.01,
     save_steps=500,
     save_total_limit=2,
     prediction_loss_only=True,
