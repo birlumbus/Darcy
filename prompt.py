@@ -27,7 +27,7 @@ model_categories = {
             "1.1": "./model/darcy-gpt2-large-1.1",
             "2.1": "./model/darcy-gpt2-large-2.1",
             "1.2": "./model/darcy-gpt2-large-1.2",
-            "2.2": "./model/darcy-gpt2-large-2,2"
+            "2.2": "./model/darcy-gpt2-large-2.2"
         }
     }
     # "6b": {
@@ -309,7 +309,7 @@ def interactive_mode():
 
 def main():
     file_path = "./evaluation/prompt_materials/test_prompts.txt"
-    output_file_path = "./evaluation/prompt_materials/test_results.txt"
+    output_file_path = "./evaluation/prompt_materials/test_results_1.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
