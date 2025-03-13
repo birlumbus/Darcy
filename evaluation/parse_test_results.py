@@ -103,8 +103,8 @@ def save_results(file_path, results_as_json):
 
 
 def main():
-    input_file_path = "./evaluation/prompt_materials/test_results_2.txt"
-    output_file_path = "./evaluation/prompt_materials/compiled_results/analysis_2.json"
+    input_file_path = "./evaluation/prompt_materials/test_results_3.txt"
+    output_file_path = "./evaluation/prompt_materials/compiled_results/analysis_3.json"
     blocks = parse_file(input_file_path)
     groups = group_scores(blocks)
     averages = compute_averages(groups)
