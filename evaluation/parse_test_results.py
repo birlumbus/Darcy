@@ -150,14 +150,13 @@ def save_results(file_path, results_as_json):
     try:
         with open(file_path, "w") as f:
             f.write(results_as_json)
-        print("Done\n")
     except Exception as e:
         print(f"\nError saving results to file: {e}\n")
 
 
 def main():
-    input_file_path = "./prompt_materials/test_results_4.txt"
-    output_file_path = "./prompt_materials/compiled_results/analysis_4.json"
+    input_file_path = "./prompt_materials/test_results_1.txt"
+    output_file_path = "./prompt_materials/compiled_results/analysis_1.json"
     blocks = parse_file(input_file_path)
     groups = group_scores(blocks)
     averages = compute_averages(groups)
@@ -167,9 +166,9 @@ def main():
     
     # dump final results as JSON
     results_as_json = json.dumps(final_results, indent=2)
-    print(results_as_json)
-    print(f"\nSaving results to {output_file_path}...")
+    print(f"\nSaving results to {output_file_path}")
     save_results(output_file_path, results_as_json)
+    print("...Done\n")
     
 
 if __name__ == "__main__":
