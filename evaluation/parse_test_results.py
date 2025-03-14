@@ -78,7 +78,16 @@ def compute_averages(groups):
     # compute the average for each metric and round to five decimal places
     averages = {}
     for group, sections in groups.items():
-        averages[group] = {}
+        # split model identifier into category and version parts
+        parts = group.split('-', 1)
+        category = parts[0]
+        version = parts[1] if len(parts) > 1 else ""
+        
+        averages[group] = {
+            "category": category,
+            "version": version
+        }
+        
         for section, metrics in sections.items():
             averages[group][section] = {}
             for metric, values in metrics.items():
@@ -87,23 +96,77 @@ def compute_averages(groups):
     return averages
 
 
+def aggregate_by_version(results):
+    """
+    Takes existing results dictionary, adds new objects that are aggregated across models 
+    sharing same "version" property. For each unique version, it computes average of metrics 
+    across all models with that version and creates a new JSON object with key "version-{version}"
+    """
+    # group model keys by version
+    version_groups = {}
+    for model_key, data in results.items():
+        version = data.get("version", "")
+        if not version:
+            continue
+        version_groups.setdefault(version, []).append(model_key)
+
+    # for each version, aggregate metrics across models
+    aggregated_results = {}
+    for version, model_keys in version_groups.items():
+        # dictionary holds lists of values for each section and metric
+        section_metrics = {}
+        for key in model_keys:
+            model_data = results[key]
+            # process each section (skip "category" and "version" keys)
+            for section, metrics in model_data.items():
+                if section in ("category", "version"):
+                    continue
+                section_metrics.setdefault(section, {})
+                for metric, value in metrics.items():
+                    section_metrics[section].setdefault(metric, []).append(value)
+        
+        # compute averages per section/metric
+        aggregated_sections = {}
+        for section, metrics in section_metrics.items():
+            aggregated_sections[section] = {}
+            for metric, values in metrics.items():
+                avg = sum(values) / len(values) if values else 0
+                aggregated_sections[section][metric] = round(avg, 5)
+        
+        # create new aggregated object
+        aggregated_results[f"version-{version}"] = {
+            "category": "aggregated",
+            "version": version,
+            "models": model_keys,
+            **aggregated_sections
+        }
+    
+    # add aggregated objects to original results
+    results.update(aggregated_results)
+    return results
+
+
 def save_results(file_path, results_as_json):
-	try:
-		with open(file_path, "w") as f:
-			f.write(results_as_json)
-		print("Done\n")
-	except Exception as e:
-		print(f"\nError saving results to file: {e}\n")
+    try:
+        with open(file_path, "w") as f:
+            f.write(results_as_json)
+        print("Done\n")
+    except Exception as e:
+        print(f"\nError saving results to file: {e}\n")
 
 
 def main():
-    input_file_path = "./evaluation/prompt_materials/test_results_4.txt"
-    output_file_path = "./evaluation/prompt_materials/compiled_results/analysis_4.json"
+    input_file_path = "./prompt_materials/test_results_4.txt"
+    output_file_path = "./prompt_materials/compiled_results/analysis_4.json"
     blocks = parse_file(input_file_path)
     groups = group_scores(blocks)
     averages = compute_averages(groups)
-    # print the averages as a JSON-formatted string
-    results_as_json = json.dumps(averages, indent=2)
+    
+    # aggregate computed averages
+    final_results = aggregate_by_version(averages)
+    
+    # dump final results as JSON
+    results_as_json = json.dumps(final_results, indent=2)
     print(results_as_json)
     print(f"\nSaving results to {output_file_path}...")
     save_results(output_file_path, results_as_json)
