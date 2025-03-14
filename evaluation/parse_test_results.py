@@ -65,18 +65,12 @@ def parse_file(filename):
 
 
 def group_scores(blocks):
-    # group scores by model group (suffix after the dash)
-    # data structure: groups[group_suffix][section][metric] -> list of values
     groups = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
     for block in blocks:
         model_id = block["model"]
-        parts = model_id.split('-')
-        if len(parts) < 2:
-            continue
-        group_suffix = parts[1]  # e.g., "0", "1", "2", or "2.1"
         for section, metrics in block["sections"].items():
             for metric, value in metrics.items():
-                groups[group_suffix][section][metric].append(value)
+                groups[model_id][section][metric].append(value)
     return groups
 
 
