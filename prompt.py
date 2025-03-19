@@ -2,7 +2,7 @@ import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
 from evaluation.calculate_perplexity import calculate_perplexity
-from evaluation.bleu_rouge_meteor import bleu_rouge_meteor
+from evaluation.bleu_rouge_meteor import evaluate_corpus
 
 
 model_categories = {
@@ -146,26 +146,30 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
 
     if model_id == "0":
         # for base models, test against dialogue references only
-        bleu, rouge, meteor = bleu_rouge_meteor(dialogue_references, output_text)
+        bleu1, bleu2, bleu4, rouge, meteor = evaluate_corpus(dialogue_references, [output_text])
         # also, store the base model's output for future comparisons
         base_outputs[category] = output_text
-        return f"\nPerplexity: {perplexity_val}\nBLEU: {bleu}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
+        return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1}\nBLEU2: {bleu2}\nBLEU4: {bleu4}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
 
     # for non-base models, test against base model output plus dialogue references
-    bleu_base, rouge_base, meteor_base = bleu_rouge_meteor([base_outputs[category]], output_text)
-    bleu_ref, rouge_ref, meteor_ref = bleu_rouge_meteor(dialogue_references, output_text)
+    bleu1_vs_base, bleu2_vs_base, bleu4_vs_base, rouge_vs_base, meteor_vs_base = bleu_rouge_meteor([base_outputs[category]], output_text)
+    bleu1_vs_ref, bleu2_vs_ref, bleu4_vs_ref, rouge_vs_ref, meteor_vs_ref = bleu_rouge_meteor(dialogue_references, output_text)
     return f"""
     Perplexity: {perplexity_val}
 
     Scores against base model output:
-    BLEU: {bleu_base}
-    ROUGE: {rouge_base}
-    METEOR: {meteor_base}
+    BLEU1: {bleu1_vs_base}
+    BLEU2: {bleu2_vs_base}
+    BLEU4: {bleu4_vs_base}
+    ROUGE: {rouge_vs_base}
+    METEOR: {meteor_vs_base}
 
     Scores against dialogue references:
-    BLEU: {bleu_ref}
-    ROUGE: {rouge_ref}
-    METEOR: {meteor_ref}
+    BLEU1: {bleu1_vs_ref}
+    BLEU2: {bleu2_vs_ref}
+    BLEU4: {bleu4_vs_ref}
+    ROUGE: {rouge_vs_ref}
+    METEOR: {meteor_vs_ref}
     """
 
 
