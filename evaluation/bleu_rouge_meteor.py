@@ -5,8 +5,8 @@ import string
 import ref_dialogue_capture
 
 
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 
 def preprocess(text):
@@ -45,26 +45,27 @@ def rouge_l(candidate_tokens, reference_tokens):
     return f1_score
 
 
-def evaluate_corpus(references_list, candidates_list):
+def evaluate_corpus(references, candidates):
     smoothie = SmoothingFunction().method1
 
     # preprocess references and candidates
-    references_tokens = [[preprocess(ref)] for ref in references_list]
-    candidates_tokens = [preprocess(cand) for cand in candidates_list]
+    # reference_tokens is list of lists, requires: len(references_tokens) == len(candidates_tokens)
+    tokenized_references = [ [preprocess(ref) for ref in references] for _ in candidates ]
+    tokenized_candidates = [preprocess(cand) for cand in candidates]
 
     # corpus-level BLEU
-    bleu1 = corpus_bleu(references_tokens, candidates_tokens, weights=(1, 0, 0, 0), smoothing_function=smoothie)
-    bleu2 = corpus_bleu(references_tokens, candidates_tokens, weights=(0.5, 0.5, 0, 0), smoothing_function=smoothie)
-    bleu4 = corpus_bleu(references_tokens, candidates_tokens, smoothing_function=smoothie)
+    bleu1 = corpus_bleu(tokenized_references, tokenized_candidates, weights=(1, 0, 0, 0), smoothing_function=smoothie)
+    bleu2 = corpus_bleu(tokenized_references, tokenized_candidates, weights=(0.5, 0.5, 0, 0), smoothing_function=smoothie)
+    bleu4 = corpus_bleu(tokenized_references, tokenized_candidates, smoothing_function=smoothie)
 
     # corpus-level ROUGE-L and METEOR (average across all samples)
     rouge_scores = []
     meteor_scores = []
-    for refs, cand in zip(references_tokens, candidates_tokens):
+    for refs, cand in zip(tokenized_references, tokenized_candidates):
         rouge = max([rouge_l(cand, ref) for ref in refs])
         rouge_scores.append(rouge)
 
-    meteor_scores = [meteor_score(refs, cand) for refs, cand in zip(references_list, candidates_list)]
+    meteor_scores = [meteor_score(refs, cand) for refs, cand in zip(tokenized_references, tokenized_candidates)]
 
     avg_rouge = sum(rouge_scores) / len(rouge_scores)
     avg_meteor = sum(meteor_scores) / len(meteor_scores)
