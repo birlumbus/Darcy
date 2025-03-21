@@ -312,8 +312,8 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./evaluation/prompt_materials/test_prompts_4.txt"
-    output_file_path = "./evaluation/prompt_materials/test_results_4.txt"
+    file_path = "./evaluation/prompt_sets/prompt_set_4.txt"
+    output_file_path = "./evaluation/prompt_results/txt/prompt_results_4.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",

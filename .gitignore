@@ -1,18 +1,4 @@
-model/darcy-gpt2-medium-1/
-model/darcy-gpt2-medium-1.1/
-model/darcy-gpt2-medium-1.2/
-model/darcy-gpt2-medium-2/
-model/darcy-gpt2-medium-2.1/
-model/darcy-gpt2-medium-2.2/
-model/darcy-gpt2-large-1/
-model/darcy-gpt2-large-1.1/
-model/darcy-gpt2-large-1.2/
-model/darcy-gpt2-large-2/
-model/darcy-gpt2-large-2.1/
-model/darcy-gpt2-large-2.2/
-model/darcy-gptj-6b-1/
-model/darcy-gptj-6b-2/
-model/darcy-gptj-6b-2.1/
-prompt_materials/
-draft notes.txt
-draft_1.txt
+model/
+evaluation/prompt_sets/
+evaluation/prompt_results/
+misc_ignore/
