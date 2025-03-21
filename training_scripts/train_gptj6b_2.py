@@ -11,7 +11,7 @@ from peft import LoraConfig, get_peft_model
 
 
 gpt_model = "EleutherAI/gpt-j-6B"
-darcy_gpt_loc = "../model/darcy-gptj-6b-2.1"
+darcy_gpt_loc = "../models/darcy-gptj-6b-2.1"
 training_data_loc = "../training_data/training_text/final_json/labeled_training_data_2.json"
 
 

@@ -10,33 +10,33 @@ model_categories = {
         "category": medium,
         "models": {
             "0": "gpt2-medium",
-            "1": "./model/darcy-gpt2-medium-1",
-            "2": "./model/darcy-gpt2-medium-2",
-            "1.1": "./model/darcy-gpt2-medium-1.1",
-            "2.1": "./model/darcy-gpt2-medium-2.1",
-            "1.2": "./model/darcy-gpt2-medium-1.2",
-            "2.2": "./model/darcy-gpt2-medium-2.2"
+            "1": "./models/darcy-gpt2-medium-1",
+            "2": "./models/darcy-gpt2-medium-2",
+            "1.1": "./models/darcy-gpt2-medium-1.1",
+            "2.1": "./models/darcy-gpt2-medium-2.1",
+            "1.2": "./models/darcy-gpt2-medium-1.2",
+            "2.2": "./models/darcy-gpt2-medium-2.2"
         }
     },
     "large": {
         "category": large,
         "models": {
             "0": "gpt2-large",
-            "1": "./model/darcy-gpt2-large-1",
-            "2": "./model/darcy-gpt2-large-2",
-            "1.1": "./model/darcy-gpt2-large-1.1",
-            "2.1": "./model/darcy-gpt2-large-2.1",
-            "1.2": "./model/darcy-gpt2-large-1.2",
-            "2.2": "./model/darcy-gpt2-large-2.2"
+            "1": "./models/darcy-gpt2-large-1",
+            "2": "./models/darcy-gpt2-large-2",
+            "1.1": "./models/darcy-gpt2-large-1.1",
+            "2.1": "./models/darcy-gpt2-large-2.1",
+            "1.2": "./models/darcy-gpt2-large-1.2",
+            "2.2": "./models/darcy-gpt2-large-2.2"
         }
     }
     # "6b": {
     #     "category": gptj6b,
     #     "models": {
     #         "0": "EleutherAI/gpt-j-6B",
-    #         "1": "./model/darcy-gptj-6b-1",
-    #         "2": "./model/darcy-gptj-6b-2",
-    #         "2.1": "./model/darcy-gptj-6b-2.1"
+    #         "1": "./models/darcy-gptj-6b-1",
+    #         "2": "./models/darcy-gptj-6b-2",
+    #         "2.1": "./models/darcy-gptj-6b-2.1"
     #     }
     # }
 }
