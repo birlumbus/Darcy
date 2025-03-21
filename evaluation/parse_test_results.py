@@ -2,14 +2,17 @@ import re
 import json
 import argparse
 
+
 def read_file(filepath):
     """Read the entire contents of the file."""
     with open(filepath, "r", encoding="utf8") as f:
         return f.read()
 
+
 def split_sections(text):
     """Split the file into sections based on 'Prompt text:' markers."""
     return [sec for sec in re.split(r"Prompt text:\s*", text) if sec.strip()]
+
 
 def extract_prompt(section):
     """Extract the prompt text from a section (first block of non-empty lines)."""
@@ -21,6 +24,7 @@ def extract_prompt(section):
         prompt_lines.append(line.strip())
     return " ".join(prompt_lines)
 
+
 def extract_perplexity(sub_text):
     """Extract the perplexity value from a block of text."""
     match = re.search(r"Perplexity:\s*([0-9\.eE+-]+)", sub_text)
@@ -30,6 +34,7 @@ def extract_perplexity(sub_text):
         except ValueError:
             return None
     return None
+
 
 def extract_outputs(section):
     """
@@ -44,7 +49,7 @@ def extract_outputs(section):
         model = match.group(1)
         version = match.group(2)
         start = match.end()
-        # Determine the end position by looking at the next match or the end of section.
+        # determine end position by next match or end of section
         end = matches[i+1].start() if i+1 < len(matches) else len(section)
         sub_text = section[start:end]
         perplexity = extract_perplexity(sub_text)
@@ -56,9 +61,11 @@ def extract_outputs(section):
         })
     return outputs
 
+
 def sort_outputs(outputs):
     """Sort the outputs by model title and then by version."""
     return sorted(outputs, key=lambda x: (x["model"], x["version"]))
+
 
 def parse_sections(sections):
     """Parse each section to extract the prompt and its outputs."""
@@ -72,31 +79,32 @@ def parse_sections(sections):
         })
     return results
 
+
 def parse_file(filepath):
     """Parse the file into structured JSON objects."""
     text = read_file(filepath)
     sections = split_sections(text)
     return parse_sections(sections)
 
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Parse GPT model test results into JSON"
+        description="Parse GPT model test results into JSON using a prompt_results integer identifier."
     )
-    parser.add_argument("input_file", help="Path to the test results file (e.g., test_results_1.txt)")
-    parser.add_argument(
-        "output_file", nargs="?", default="parsed_results.json", 
-        help="Path to output JSON file (default: parsed_results.json)"
-    )
+    parser.add_argument("input_integer", type=int,
+                        help="An integer to identify the prompt results file. The input file is constructed as './prompt_results/txt/prompt_results_<input_integer>.txt'")
     args = parser.parse_args()
     
-    parsed_data = parse_file(args.input_file)
+    # construct input and output file paths using provided integer
+    input_filepath = f"./prompt_results/txt/prompt_results_{args.input_integer}.txt"
+    output_filepath = f"./prompt_results/json/prompt_results_{args.input_integer}.json"
     
-    # Write the parsed results to a JSON file.
-    with open(args.output_file, "w", encoding="utf8") as out_f:
+    parsed_data = parse_file(input_filepath)
+    
+    # write parsed results to JSON file
+    with open(output_filepath, "w", encoding="utf8") as out_f:
         json.dump(parsed_data, out_f, indent=2)
-    
-    # Print the JSON to stdout.
-    print(json.dumps(parsed_data, indent=2))
+
 
 if __name__ == "__main__":
     main()
