@@ -53,10 +53,16 @@ def extract_outputs(section):
         end = matches[i+1].start() if i+1 < len(matches) else len(section)
         sub_text = section[start:end]
         perplexity = extract_perplexity(sub_text)
+        # extract the model's output text by taking text before "Perplexity:" marker.
+        if "Perplexity:" in sub_text:
+            output_text = sub_text.split("Perplexity:")[0].strip()
+        else:
+            output_text = sub_text.strip()
         
         outputs.append({
             "model": model,
             "version": version,
+            "output": output_text,
             "perplexity": perplexity
         })
     return outputs
@@ -94,16 +100,17 @@ def main():
     parser.add_argument("input_integer", type=int,
                         help="An integer to identify the prompt results file. The input file is constructed as './prompt_results/txt/prompt_results_<input_integer>.txt'")
     args = parser.parse_args()
-    
-    # construct input and output file paths using provided integer
+
     input_filepath = f"./prompt_results/txt/prompt_results_{args.input_integer}.txt"
     output_filepath = f"./prompt_results/json/prompt_results_{args.input_integer}.json"
     
+    print('\nParsing data...')
     parsed_data = parse_file(input_filepath)
     
-    # write parsed results to JSON file
+    print('Writing to JSON file...')
     with open(output_filepath, "w", encoding="utf8") as out_f:
         json.dump(parsed_data, out_f, indent=2)
+    print('...Done\n')
 
 
 if __name__ == "__main__":
