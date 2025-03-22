@@ -1,3 +1,4 @@
+import json
 import nltk
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 from nltk.translate.meteor_score import meteor_score
@@ -10,7 +11,9 @@ import ref_dialogue_capture
 
 
 def preprocess(text):
-    # lowercase and remove punctuation
+    """
+    Lowercase the text, tokenize it, and remove punctuation.
+    """
     tokens = nltk.word_tokenize(text.lower())
     return [t for t in tokens if t not in string.punctuation]
 
@@ -45,36 +48,82 @@ def rouge_l(candidate_tokens, reference_tokens):
     return f1_score
 
 
-def evaluate_corpus(references, candidates):
+def evaluate_texts(ref_texts, candidate_text):
+    """
+    Evaluate a candidate text against a set of reference texts using BLEU, ROUGE-L, and METEOR.
+    """
     smoothie = SmoothingFunction().method1
-
-    # preprocess references and candidates
-    # reference_tokens is list of lists, requires: len(references_tokens) == len(candidates_tokens)
-    tokenized_references = [ [preprocess(ref) for ref in references] for _ in candidates ]
-    tokenized_candidates = [preprocess(cand) for cand in candidates]
-
-    # corpus-level BLEU
-    bleu1 = corpus_bleu(tokenized_references, tokenized_candidates, weights=(1, 0, 0, 0), smoothing_function=smoothie)
-    bleu2 = corpus_bleu(tokenized_references, tokenized_candidates, weights=(0.5, 0.5, 0, 0), smoothing_function=smoothie)
-    bleu4 = corpus_bleu(tokenized_references, tokenized_candidates, smoothing_function=smoothie)
-
-    # corpus-level ROUGE-L and METEOR (average across all samples)
-    rouge_scores = []
-    meteor_scores = []
-    for refs, cand in zip(tokenized_references, tokenized_candidates):
-        rouge = max([rouge_l(cand, ref) for ref in refs])
-        rouge_scores.append(rouge)
-
-    meteor_scores = [meteor_score(refs, cand) for refs, cand in zip(tokenized_references, tokenized_candidates)]
-
+    
+    # preprocess references and candidate text
+    tokenized_refs = [preprocess(ref) for ref in ref_texts]
+    candidate_tokens = preprocess(candidate_text)
+    
+    # compute BLEU scores
+    bleu1 = corpus_bleu([tokenized_refs], [candidate_tokens], weights=(1, 0, 0, 0), smoothing_function=smoothie)
+    bleu2 = corpus_bleu([tokenized_refs], [candidate_tokens], weights=(0.5, 0.5, 0, 0), smoothing_function=smoothie)
+    bleu4 = corpus_bleu([tokenized_refs], [candidate_tokens], smoothing_function=smoothie)
+    
+    # compute ROUGE-L (maximum score among references)
+    rouge_scores = [rouge_l(candidate_tokens, preprocess(ref)) for ref in ref_texts]
     avg_rouge = sum(rouge_scores) / len(rouge_scores)
-    avg_meteor = sum(meteor_scores) / len(meteor_scores)
+    
+    # compute METEOR
+    meteor = meteor_score(ref_texts, candidate_text)
+    
+    return {
+        "bleu1": bleu1,
+        "bleu2": bleu2,
+        "bleu4": bleu4,
+        "rouge_l": avg_rouge,
+        "meteor": meteor
+    }
 
-    return bleu1, bleu2, bleu4, avg_rouge, avg_meteor
+
+def process_results(json_file, ref_file_path):
+    """
+    Process the JSON file with prompt outputs by:
+    - Evaluating each candidate against a set of reference texts.
+    - For non-base outputs (version != "0"), also evaluating against the base output.
+    - Adding the evaluation results back into the JSON structure.
+    """
+    # capture references
+    references = ref_dialogue_capture.capture_references(ref_file_path, min_words=12, max_words=80, sample_size=100)
+    
+    with open(json_file, 'r') as f:
+        data = json.load(f)
+    
+    for prompt_obj in data:
+        # group outputs by model to easily locate the base output (version "0")
+        outputs_by_model = {}
+        for output_obj in prompt_obj["outputs"]:
+            model = output_obj["model"]
+            outputs_by_model.setdefault(model, []).append(output_obj)
+        
+        for model, outputs in outputs_by_model.items():
+            # identify baseline output (version "0") for this model
+            baseline = next((o for o in outputs if str(o.get("version")) == "0"), None)
+            
+            for output_obj in outputs:
+                candidate_text = output_obj["output"]
+                # always evaluate against external references
+                ref_scores = evaluate_texts(references, candidate_text)
+                output_obj["evaluation_vs_references"] = ref_scores
+                
+                # if not a base output and a baseline exists, also evaluate against baseline
+                if str(output_obj.get("version")) != "0" and baseline is not None:
+                    baseline_text = baseline["output"]
+                    baseline_scores = evaluate_texts([baseline_text], candidate_text)
+                    output_obj["evaluation_vs_baseline"] = baseline_scores
+    
+    # write updated results back to JSON file
+    print("Updating JSON file with evaluation metrics...")
+    with open(json_file, 'w') as f:
+        json.dump(data, f, indent=2)
 
 
-# example usage
 if __name__ == "__main__":
+    '''
+    # FORMER TEST CODE
     # ref text for tokenization in evaluate_corpus
     all_dialogue = '../training_data/training_text/isolated_categories/darcy_dialogue_only.txt'
     references = ref_dialogue_capture.capture_references(all_dialogue, min_words=12, max_words=80, sample_size=100)
@@ -91,3 +140,10 @@ if __name__ == "__main__":
     print(f"Corpus BLEU-4: {bleu4:.4f}")
     print(f"Average ROUGE-L: {rouge:.4f}")
     print(f"Average METEOR: {meteor:.4f}")
+    '''
+
+    json_file = './prompt_results/json/prompt_results_1_copy.json'
+    ref_file_path = '../training_data/training_text/isolated_categories/darcy_dialogue_only.txt'
+    print("\nEvaluating...")
+    process_results(json_file, ref_file_path)
+    print("Done.\n")
