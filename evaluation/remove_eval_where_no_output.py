@@ -16,18 +16,18 @@ def remove_no_output_evaluations(data):
 
 
 def main():
-    file_name = 'prompt_results_3.json'
+    file_name = 'prompt_results_4.json'
     file_path = f'prompt_results/json/{file_name}'
 
     # read JSON data from input file
-    with open(json_file, "r", encoding="utf-8") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     print(f'\nCleaning JSON data...')
     cleaned_data = remove_no_output_evaluations(data)
 
     print(f'Writing new JSON data back to file...')
-    with open(json_file, "w", encoding="utf-8") as f:
+    with open(file_path, "w", encoding="utf-8") as f:
         json.dump(cleaned_data, f, indent=2)
 
     print(f'JSON data written to {file_name}\n')
