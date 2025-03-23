@@ -4,6 +4,11 @@ import glob
 import statistics
 
 
+# ---------------------------------
+# Helper Functions (reduces nesting)
+# ---------------------------------
+
+
 def is_no_output(output_text):
     """
     Determine if an output object contains no output.
@@ -78,7 +83,8 @@ def compute_average(values):
     """
     Compute the average of a list of numbers; return None if the list is empty.
     """
-    return statistics.mean(values) if values else None
+    filtered = [v for v in values if v is not None]
+    return statistics.mean(filtered) if filtered else None
 
 
 def compute_aggregated_metrics(results):
@@ -179,7 +185,7 @@ def aggregate_insights(input_folder, output_file):
 
 
 def main():
-    input_folder = "./evaluation/prompt_results/json/"
+    input_folder = "./prompt_results/json/"
     output_file = "./prompt_results/compiled_analysis/aggregated_results.json"
     print('\nAnalyzing data...')
     aggregate_insights(input_folder, output_file)
