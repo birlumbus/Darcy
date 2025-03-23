@@ -105,28 +105,29 @@ def process_results(json_file, ref_file_path):
     with open(json_file, 'r') as f:
         data = json.load(f)
     
-    for prompt_obj in data:
+    for prompt in data:
         # group outputs by model to easily locate base output
         outputs_by_model = {}
-        for output_obj in prompt_obj["outputs"]:
-            model = output_obj["model"]
-            outputs_by_model.setdefault(model, []).append(output_obj)
+        for output in prompt["outputs"]:
+            if output.get('output') != '[[no output]]':
+                model = output["model"]
+                outputs_by_model.setdefault(model, []).append(output)
         
         for model, outputs in outputs_by_model.items():
             # identify baseline output for this model
             baseline = next((o for o in outputs if str(o.get("version")) == "0"), None)
             
-            for output_obj in outputs:
-                candidate_text = output_obj["output"]
+            for output in outputs:
+                candidate_text = output["output"]
                 # always evaluate against external references
                 ref_scores = evaluate_texts(references, candidate_text)
-                output_obj["evaluation_vs_references"] = ref_scores
+                output["evaluation_vs_references"] = ref_scores
                 
                 # for non-base outputs, evaluate against baseline (if available)
-                if str(output_obj.get("version")) != "0" and baseline is not None:
+                if str(output.get("version")) != "0" and baseline is not None:
                     baseline_text = baseline["output"]
                     baseline_scores = evaluate_texts([baseline_text], candidate_text)
-                    output_obj["evaluation_vs_baseline"] = baseline_scores
+                    output["evaluation_vs_baseline"] = baseline_scores
     
     # write updated results back to JSON file
     print("Updating JSON file with evaluation metrics...")
@@ -135,7 +136,7 @@ def process_results(json_file, ref_file_path):
 
 
 if __name__ == "__main__":
-    json_file = './prompt_results/json/prompt_results_1 copy.json'
+    json_file = './prompt_results/json/prompt_results_4.json'
     ref_file_path = '../training_data/training_text/isolated_categories/darcy_dialogue_only.txt'
     print("\nEvaluating...")
     process_results(json_file, ref_file_path)
