@@ -23,7 +23,7 @@ group_colors = {'medium': 'salmon', 'large': 'lightgreen', '6b': 'skyblue'}
 for stat_type in ['baseline', 'references']:
     # loop over each metric
     for metric_name, json_key in metrics.items():
-        # for baseline, skip perplexity since it is not available
+        # For baseline, skip perplexity as it's not available.
         if stat_type == 'baseline' and metric_name == 'perplexity':
             continue
 
@@ -32,19 +32,25 @@ for stat_type in ['baseline', 'references']:
         groups = []
         metric_values = []
 
-        # loop over model groups to extract metric scores, excluding version '0'
+        # loop over model groups to extract metric scores
         for group in ['medium', 'large', '6b']:
             group_data = data['aggregated_results'][group]
-            # sort models by version (skipping version '0')
-            for variant in sorted(group_data.keys(), key=lambda v: tuple(map(float, v.split('.')))):
-                if variant == "0":
-                    continue  # Exclude version '0'
+            for variant in group_data:
+                # For non-perplexity metrics, skip version "0"
+                if metric_name != "perplexity" and variant == "0":
+                    continue
+
                 details = group_data[variant]
                 # create a label combining model group and version
                 label = f"{group}: {variant}"
                 x_labels.append(label)
                 groups.append(group)
-                value = details['average_metrics'][stat_type].get(json_key, None)
+
+                if metric_name == "perplexity":
+                    # fetch perplexity directly from average_metrics
+                    value = details['average_metrics'].get('perplexity', None)
+                else:
+                    value = details['average_metrics'][stat_type].get(json_key, None)
                 metric_values.append(value)
 
         # create bar chart for the current metric and stat type
@@ -61,10 +67,10 @@ for stat_type in ['baseline', 'references']:
             best_label = f"{best_group}: {best_version}"
             if best_label in x_labels:
                 index = x_labels.index(best_label)
-                # emphasize best overall variant with a bold black edge
+                # emphasize best overall variant with bold black edge
                 bars[index].set_edgecolor('black')
                 bars[index].set_linewidth(3)
-                # add an annotation above the bar
+                # adds annotation above bar
                 plt.annotate("Best Overall", 
                              xy=(index, metric_values[index]), 
                              xytext=(index, metric_values[index] + 0.005),
