@@ -13,7 +13,8 @@ with open(in_file, 'r') as f:
 aggregated_results = data['aggregated_results']
 
 
-# --- set A: all models but ignore versions labeled "0" ---
+# --- set a ---
+print("\nExtracting means; all models...")
 results_all = {metric: [] for metric in metrics_to_average}
 
 
@@ -37,7 +38,8 @@ averages_all = {
 }
 
 
-# --- set B: exclude "6b" models and ignore '0' ---
+# --- set b ---
+print("Extracting means; excluding 6b...")
 results_no_6b = {metric: [] for metric in metrics_to_average}
 
 
@@ -63,11 +65,16 @@ averages_no_6b = {
 }
 
 
-# print results
-print("Averages excluding version '0':")
-for metric, avg in averages_all.items():
-    print(f"{metric}: {avg:.4f}")
+# save results to JSON file
+out_file = 'aggregated_means.json'
+out_path = f'prompt_results/compiled_analysis/{out_file}'
+compiled_results = {
+    "averages_excluding_version_0": averages_all,
+    "averages_excluding_version_0_and_6b_models": averages_no_6b
+}
 
-print("\nAverages excluding version '0' and 6b models:")
-for metric, avg in averages_no_6b.items():
-    print(f"{metric}: {avg:.4f}")
+
+print(f'Saving to {out_file}...')
+with open(out_path, 'w') as f:
+    json.dump(compiled_results, f, indent=4)
+print('Done\n')
