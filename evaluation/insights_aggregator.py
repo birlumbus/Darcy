@@ -165,6 +165,23 @@ def read_json_files(input_folder):
     return all_entries
 
 
+def sort_aggregated_results(aggregated):
+    """
+    Sort models in the order: medium, large, 6b.
+    Also, sort version keys numerically.
+    """
+    MODEL_ORDER = {"medium": 0, "large": 1, "6b": 2}
+    sorted_aggregated = {}
+    # Sort models using the defined order; default to a high value if not found
+    for model in sorted(aggregated.keys(), key=lambda m: MODEL_ORDER.get(m, 999)):
+        sorted_versions = {}
+        # Sort versions numerically (versions are stored as strings)
+        for version in sorted(aggregated[model].keys(), key=lambda v: int(v)):
+            sorted_versions[version] = aggregated[model][version]
+        sorted_aggregated[model] = sorted_versions
+    return sorted_aggregated
+
+
 # ------------------------
 # Global Outlier Thresholds
 # ------------------------
@@ -203,6 +220,9 @@ def aggregate_insights(input_folder, output_file, thresholds=None):
 
     # determine best overall model/version (based on evaluation_vs_references bleu4 score)
     best_model, best_version, best_bleu4 = determine_best_model(aggregated)
+
+    # sort aggregated results by model and version
+    aggregated = sort_aggregated_results(aggregated)
 
     summary = {
         "aggregated_results": aggregated,
