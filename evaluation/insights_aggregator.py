@@ -25,8 +25,8 @@ def init_model_version(results, model, version):
     if version not in results[model]:
         results[model][version] = {
             "metrics": {
+                "perplexity": [],
                 "references": {
-                    "perplexity": [],
                     "bleu1": [],
                     "bleu2": [],
                     "bleu4": [],
