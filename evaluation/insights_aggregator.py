@@ -8,7 +8,6 @@ import statistics
 # Helper Functions (reduces nesting)
 # ---------------------------------
 
-
 def is_no_output(output_text):
     """
     Determine if an output object contains no output.
@@ -79,27 +78,48 @@ def process_output(out, model, version, results):
                 results[model][version]["metrics"]["baseline"][metric].append(eval_base[metric])
 
 
-def compute_average(values):
+def compute_average(values, min_threshold=None, max_threshold=None):
     """
-    Compute the average of a list of numbers; return None if the list is empty.
+    Compute the average of a list of numbers after filtering out values that fall outside
+    of the given thresholds. If no threshold is provided, all non-None values are included.
     """
-    filtered = [v for v in values if v is not None]
+    filtered = [
+        v for v in values
+        if v is not None and 
+           (min_threshold is None or v >= min_threshold) and 
+           (max_threshold is None or v <= max_threshold)
+    ]
     return statistics.mean(filtered) if filtered else None
 
 
-def compute_aggregated_metrics(results):
+def compute_aggregated_metrics(results, thresholds=None):
     """
     Compute the average metrics for both 'references' and 'baseline'
-    for each model and version.
+    for each model and version. If a thresholds dictionary is provided, values outside the
+    specified min/max for a metric are excluded from the calculation.
+
+    thresholds: dict mapping metric names to a dict with keys "min" and "max".
+    Example:
+      thresholds = {
+          "perplexity": {"min": 0, "max": 1000},
+          "bleu1": {"min": 0, "max": 1},
+          ...
+      }
     """
     aggregated = {}
     for model, versions in results.items():
         aggregated[model] = {}
         for version, data in versions.items():
-            avg_refs = {metric: compute_average(values)
-                        for metric, values in data["metrics"]["references"].items()}
-            avg_baseline = {metric: compute_average(values)
-                            for metric, values in data["metrics"]["baseline"].items()}
+            avg_refs = {}
+            for metric, values in data["metrics"]["references"].items():
+                min_threshold = thresholds.get(metric, {}).get("min") if thresholds and metric in thresholds else None
+                max_threshold = thresholds.get(metric, {}).get("max") if thresholds and metric in thresholds else None
+                avg_refs[metric] = compute_average(values, min_threshold, max_threshold)
+            avg_baseline = {}
+            for metric, values in data["metrics"]["baseline"].items():
+                min_threshold = thresholds.get(metric, {}).get("min") if thresholds and metric in thresholds else None
+                max_threshold = thresholds.get(metric, {}).get("max") if thresholds and metric in thresholds else None
+                avg_baseline[metric] = compute_average(values, min_threshold, max_threshold)
             aggregated[model][version] = {
                 "average_metrics": {
                     "references": avg_refs,
@@ -146,10 +166,24 @@ def read_json_files(input_folder):
 
 
 # ------------------------
+# Global Outlier Thresholds
+# ------------------------
+
+OUTLIER_THRESHOLDS = {
+    "perplexity": {"min": 0, "max": 130},  # Example thresholds for perplexity
+    "bleu1": {"min": 0.009, "max": 1},
+    "bleu2": {"min": 0.009, "max": 1},
+    "bleu4": {"min": 0.009, "max": 1},
+    "rouge_l": {"min": 0.009, "max": 1},
+    "meteor": {"min": 0.009, "max": 1}
+}
+
+
+# ------------------------
 # Main Aggregation Function
 # ------------------------
 
-def aggregate_insights(input_folder, output_file):
+def aggregate_insights(input_folder, output_file, thresholds=None):
     # initialize an empty results dictionary
     results = {}
 
@@ -164,10 +198,10 @@ def aggregate_insights(input_folder, output_file):
             version = str(out.get("version"))
             process_output(out, model, version, results)
 
-    # compute averages for all collected metrics
-    aggregated = compute_aggregated_metrics(results)
+    # compute averages for all collected metrics using the provided thresholds
+    aggregated = compute_aggregated_metrics(results, thresholds=thresholds)
 
-    # determine best overall model/version (based on evaluation_vs_references bleu1 score)
+    # determine best overall model/version (based on evaluation_vs_references bleu4 score)
     best_model, best_version, best_bleu4 = determine_best_model(aggregated)
 
     summary = {
@@ -188,7 +222,7 @@ def main():
     input_folder = "./prompt_results/json/"
     output_file = "./prompt_results/compiled_analysis/aggregated_results.json"
     print('\nAnalyzing data...')
-    aggregate_insights(input_folder, output_file)
+    aggregate_insights(input_folder, output_file, thresholds=OUTLIER_THRESHOLDS)
     print(f'Saved data at {output_file}\n')
 
 
