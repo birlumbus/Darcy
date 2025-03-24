@@ -62,7 +62,7 @@ def process_output(out, model, version, results):
 
     # record perplexity (always stored under 'references')
     if "perplexity" in out:
-        results[model][version]["metrics"]["references"]["perplexity"].append(out["perplexity"])
+        results[model][version]["metrics"]["perplexity"].append(out["perplexity"])
 
     # add evaluation_vs_references metrics
     eval_refs = out.get("evaluation_vs_references", {})
@@ -99,12 +99,6 @@ def compute_aggregated_metrics(results, thresholds=None):
     specified min/max for a metric are excluded from the calculation.
 
     thresholds: dict mapping metric names to a dict with keys "min" and "max".
-    Example:
-      thresholds = {
-          "perplexity": {"min": 0, "max": 1000},
-          "bleu1": {"min": 0, "max": 1},
-          ...
-      }
     """
     aggregated = {}
     for model, versions in results.items():
@@ -120,8 +114,13 @@ def compute_aggregated_metrics(results, thresholds=None):
                 min_threshold = thresholds.get(metric, {}).get("min") if thresholds and metric in thresholds else None
                 max_threshold = thresholds.get(metric, {}).get("max") if thresholds and metric in thresholds else None
                 avg_baseline[metric] = compute_average(values, min_threshold, max_threshold)
+            # compute average perplexity and include it in average_metrics
+            min_threshold = thresholds.get("perplexity", {}).get("min") if thresholds and "perplexity" in thresholds else None
+            max_threshold = thresholds.get("perplexity", {}).get("max") if thresholds and "perplexity" in thresholds else None
+            avg_perplexity = compute_average(data["metrics"]["perplexity"], min_threshold, max_threshold)
             aggregated[model][version] = {
                 "average_metrics": {
+                    "perplexity": avg_perplexity,
                     "references": avg_refs,
                     "baseline": avg_baseline
                 },
@@ -172,11 +171,11 @@ def sort_aggregated_results(aggregated):
     """
     MODEL_ORDER = {"medium": 0, "large": 1, "6b": 2}
     sorted_aggregated = {}
-    # Sort models using the defined order; default to a high value if not found
+    # sort models using defined order; default to a high value if not found
     for model in sorted(aggregated.keys(), key=lambda m: MODEL_ORDER.get(m, 999)):
         sorted_versions = {}
-        # Sort versions numerically (versions are stored as strings)
-        for version in sorted(aggregated[model].keys(), key=lambda v: int(v)):
+        # sort versions numerically (versions are stored as strings)
+        for version in sorted(aggregated[model].keys(), key=lambda v: tuple(map(float, v.split('.')))):
             sorted_versions[version] = aggregated[model][version]
         sorted_aggregated[model] = sorted_versions
     return sorted_aggregated
@@ -187,7 +186,7 @@ def sort_aggregated_results(aggregated):
 # ------------------------
 
 OUTLIER_THRESHOLDS = {
-    "perplexity": {"min": 0, "max": 130},  # Example thresholds for perplexity
+    "perplexity": {"min": 0, "max": 130},
     "bleu1": {"min": 0.009, "max": 1},
     "bleu2": {"min": 0.009, "max": 1},
     "bleu4": {"min": 0.009, "max": 1},
