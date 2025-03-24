@@ -23,7 +23,7 @@ group_colors = {'medium': 'salmon', 'large': 'lightgreen', '6b': 'skyblue'}
 for stat_type in ['baseline', 'references']:
     # loop over each metric
     for metric_name, json_key in metrics.items():
-        # For baseline, skip perplexity as it's not available.
+        # for baseline, skip perplexity as it's not available.
         if stat_type == 'baseline' and metric_name == 'perplexity':
             continue
 
@@ -36,8 +36,8 @@ for stat_type in ['baseline', 'references']:
         for group in ['medium', 'large', '6b']:
             group_data = data['aggregated_results'][group]
             for variant in group_data:
-                # For non-perplexity metrics, skip version "0"
-                if metric_name != "perplexity" and variant == "0":
+                # for non-perplexity metrics, skip version "0" for baseline only
+                if metric_name != "perplexity" and variant == "0" and stat_type != "references":
                     continue
 
                 details = group_data[variant]
