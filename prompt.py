@@ -2,7 +2,7 @@ import prompt_scripts.prompt_gpt2medium as medium
 import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
 from evaluation.calculate_perplexity import calculate_perplexity
-from evaluation.bleu_rouge_meteor import evaluate_corpus
+from evaluation.bleu_rouge_meteor import evaluate_texts
 
 
 model_categories = {
@@ -146,7 +146,7 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
 
     if model_id == "0":
         # for base models, test against dialogue references only
-        bleu1, bleu2, bleu4, rouge, meteor = evaluate_corpus(dialogue_references, [output_text])
+        bleu1, bleu2, bleu4, rouge, meteor = evaluate_texts(dialogue_references, [output_text])
         # also, store the base model's output for future comparisons
         base_outputs[category] = output_text
         return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1}\nBLEU2: {bleu2}\nBLEU4: {bleu4}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
