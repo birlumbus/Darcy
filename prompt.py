@@ -3,6 +3,7 @@ import prompt_scripts.prompt_gpt2large as large
 import prompt_scripts.prompt_gptj6b as gptj6b
 from evaluation.calculate_perplexity import calculate_perplexity
 from evaluation.bleu_rouge_meteor import evaluate_texts
+import os
 
 
 model_categories = {
@@ -312,15 +313,15 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./evaluation/prompt_sets/prompt_set_4.txt"
-    output_file_path = "./evaluation/prompt_results/txt/prompt_results_4.txt"
+    file_path = "./evaluation/prompt_sets/prompt_set_5.txt"
+    output_file_path = "./evaluation/prompt_results/txt/prompt_results_5.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_3.txt"
     ]
 
-    print("Select mode:")
+    print("\nSelect mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")
     print(f"  [f] File mode (submit prompts found in {file_path})")
     mode_choice = input("Your selection (default is s): ").strip().lower()
