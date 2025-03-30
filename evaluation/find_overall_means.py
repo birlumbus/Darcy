@@ -16,14 +16,14 @@ def calculate_mean(metrics_list):
     means = {}
     for metric in metrics_to_average:
         metric_values = [m.get(metric, 0) for m in metrics_list if m.get(metric) is not None]
-        means[metric] = np.mean(metric_values) if metric_values else None
+        means[metric] = round(np.mean(metric_values), 2) if metric_values else None
     return means
 
 
 def percentage_change(new_value, old_value):
     if old_value == 0 or old_value is None:
         return None  # Avoid division by zero or None
-    return ((new_value - old_value) / old_value) * 100
+    return round(((new_value - old_value) / old_value) * 100)
 
 
 results = {}
@@ -33,9 +33,11 @@ for model, versions in aggregated_results.items():
     results[model] = {}
 
     # extract version 0 metrics
-    version_0_metrics['perplexity'] = versions['0']['average_metrics']['perplexity']
-    version_0_metrics = versions['0']['average_metrics']['references']
-    
+    version_0_metrics = {'perplexity': round(versions['0']['average_metrics']['perplexity'], 2)}
+    references = versions['0']['average_metrics']['references']
+    references = {k: round(v, 2) if v is not None else None for k, v in references.items()}
+    version_0_metrics.update(references)
+
     results[model]['0'] = version_0_metrics
 
     # grouping version sets
@@ -45,12 +47,14 @@ for model, versions in aggregated_results.items():
     for version, info in versions.items():
         if version in ['1', '1.1', '1.2']:
             metrics = info['average_metrics']['references']
-            metrics['perplexity'] = info['average_metrics']['perplexity']
+            metrics = {k: round(v, 2) if v is not None else None for k, v in metrics.items()}
+            metrics['perplexity'] = round(info['average_metrics']['perplexity'], 2)
             version_1_metrics.append(metrics)
 
         elif version in ['2', '2.1', '2.2']:
             metrics = info['average_metrics']['references']
-            metrics['perplexity'] = info['average_metrics']['perplexity']
+            metrics = {k: round(v, 2) if v is not None else None for k, v in metrics.items()}
+            metrics['perplexity'] = round(info['average_metrics']['perplexity'], 2)
             version_2_metrics.append(metrics)
 
     # calculate means for each version set
@@ -87,6 +91,3 @@ print(f'Saving to {out_file}...')
 with open(out_path, 'w') as f:
     json.dump(compiled_results, f, indent=4)
 print('Done\n')
-
-
-
