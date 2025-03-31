@@ -156,6 +156,11 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
 
     # for base models, test against dialogue references only
     if model_id == "0":
+        # in very rare cases, the base model may not produce output
+        if category not in base_outputs:
+            print(f"Warning: Base output for category '{category}' not found. Skipping comparison.")
+            return "[[base output missing]]"
+
         # store base model's output for future comparisons
         base_outputs[category] = output_text
         return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1_vs_ref}\nBLEU2: {bleu2_vs_ref}\nBLEU4: {bleu4_vs_ref}\nROUGE: {rouge_vs_ref}\nMETEOR: {meteor_vs_ref}\n"
@@ -198,6 +203,10 @@ def prompt_single_model(
     If dialogue_references is provided (as in file_mode), test metrics are computed.
     Otherwise (interactive mode) no tests are run and base model outputs are not preserved.
     """
+def prompt_single_model(
+    category, model_id, prompt_text, loaded_models, 
+    base_outputs=None, dialogue_references=None
+):
     base_outputs = base_outputs if base_outputs is not None else {}
     dialogue_references = dialogue_references if dialogue_references is not None else []
 
@@ -206,16 +215,34 @@ def prompt_single_model(
     
     print(f"\nPROMPTING MODEL: {category}-{model_id}\n")
     model, tokenizer = loaded_models[model_id]
-
     mod = model_categories[category]["category"]
-    output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
-    print() # line break
 
-    # only run tests if dialogue_references are provided (i.e. file_mode)
+    # If in file mode (dialogue_references provided) and prompting base model,
+    # ensure a non-empty output is produced
+    if model_id == "0" and dialogue_references:
+        attempts = 0
+        output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+        # loop until non-empty output is produced (or until max_attempts is reached)
+        while not (output_text and output_text.strip()):
+            attempts += 1
+            print(f"Base model produced no output. Prompting again... (attempt {attempts})")
+            output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+            # break out after a certain number of attempts
+            if attempts >= 10:
+                print("\n\n\n\nWARNING: Maximum attempts reached. Proceeding with empty output.\n\n\n\n")
+                break
+    else:
+        output_text = mod.generate_text(prompt_text, model, tokenizer, max_length=256)
+
+    print()  # line break
+
+    # If testing mode is active (dialogue_references provided), run tests.
     if dialogue_references:
         test_metrics = run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_references, model, tokenizer)
         model_output_info = f"From {category}-{model_id}:\n{output_text}\n{test_metrics}"
         return model_output_info
+    else:
+        return f"From {category}-{model_id}:\n{output_text}\n"
 
 
 def process_category(category, prompt_text, base_outputs, dialogue_references):
@@ -327,8 +354,8 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./evaluation/prompt_sets/prompt_set_5.txt"
-    output_file_path = "./evaluation/prompt_results/txt/prompt_results_5.txt"
+    file_path = "./evaluation/prompt_sets/prompt_set_6.txt"
+    output_file_path = "./evaluation/prompt_results/txt/prompt_results_6.txt"
     dialogue_files = [
         "./evaluation/reference_dialogue/darcy_dialogue_1.txt",
         "./evaluation/reference_dialogue/darcy_dialogue_2.txt",
