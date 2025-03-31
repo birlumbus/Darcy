@@ -143,18 +143,32 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
     if not output_text or not output_text.strip():
         return "[[no output]]"
 
+    # always calculate perplexity
     perplexity_val = calculate_perplexity(output_text, model, tokenizer)
+    # always calculate scores against references
+    scores_vs_ref = evaluate_texts(dialogue_references, output_text)
 
+    bleu1_vs_ref = scores_vs_ref["bleu1"]
+    bleu2_vs_ref = scores_vs_ref["bleu2"]
+    bleu4_vs_ref = scores_vs_ref["bleu4"]
+    rouge_vs_ref = scores_vs_ref["rouge_l"]
+    meteor_vs_ref = scores_vs_ref["meteor"]
+
+    # for base models, test against dialogue references only
     if model_id == "0":
-        # for base models, test against dialogue references only
-        bleu1, bleu2, bleu4, rouge, meteor = evaluate_texts(dialogue_references, [output_text])
-        # also, store the base model's output for future comparisons
+        # store base model's output for future comparisons
         base_outputs[category] = output_text
-        return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1}\nBLEU2: {bleu2}\nBLEU4: {bleu4}\nROUGE: {rouge}\nMETEOR: {meteor}\n"
+        return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1_vs_ref}\nBLEU2: {bleu2_vs_ref}\nBLEU4: {bleu4_vs_ref}\nROUGE: {rouge_vs_ref}\nMETEOR: {meteor_vs_ref}\n"
 
     # for non-base models, test against base model output plus dialogue references
-    bleu1_vs_base, bleu2_vs_base, bleu4_vs_base, rouge_vs_base, meteor_vs_base = bleu_rouge_meteor([base_outputs[category]], output_text)
-    bleu1_vs_ref, bleu2_vs_ref, bleu4_vs_ref, rouge_vs_ref, meteor_vs_ref = bleu_rouge_meteor(dialogue_references, output_text)
+    scores_vs_base = evaluate_texts([base_outputs[category]], output_text)
+
+    bleu1_vs_base = scores_vs_base["bleu1"]
+    bleu2_vs_base = scores_vs_base["bleu2"]
+    bleu4_vs_base = scores_vs_base["bleu4"]
+    rouge_vs_base = scores_vs_base["rouge_l"]
+    meteor_vs_base = scores_vs_base["meteor"]
+
     return f"""
     Perplexity: {perplexity_val}
 
