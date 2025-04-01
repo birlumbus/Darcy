@@ -1,7 +1,6 @@
 import json
 import numpy as np
 
-
 metrics_to_average = ['perplexity', 'bleu1', 'bleu2', 'bleu4', 'rouge_l', 'meteor']
 
 print("\nLoading in aggregated_results...")
@@ -22,7 +21,7 @@ def calculate_mean(metrics_list):
 
 def percentage_change(new_value, old_value):
     if old_value == 0 or old_value is None:
-        return None  # Avoid division by zero or None
+        return None  # avoid division by zero or None
     return round(((new_value - old_value) / old_value) * 100)
 
 
@@ -32,32 +31,29 @@ print('Calculating means...')
 for model, versions in aggregated_results.items():
     results[model] = {}
 
-    # extract version 0 metrics
-    version_0_metrics = {'perplexity': round(versions['0']['average_metrics']['perplexity'], 2)}
+    # extract version 0 metrics without rounding
+    version_0_metrics = {'perplexity': versions['0']['average_metrics']['perplexity']}
     references = versions['0']['average_metrics']['references']
-    references = {k: round(v, 2) if v is not None else None for k, v in references.items()}
     version_0_metrics.update(references)
-
     results[model]['0'] = version_0_metrics
 
-    # grouping version sets
+    # grouping version sets without premature rounding
     version_1_metrics = []
     version_2_metrics = []
 
     for version, info in versions.items():
         if version in ['1', '1.1', '1.2']:
             metrics = info['average_metrics']['references']
-            metrics = {k: round(v, 2) if v is not None else None for k, v in metrics.items()}
-            metrics['perplexity'] = round(info['average_metrics']['perplexity'], 2)
+            # use raw value for perplexity
+            metrics['perplexity'] = info['average_metrics']['perplexity']
             version_1_metrics.append(metrics)
-
         elif version in ['2', '2.1', '2.2']:
             metrics = info['average_metrics']['references']
-            metrics = {k: round(v, 2) if v is not None else None for k, v in metrics.items()}
-            metrics['perplexity'] = round(info['average_metrics']['perplexity'], 2)
+            # use raw value for perplexity
+            metrics['perplexity'] = info['average_metrics']['perplexity']
             version_2_metrics.append(metrics)
 
-    # calculate means for each version set
+    # calculate means for each version set (rounding occurs in calculate_mean)
     version_1_mean = calculate_mean(version_1_metrics)
     version_2_mean = calculate_mean(version_2_metrics)
     overall_mean = calculate_mean(version_1_metrics + version_2_metrics)
@@ -78,14 +74,10 @@ for model, versions in aggregated_results.items():
 
     results[model]['percentage_changes'] = percentage_changes
 
-
-# save to JSON file
+# save to file
 out_file = 'aggregated_means.json'
 out_path = f'prompt_results/compiled_analysis/{out_file}'
-compiled_results = {
-    "aggregated_means": results
-}
-
+compiled_results = {"aggregated_means": results}
 
 print(f'Saving to {out_file}...')
 with open(out_path, 'w') as f:
