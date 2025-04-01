@@ -3,7 +3,8 @@ import nltk
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 from nltk.translate.meteor_score import meteor_score
 import string
-from . import ref_dialogue_capture
+# if running standalone, remove "from ." below
+import ref_dialogue_capture
 
 
 # nltk.download('punkt')
@@ -136,7 +137,7 @@ def process_results(json_file, ref_file_path):
 
 
 if __name__ == "__main__":
-    json_file = './prompt_results/json/prompt_results_4.json'
+    json_file = './prompt_results/json/prompt_results_6.json'
     ref_file_path = '../training_data/training_text/isolated_categories/darcy_dialogue_only.txt'
     print("\nEvaluating...")
     process_results(json_file, ref_file_path)
