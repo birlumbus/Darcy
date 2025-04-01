@@ -25,6 +25,18 @@ def extract_prompt(section):
     return " ".join(prompt_lines)
 
 
+def extract_metric(sub_text, metric):
+    """Extract a metric value from a block of text given the metric name."""
+    pattern = re.compile(rf"{metric}:\s*([0-9\.eE+-]+)")
+    match = pattern.search(sub_text)
+    if match:
+        try:
+            return float(match.group(1))
+        except ValueError:
+            return None
+    return None
+
+
 def extract_perplexity(sub_text):
     """Extract the perplexity value from a block of text."""
     match = re.search(r"Perplexity:\s*([0-9\.eE+-]+)", sub_text)
@@ -52,7 +64,12 @@ def extract_outputs(section):
         # determine end position by next match or end of section
         end = matches[i+1].start() if i+1 < len(matches) else len(section)
         sub_text = section[start:end]
+        
         perplexity = extract_perplexity(sub_text)
+        bleu1 = extract_metric(sub_text, "BLEU1")
+        bleu2 = extract_metric(sub_text, "BLEU2")
+        bleu4 = extract_metric(sub_text, "BLEU4")
+        
         # extract the model's output text by taking text before "Perplexity:" marker.
         if "Perplexity:" in sub_text:
             output_text = sub_text.split("Perplexity:")[0].strip()
@@ -63,7 +80,10 @@ def extract_outputs(section):
             "model": model,
             "version": version,
             "output": output_text,
-            "perplexity": perplexity
+            "perplexity": perplexity,
+            "bleu1": bleu1,
+            "bleu2": bleu2,
+            "bleu4": bleu4
         })
     return outputs
 
