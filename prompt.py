@@ -145,7 +145,7 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
 
     # always calculate perplexity
     perplexity_val = calculate_perplexity(output_text, model, tokenizer)
-    # always calculate scores against references
+    # calculate scores against dialogue references
     scores_vs_ref = evaluate_texts(dialogue_references, output_text)
 
     bleu1_vs_ref = scores_vs_ref["bleu1"]
@@ -154,18 +154,15 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
     rouge_vs_ref = scores_vs_ref["rouge_l"]
     meteor_vs_ref = scores_vs_ref["meteor"]
 
-    # for base models, test against dialogue references only
     if model_id == "0":
-        # in very rare cases, the base model may not produce output
-        if category not in base_outputs:
-            print(f"Warning: Base output for category '{category}' not found. Skipping comparison.")
-            return "[[base output missing]]"
-
-        # store base model's output for future comparisons
+        # for the base model, store the output regardless
         base_outputs[category] = output_text
-        return f"\nPerplexity: {perplexity_val}\nBLEU1: {bleu1_vs_ref}\nBLEU2: {bleu2_vs_ref}\nBLEU4: {bleu4_vs_ref}\nROUGE: {rouge_vs_ref}\nMETEOR: {meteor_vs_ref}\n"
+        return (
+            f"\nPerplexity: {perplexity_val}\n"
+            f"BLEU1: {bleu1_vs_ref}\nBLEU2: {bleu2_vs_ref}\nBLEU4: {bleu4_vs_ref}\n"
+            f"ROUGE: {rouge_vs_ref}\nMETEOR: {meteor_vs_ref}\n"
+        )
 
-    # for non-base models, test against base model output plus dialogue references
     scores_vs_base = evaluate_texts([base_outputs[category]], output_text)
 
     bleu1_vs_base = scores_vs_base["bleu1"]
@@ -174,23 +171,16 @@ def run_tests_for_model(category, model_id, output_text, base_outputs, dialogue_
     rouge_vs_base = scores_vs_base["rouge_l"]
     meteor_vs_base = scores_vs_base["meteor"]
 
-    return f"""
-    Perplexity: {perplexity_val}
+    return (
+        f"\nPerplexity: {perplexity_val}\n\n"
+        "Scores against base model output:\n"
+        f"BLEU1: {bleu1_vs_base}\nBLEU2: {bleu2_vs_base}\nBLEU4: {bleu4_vs_base}\n"
+        f"ROUGE: {rouge_vs_base}\nMETEOR: {meteor_vs_base}\n\n"
+        "Scores against dialogue references:\n"
+        f"BLEU1: {bleu1_vs_ref}\nBLEU2: {bleu2_vs_ref}\nBLEU4: {bleu4_vs_ref}\n"
+        f"ROUGE: {rouge_vs_ref}\nMETEOR: {meteor_vs_ref}\n"
+    )
 
-    Scores against base model output:
-    BLEU1: {bleu1_vs_base}
-    BLEU2: {bleu2_vs_base}
-    BLEU4: {bleu4_vs_base}
-    ROUGE: {rouge_vs_base}
-    METEOR: {meteor_vs_base}
-
-    Scores against dialogue references:
-    BLEU1: {bleu1_vs_ref}
-    BLEU2: {bleu2_vs_ref}
-    BLEU4: {bleu4_vs_ref}
-    ROUGE: {rouge_vs_ref}
-    METEOR: {meteor_vs_ref}
-    """
 
 
 def prompt_single_model(
