@@ -18,17 +18,22 @@ def main():
                 print(f"Error decoding JSON from file {file_path}: {e}")
                 continue
 
-        # iterate over each prompt object and its outputs in the current file
+        # iterate over prompt objects in current file
         for prompt_obj in data:
+            # retrieve prompt text
+            prompt_text = prompt_obj.get("prompt", "No prompt provided")
+            
+            # iterate over outputs in current prompt object
             for output in prompt_obj.get("outputs", []):
                 bleu4 = output.get("evaluation_vs_references", {}).get("bleu4")
                 if bleu4 is not None and bleu4 > threshold:
-                    # Optionally record the source file for reference
+                    # record source file for reference
                     output['source_file'] = os.path.basename(file_path)
+                    # add prompt text as new property in the output
+                    output['prompt'] = prompt_text
                     high_score_results.append(output)
     
-    # define the output file path for the aggregated results
-    
+    # define output file path for aggregated results
     output_file_name = 'highest_bleu4_results.json'
     output_file_path = f'./prompt_results/json/best_results/{output_file_name}'
     with open(output_file_path, 'w') as out_file:
