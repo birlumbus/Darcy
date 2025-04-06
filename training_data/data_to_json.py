@@ -27,10 +27,10 @@ def data_to_json(in_file, out_file):
         
 
 def main():
-    in_1  = "./training_text/final_txt/labeled_training_data_1.txt"
-    out_1 = "./training_text/final_json/labeled_training_data_1.json"
-    in_2  = "./training_text/final_txt/labeled_training_data_2.txt"
-    out_2 = "./training_text/final_json/labeled_training_data_2.json"
+    in_1  = "./training_text/final_txt/ready_dataset_1.txt"
+    out_1 = "./training_text/final_json/ready_dataset_1.json"
+    in_2  = "./training_text/final_txt/ready_dataset_2.txt"
+    out_2 = "./training_text/final_json/ready_dataset_2.json"
 
     data_to_json(in_1, out_1)
     data_to_json(in_2, out_2)

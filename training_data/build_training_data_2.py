@@ -13,7 +13,7 @@ changelog_file = "./unprocessed_text/text_processing_changelog_dialogue_only.txt
 questions_file = "./training_text/isolated_categories/questions.txt"
 
 # output files
-labeled_data_file = "./training_text/final_txt/labeled_training_data_2.txt"
+labeled_data_file = "./training_text/final_txt/ready_dataset_2.txt"
 tag_count_file = "./training_text/tag_counts_2.txt"
 
 prompts_and_dialogue = []

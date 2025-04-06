@@ -14,7 +14,7 @@ changelog_file = "./unprocessed_text/text_processing_changelog.txt"
 questions_file = "./training_text/isolated_categories/questions.txt"
 
 # output files
-labeled_data_file = "./training_text/final_txt/labeled_training_data_1.txt"
+labeled_data_file = "./training_text/final_txt/ready_dataset_1.txt"
 dialogue_file = "./training_text/isolated_categories/darcy_dialogue_only.txt"
 actions_file = "./training_text/isolated_categories/darcy_actions_only.txt"
 impressions_file = "./training_text/isolated_categories/others_impressions_only.txt"
