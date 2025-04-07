@@ -73,7 +73,7 @@ for model, versions in aggregated_results.items():
     # store individual version means under a separate key, rounding them here after overall means are computed
     results[model]['individual_means'] = {}
     for version, ind_mean in individual_means.items():
-        rounded_ind_mean = {metric: round(ind_mean.get(metric), 2) if ind_mean.get(metric) is not None else None for metric in metrics_to_average}  # new code: round each metric
+        rounded_ind_mean = {metric: round(ind_mean.get(metric), 4) if ind_mean.get(metric) is not None else None for metric in metrics_to_average}  # new code: round each metric
         results[model]['individual_means'][f"version_{version}_mean"] = rounded_ind_mean
 
     # calculate percentage changes from version 0 for group means
