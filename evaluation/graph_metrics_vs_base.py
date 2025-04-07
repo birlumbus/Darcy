@@ -5,6 +5,7 @@ import numpy as np
 # data from aggregated_means.json (loaded from file)
 with open('./prompt_results/compiled_analysis/aggregated_means.json', 'r') as f:
     data = json.load(f)
+data = data["aggregated_means"]  # extract the nested aggregated_means dictionary
 
 # choose metric to visualize (e.g., "perplexity", "bleu4", etc.)
 metric = "bleu4"
