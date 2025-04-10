@@ -2,7 +2,6 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # list of metrics to visualize
 metrics_to_average = ['perplexity', 'bleu1', 'bleu2', 'bleu4', 'rouge_l', 'meteor']
 
@@ -20,7 +19,6 @@ colors = {
 
 model_types = ["medium", "large", "6b"]
 bar_width = 0.618
-
 
 # loop over each metric and build a graph for each one
 for metric in metrics_to_average:
@@ -48,9 +46,10 @@ for metric in metrics_to_average:
         # plot bars for version averages
         bars = ax.bar(x, values, width=bar_width, color=colors[model], edgecolor='black', label=f"{model}")
         
-        # overlay a marker for the base model (version 0) on each bar
-        # marker is placed at center of each bar with y value equal to baseline
-        ax.scatter(x, [baseline]*len(x), color='white', edgecolor='black', zorder=5, s=100, label="Base model (v0)" if offset == 0 else "")
+        # overlay a marker for the base model (version 0) on each bar:
+        # marker is placed at the center of each bar with y value equal to baseline
+        ax.scatter(x, [baseline]*len(x), color='white', edgecolor='black', zorder=5, s=100, 
+                   label="Base model (v0)" if offset == 0 else "")
         
         # annotate baseline value as horizontal dashed line for clarity
         ax.hlines(baseline, x[0]-bar_width/2, x[-1]+bar_width/2, colors='gray', linestyles='--', linewidth=1)
@@ -61,10 +60,19 @@ for metric in metrics_to_average:
                 if val > best_value:
                     best_value = val
                     best_bar = bars[i]
+                    
+        # for perplexity, overlay a hatched region for the portion above the baseline
+        if metric == "perplexity":
+            # for each bar, compute extra height above the baseline
+            height_diffs = [v - baseline for v in values]
+            # overlay a new bar from the baseline to the top of the bar using a hatch pattern
+            # using color 'none' helps preserve the underlying bar’s appearance
+            ax.bar(x, height_diffs, width=bar_width, bottom=baseline, color='none', 
+                   edgecolor='black', hatch='///', zorder=10)
         
         # set x-axis ticks and labels
         tick_positions.extend(x)
-        tick_labels.extend([v for v in versions])
+        tick_labels.extend(versions)
         
         # update offset for next group (add a gap between groups)
         offset = x[-1] + 1 + bar_width
@@ -73,7 +81,6 @@ for metric in metrics_to_average:
     if best_bar is not None and metric == "bleu4":
         best_bar.set_edgecolor('black')
         best_bar.set_linewidth(3)
-        # adds annotation above bar
         best_x = best_bar.get_x() + best_bar.get_width() / 2
         best_y = best_bar.get_height()
         ax.annotate("Best Overall", 
@@ -91,4 +98,3 @@ for metric in metrics_to_average:
     
     plt.tight_layout()
     plt.show()
-
