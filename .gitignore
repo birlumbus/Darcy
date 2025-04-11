@@ -2,3 +2,4 @@ models/
 evaluation/prompt_sets/
 evaluation/prompt_results/
 misc_ignore/
+.DS_Store
