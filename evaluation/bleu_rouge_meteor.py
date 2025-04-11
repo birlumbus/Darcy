@@ -3,8 +3,9 @@ import nltk
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 from nltk.translate.meteor_score import meteor_score
 import string
-# if running standalone, remove "from ." below
-import ref_dialogue_capture
+# if running standalone, use "import ref_dialogue_capture"
+from . import ref_dialogue_capture
+# import ref_dialogue_capture
 
 
 # nltk.download('punkt')

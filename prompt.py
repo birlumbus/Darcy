@@ -1,9 +1,16 @@
-import prompt_scripts.prompt_gpt2medium as medium
-import prompt_scripts.prompt_gpt2large as large
-import prompt_scripts.prompt_gptj6b as gptj6b
+import sys
+import os
+
+base_dir = os.path.dirname(__file__)
+prompting_path = os.path.join(base_dir, 'src', 'scripts')
+sys.path.append(prompting_path)
+
+from prompting import prompt_gpt2medium as medium
+from prompting import prompt_gpt2large as large
+from prompting import prompt_gptj6b as gptj6b
+
 from evaluation.calculate_perplexity import calculate_perplexity
 from evaluation.bleu_rouge_meteor import evaluate_texts
-import os
 
 
 model_categories = {
