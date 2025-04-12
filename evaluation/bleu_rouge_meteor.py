@@ -8,6 +8,7 @@ from . import ref_dialogue_capture
 # import ref_dialogue_capture
 
 
+# these only need to be done once!
 # nltk.download('punkt')
 # nltk.download('wordnet')
 
