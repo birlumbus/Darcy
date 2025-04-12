@@ -2,19 +2,19 @@ import tag_counter
 
 
 '''
-Builds training data using prompt/dialogue & question/answer pairs
+Builds dataset_2.txt using prompt/dialogue & question/answer pairs
     1. Dialogue and actions are added to a list
     2. Question/answer pairs are interleaved equally throughout, ensuring they never interrupt a prompt/dialogue pair
 '''
 
 
 # input files
-changelog_file = "./unprocessed_text/text_processing_changelog_dialogue_only.txt"
-questions_file = "./training_text/isolated_categories/questions.txt"
+changelog_file = "./unprocessed_data/processing_changelogs/dataset_2_changelog.txt"
+questions_file = "./processed_data/data_groups/supplemental_qa.txt"
 
 # output files
-labeled_data_file = "./training_text/final_txt/ready_dataset_2.txt"
-tag_count_file = "./training_text/tag_counts_2.txt"
+labeled_data_file = "./processed_data/datasets_txt/dataset_2.txt"
+tag_count_file = "./processed_data/label_totals/label_counts_2.txt"
 
 prompts_and_dialogue = []
 questions_and_answers = []

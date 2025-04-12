@@ -2,7 +2,7 @@ import tag_counter
 
 
 '''
-Builds training data using dialogue, question/answer pairs, actions, & impressions
+Builds dataset_1.txt using dialogue, question/answer pairs, actions, & impressions
     1. Dialogue and actions are added to a list
     2. Question/answer pairs are interleaved equally throughout
     3. Impressions are shuffled and added at equal intervals after the halfway point.
@@ -10,15 +10,17 @@ Builds training data using dialogue, question/answer pairs, actions, & impressio
 
 
 # input files
-changelog_file = "./unprocessed_text/text_processing_changelog.txt"
-questions_file = "./training_text/isolated_categories/questions.txt"
+changelog_file = "./unprocessed_data/processing_changelogs/dataset_1_changelog.txt"
+questions_file = "./processed_data/data_groups/supplemental_qa.txt"
+
+# save locations for each data group
+dialogue_file = "./processed_data/data_groups/darcy_dialogue.txt"
+actions_file = "./processed_data/data_groups/darcy_actions.txt"
+impressions_file = "./processed_data/data_groups/others_impressions.txt"
 
 # output files
-labeled_data_file = "./training_text/final_txt/ready_dataset_1.txt"
-dialogue_file = "./training_text/isolated_categories/darcy_dialogue_only.txt"
-actions_file = "./training_text/isolated_categories/darcy_actions_only.txt"
-impressions_file = "./training_text/isolated_categories/others_impressions_only.txt"
-tag_count_file = "./training_text/tag_counts_1.txt"
+labeled_data_file = "./processed_data/datasets_txt/dataset_1.txt"
+tag_count_file = "./processed_data/label_totals/label_counts_1.txt"
 
 dialogue_and_actions = []
 others_impressions = []
