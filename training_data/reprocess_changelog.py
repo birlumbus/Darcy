@@ -1,4 +1,12 @@
 
+'''
+Removes data of specified labels from a copied version of dataset_1_changelog.txt
+In this case, dataset_2_changelog needed removal of:
+    <others-impressions-of-darcy>
+    <darcy-actions>
+In addition, '<darcy-dialogue>' was changed to '<user>'
+'''
+
 
 def delete_impressions_and_actions(changelog_file):
     with open(changelog_file, "r", encoding="utf-8") as changelog:
@@ -19,7 +27,7 @@ def delete_impressions_and_actions(changelog_file):
 
 
 def main():
-    changelog_file = "./unprocessed_text/text_processing_changelog_dialogue_only.txt"
+    changelog_file = f"./unprocessed_data/processing_changelogs/dataset_2_changelog.txt"
     print("Deleting impressions and actions...")
     delete_impressions_and_actions(changelog_file)
     print("Impressions and actions deleted.\n")

@@ -1,4 +1,4 @@
-import tag_counter
+import label_counter
 
 
 '''
@@ -14,7 +14,7 @@ questions_file = "./processed_data/data_groups/supplemental_qa.txt"
 
 # output files
 labeled_data_file = "./processed_data/datasets_txt/dataset_2.txt"
-tag_count_file = "./processed_data/label_totals/label_counts_2.txt"
+label_count_file = "./processed_data/label_totals/label_counts_2.txt"
 
 prompts_and_dialogue = []
 questions_and_answers = []
@@ -81,8 +81,8 @@ def main():
     final_data = interleave_questions()
     print("Saving labeled data...")
     save_labeled_data(final_data)
-    print("Counting tags...")
-    tag_counter.count_tags(labeled_data_file, tag_count_file)
+    print("Counting labels...")
+    label_counter.count_labels(labeled_data_file, label_count_file)
     print("\nExtraction and categorization complete.\n")
 
 

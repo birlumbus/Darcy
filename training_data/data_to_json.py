@@ -3,8 +3,8 @@ import re
 
 
 '''
-Opens text files built by build_training_data scripts
-Writes their contents into json files in the same location
+Opens txt datasets built by build_dataset scripts
+Writes their contents into json files
 '''
 
 
@@ -27,10 +27,10 @@ def data_to_json(in_file, out_file):
         
 
 def main():
-    in_1  = "./training_text/final_txt/ready_dataset_1.txt"
-    out_1 = "./training_text/final_json/ready_dataset_1.json"
-    in_2  = "./training_text/final_txt/ready_dataset_2.txt"
-    out_2 = "./training_text/final_json/ready_dataset_2.json"
+    in_1  = "./processed_data/datasets_txt/dataset_1.txt"
+    in_2  = "./processed_data/datasets_txt/dataset_2.txt"
+    out_1 = "./processed_data/datasets_json/dataset_1.json"
+    out_2 = "./processed_data/datasets_json/dataset_2.json"
 
     data_to_json(in_1, out_1)
     data_to_json(in_2, out_2)

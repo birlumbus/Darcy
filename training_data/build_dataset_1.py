@@ -1,4 +1,4 @@
-import tag_counter
+import label_counter
 
 
 '''
@@ -20,7 +20,7 @@ impressions_file = "./processed_data/data_groups/others_impressions.txt"
 
 # output files
 labeled_data_file = "./processed_data/datasets_txt/dataset_1.txt"
-tag_count_file = "./processed_data/label_totals/label_counts_1.txt"
+label_count_file = "./processed_data/label_totals/label_counts_1.txt"
 
 dialogue_and_actions = []
 others_impressions = []
@@ -105,8 +105,8 @@ def main():
     save_labeled_data(final_data)
     print("Isolating categories...")
     isolate_categories()
-    print("Counting tags...")
-    tag_counter.count_tags(labeled_data_file, tag_count_file)
+    print("Counting labels...")
+    tag_counter.count_labels(labeled_data_file, label_count_file)
     print("\nExtraction and categorization complete.\n")
 
 
