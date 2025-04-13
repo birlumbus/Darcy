@@ -1,6 +1,12 @@
 import json
 
 
+'''
+Performance metrics are removed for all outputs where output is '[[no output]]'
+This process is no longer expected to be necessary.
+'''
+
+
 def remove_no_output_evaluations(data):
     # iterate over each prompt
     for prompt in data:

@@ -3,6 +3,13 @@ import json
 import argparse
 
 
+'''
+User identifies prompt_results file with integer param
+File is read and outputs identified
+Outputs are sorted by prompt and added to json file
+'''
+
+
 def read_file(filepath):
     """Read the entire contents of the file."""
     with open(filepath, "r", encoding="utf8") as f:
