@@ -1,6 +1,12 @@
 import json
 import numpy as np
 
+
+'''
+Graphing scripts run from these results
+'''
+
+
 metrics_to_average = ['perplexity', 'bleu1', 'bleu2', 'bleu4', 'rouge_l', 'meteor']
 
 print("\nLoading in aggregated_results...")
@@ -96,4 +102,5 @@ compiled_results = {"aggregated_means": results}
 print(f'Saving to {out_file}...')
 with open(out_path, 'w') as f:
     json.dump(compiled_results, f, indent=4)
-print('Done\n')
+print('Done')
+print('Graph scripts will run using the new results\n')

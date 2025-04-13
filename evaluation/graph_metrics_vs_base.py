@@ -2,6 +2,13 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+'''
+Script is used for more specific graphing needs
+Used to create all 3 graphs located in assets folder
+'''
+
+
 # list of metrics to visualize
 metrics_to_average = ['perplexity', 'bleu1', 'bleu2', 'bleu4', 'rouge_l', 'meteor']
 

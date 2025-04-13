@@ -1,6 +1,11 @@
 import json
 import matplotlib.pyplot as plt
 
+'''
+For quick visualization
+Graphs of every metric, for every model
+'''
+
 # load data
 file_path = 'prompt_results/compiled_analysis/aggregated_results.json'
 with open(file_path, 'r') as f:

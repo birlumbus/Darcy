@@ -4,6 +4,12 @@ import glob
 import statistics
 
 
+'''
+Used to aggregate insights found in all prompt_results json files
+After this script is run, find_overall_means.py does further processing to make graph scripts work.
+'''
+
+
 # ---------------------------------
 # Helper Functions (reduces nesting)
 # ---------------------------------
@@ -242,7 +248,9 @@ def main():
     output_file = "./prompt_results/compiled_analysis/aggregated_results.json"
     print('\nAnalyzing data...')
     aggregate_insights(input_folder, output_file, thresholds=OUTLIER_THRESHOLDS)
-    print(f'Saved data at {output_file}\n')
+    print(f'Saved data at {output_file}')
+    print('Run find_overall_means.py for further processing')
+    print('After running find_overall_means.py, graphing scripts will reflect results\n')
 
 
 if __name__ == "__main__":
