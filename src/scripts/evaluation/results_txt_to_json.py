@@ -110,8 +110,8 @@ def main():
                         help="An integer to identify the prompt results file. The input file is constructed as './prompt_results/txt/prompt_results_<input_integer>.txt'")
     args = parser.parse_args()
 
-    input_filepath = f"./prompt_results/txt/prompt_results_{args.input_integer}.txt"
-    output_filepath = f"./prompt_results/json/prompt_results_{args.input_integer}.json"
+    input_filepath = f"../../evaluation_data/prompt_results/txt/prompt_results_{args.input_integer}.txt"
+    output_filepath = f"../../evaluation_data/prompt_results/json/prompt_results_{args.input_integer}.json"
     
     print('\nParsing data...')
     parsed_data = parse_file(input_filepath)

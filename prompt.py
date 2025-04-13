@@ -295,8 +295,11 @@ def interactive_mode():
 
 
 def main():
-    file_path = "./src/evaluation_data/prompt_sets/prompt_set_test.txt"
-    output_file_path = "./src/evaluation_data/prompt_results/txt/prompt_results_7.txt"
+    # this number determines filename of in/output
+    set_num = 7
+
+    file_path = f"./src/evaluation_data/prompt_sets/prompt_set_{set_num}.txt"
+    output_file_path = f"./src/evaluation_data/prompt_results/txt/prompt_results_{set_num}.txt"
 
     print("\nSelect mode:")
     print("  [s] Interactive mode (single prompt to model(s) of your choice)")
@@ -308,7 +311,8 @@ def main():
     else:
         interactive_mode()
 
-    print('\nAfter results are saved, run bleu_rouge_meteor.py to analyze results\n')
+    print(f"\nAfter results are saved, run results_txt_to_json.py with arg {set_num}")
+    print("Then, edit hard-coded filepath in bleu_rouge_meteor.py to analyze\n")
 
 
 if __name__ == '__main__':
