@@ -1,6 +1,11 @@
 import json
 
 
+'''
+To be run if unwanted bleu 1,2,4 properties exist (this should be fixed)
+'''
+
+
 INPUT_FILE = './prompt_results/json/prompt_results_6.json'
 
 

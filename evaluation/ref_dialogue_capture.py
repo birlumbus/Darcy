@@ -1,6 +1,13 @@
 import random
 
 
+'''
+Pulls sample of reference dialogues for testing outputs against
+Default sample size is 100
+They're saved to ref_dialogue folder
+'''
+
+
 # load dialogues from file
 def load_dialogue(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
@@ -27,7 +34,7 @@ def save_references(filepath, selected_samples):
 
 if __name__ == '__main__':
     all_dialogue = '../training_data/training_text/isolated_categories/darcy_dialogue_only.txt'
-    references = '../training_data/training_text/isolated_categories/references_for_analysis.txt'
+    references = '../evaluation/ref_dialogue/references_for_analysis.txt'
 
     selected_samples = capture_references(all_dialogue, min_words=12, max_words=28, sample_size=100)
 
