@@ -51,7 +51,7 @@ python cli.py <command> [optional args]
 
 ## Model Training Commands
 
-WARNING: depending on your available computing, running these all at once may take a _very_ long time.
+WARNING: depending on your available computing power, running all of these at once may take substantial time.
 
 ```bash
 python cli.py train-gpt2medium-1
