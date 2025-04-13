@@ -368,6 +368,7 @@ def main():
         file_mode(file_path, output_file_path, dialogue_files)
     else:
         interactive_mode()
+    print('\nAfter results are saved, run results_txt_to_json.py\n')
 
 
 if __name__ == '__main__':
