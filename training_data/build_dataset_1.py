@@ -106,7 +106,7 @@ def main():
     print("Isolating categories...")
     isolate_categories()
     print("Counting labels...")
-    tag_counter.count_labels(labeled_data_file, label_count_file)
+    label_counter.count_labels(labeled_data_file, label_count_file)
     print("\nExtraction and categorization complete.\n")
 
 
