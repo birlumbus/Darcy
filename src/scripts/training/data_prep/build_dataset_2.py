@@ -9,12 +9,12 @@ Builds dataset_2.txt using prompt/dialogue & question/answer pairs
 
 
 # input files
-changelog_file = "./unprocessed_data/processing_changelogs/dataset_2_changelog.txt"
-questions_file = "./processed_data/data_groups/supplemental_qa.txt"
+changelog_file = "../../../training_data/unprocessed_data/processing_changelogs/dataset_2_changelog.txt"
+questions_file = "../../../training_data/processed_data/data_groups/supplemental_qa.txt"
 
 # output files
-labeled_data_file = "./processed_data/datasets_txt/dataset_2.txt"
-label_count_file = "./processed_data/label_totals/label_counts_2.txt"
+labeled_data_file = "../../../training_data/processed_data/datasets_txt/dataset_2.txt"
+label_count_file = "../../../training_data/processed_data/label_totals/label_counts_2.txt"
 
 prompts_and_dialogue = []
 questions_and_answers = []

@@ -10,17 +10,17 @@ Builds dataset_1.txt using dialogue, question/answer pairs, actions, & impressio
 
 
 # input files
-changelog_file = "./unprocessed_data/processing_changelogs/dataset_1_changelog.txt"
-questions_file = "./processed_data/data_groups/supplemental_qa.txt"
+changelog_file = "../../../training_data/unprocessed_data/processing_changelogs/dataset_1_changelog.txt"
+questions_file = "../../../training_data/processed_data/data_groups/supplemental_qa.txt"
 
 # save locations for each data group
-dialogue_file = "./processed_data/data_groups/darcy_dialogue.txt"
-actions_file = "./processed_data/data_groups/darcy_actions.txt"
-impressions_file = "./processed_data/data_groups/others_impressions.txt"
+dialogue_file = "../../../training_data/processed_data/data_groups/darcy_dialogue.txt"
+actions_file = "../../../training_data/processed_data/data_groups/darcy_actions.txt"
+impressions_file = "../../../training_data/processed_data/data_groups/others_impressions.txt"
 
 # output files
-labeled_data_file = "./processed_data/datasets_txt/dataset_1.txt"
-label_count_file = "./processed_data/label_totals/label_counts_1.txt"
+labeled_data_file = "../../../training_data/processed_data/datasets_txt/dataset_1.txt"
+label_count_file = "../../../training_data/processed_data/label_totals/label_counts_1.txt"
 
 dialogue_and_actions = []
 others_impressions = []

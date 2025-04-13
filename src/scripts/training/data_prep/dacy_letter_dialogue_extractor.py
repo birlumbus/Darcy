@@ -14,8 +14,8 @@ def separate_sentences(input, output):
             file.write(f"<darcy-dialogue> {sentence.strip()}\n")
 
 
-input = './unprocessed_data/darcy_letter/darcy_letter.txt'
-output = './unprocessed_data/darcy_letter/darcy_letter_as_dialogue.txt'
+input = '../../../training_data/unprocessed_data/darcy_letter/darcy_letter.txt'
+output = '../../../training_data/unprocessed_data/darcy_letter/darcy_letter_as_dialogue.txt'
 
 separate_sentences(input, output)
 
