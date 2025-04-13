@@ -1,5 +1,4 @@
 models/
-evaluation/prompt_sets/
-evaluation/prompt_results/
+src/evaluation_data/
 misc_ignore/
 .DS_Store
