@@ -7,7 +7,7 @@ Graphs of every metric, for every model
 '''
 
 # load data
-file_path = 'prompt_results/compiled_analysis/aggregated_results.json'
+file_path = '../../evaluation_data/prompt_results/compiled_analysis/aggregated_results.json'
 with open(file_path, 'r') as f:
     data = json.load(f)
 

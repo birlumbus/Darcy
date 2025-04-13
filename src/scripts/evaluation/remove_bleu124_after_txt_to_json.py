@@ -2,11 +2,12 @@ import json
 
 
 '''
-To be run if unwanted bleu 1,2,4 properties exist (this should be fixed)
+DEPRECATED
+To be run if unwanted bleu 1,2,4 properties exist
 '''
 
 
-INPUT_FILE = './prompt_results/json/prompt_results_6.json'
+INPUT_FILE = '../../evaluation_data/prompt_results/json/prompt_results_6.json'
 
 
 def remove_bleu_metrics(data):

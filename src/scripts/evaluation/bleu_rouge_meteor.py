@@ -102,7 +102,7 @@ def process_results(json_file, ref_file_path):
     """
     # capture references
     references = ref_dialogue_capture.capture_references(ref_file_path, min_words=12, max_words=80, sample_size=100)
-    
+
     with open(json_file, 'r') as f:
         data = json.load(f)
     

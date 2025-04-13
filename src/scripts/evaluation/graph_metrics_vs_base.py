@@ -13,7 +13,7 @@ Used to create all 3 graphs located in assets folder
 metrics_to_average = ['perplexity', 'bleu1', 'bleu2', 'bleu4', 'rouge_l', 'meteor']
 
 # data from aggregated_means.json (loaded from file)
-with open('./prompt_results/compiled_analysis/aggregated_means.json', 'r') as f:
+with open('../../evaluation_data/prompt_results/compiled_analysis/aggregated_means.json', 'r') as f:
     data = json.load(f)
 data = data["aggregated_means"]  # extract the nested aggregated_means dictionary
 

@@ -96,7 +96,7 @@ for model, versions in aggregated_results.items():
 
 # save to file
 out_file = 'aggregated_means.json'
-out_path = f'prompt_results/compiled_analysis/{out_file}'
+out_path = f'../../evaluation_data/prompt_results/compiled_analysis/{out_file}'
 compiled_results = {"aggregated_means": results}
 
 print(f'Saving to {out_file}...')

@@ -2,8 +2,8 @@ import json
 
 
 '''
+DEPRECATED
 Performance metrics are removed for all outputs where output is '[[no output]]'
-This process is no longer expected to be necessary.
 '''
 
 
@@ -23,7 +23,7 @@ def remove_no_output_evaluations(data):
 
 def main():
     file_name = 'prompt_results_4.json'
-    file_path = f'prompt_results/json/{file_name}'
+    file_path = f'../../evaluation_data/prompt_results/json/{file_name}'
 
     # read JSON data from input file
     with open(file_path, "r", encoding="utf-8") as f:

@@ -35,7 +35,7 @@ def main():
     
     # define output file path for aggregated results
     output_file_name = 'highest_bleu4_results.json'
-    output_file_path = f'./prompt_results/json/best_results/{output_file_name}'
+    output_file_path = f'../../evaluation_data/prompt_results/json/best_results/{output_file_name}'
     with open(output_file_path, 'w') as out_file:
         json.dump(high_score_results, out_file, indent=2)
     

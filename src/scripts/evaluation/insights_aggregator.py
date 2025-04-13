@@ -244,8 +244,8 @@ def aggregate_insights(input_folder, output_file, thresholds=None):
 
 
 def main():
-    input_folder = "./prompt_results/json/"
-    output_file = "./prompt_results/compiled_analysis/aggregated_results.json"
+    input_folder = "../../evaluation_data/prompt_results/json/"
+    output_file = "../../evaluation_data/prompt_results/compiled_analysis/aggregated_results.json"
     print('\nAnalyzing data...')
     aggregate_insights(input_folder, output_file, thresholds=OUTLIER_THRESHOLDS)
     print(f'Saved data at {output_file}')
