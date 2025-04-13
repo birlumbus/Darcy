@@ -21,6 +21,9 @@ COMMANDS = {
     "graph-vitals": "src/scripts/evaluation/graph_metrics_vs_base.py",
     "graph-all": "src/scripts/evaluation/graph_results.py",
     "test-perplexity-script": "src/scripts/evaluation/calculate_perplexity.py"
+    # dataset_builders
+    "build-dataset-1": "src/scripts/training/data_prep/build_dataset_1.py"
+    "build-dataset-2": "src/scripts/training/data_prep/build_dataset_2.py"
 }
 
 def main():
