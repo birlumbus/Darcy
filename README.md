@@ -1,6 +1,7 @@
 # DarcyGPT
 
-A write-up containing results and selected model output can be found:
+A write-up containing performance results and selected model output can be found:
+- [On Medium](https://medium.com/@rhodrithomas_79672/training-mr-darcy-fine-tuning-ai-models-for-distinctive-speech-patterns-d336867ec0e3)
 - [via PDF](https://github.com/birlumbus/DarcyGPT/blob/main/assets/Training%20Mr.%20Darcy.pdf)
 
 This repository contains training scripts, prompting tools, and evaluation utilities for fine-tuning language models (e.g., GPT-2, GPT-J) on *Pride and Prejudice* dialogue — specifically, Mr. Darcy’s lines.
